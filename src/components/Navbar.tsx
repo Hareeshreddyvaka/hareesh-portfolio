@@ -43,19 +43,19 @@ const Navbar = () => {
   };
 
   return (
-    <motion.nav 
+    <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className="fixed top-0 left-0 right-0 z-50 bg-dark-200/95 backdrop-blur-sm border-b border-primary-500/20"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <motion.div 
-            whileHover={{ scale: 1.05 }}
-            className="flex-shrink-0"
-          >
-            <span className="text-2xl font-bold bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">
-              Portfolio
+          {/* Brand */}
+          <motion.div whileHover={{ scale: 1.05 }} className="flex-shrink-0">
+            <span className="text-2xl font-bold bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent cursor-pointer"
+              onClick={() => scrollToSection('#home')}
+            >
+              Vaka Hareesh Reddy
             </span>
           </motion.div>
 
@@ -83,20 +83,26 @@ const Navbar = () => {
           {/* Social Links - Desktop */}
           <div className="hidden md:flex items-center space-x-4">
             {[
-              { Icon: Github, href: '#', label: 'GitHub' },
-              { Icon: Linkedin, href: '#', label: 'LinkedIn' },
+              { Icon: Github, href: 'https://github.com/vakahareeshreddy', label: 'GitHub' },
+              { Icon: Linkedin, href: 'https://www.linkedin.com/in/vaka-hareesh-reddy', label: 'LinkedIn' },
               { Icon: Mail, href: '#contact', label: 'Email' },
             ].map(({ Icon, href, label }) => (
               <motion.a
                 key={label}
                 href={href}
+                target={href.startsWith('#') ? '_self' : '_blank'}
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className="text-gray-400 hover:text-primary-400 transition-colors duration-300"
-                onClick={href.startsWith('#') ? (e) => {
-                  e.preventDefault();
-                  scrollToSection(href);
-                } : undefined}
+                onClick={
+                  href.startsWith('#')
+                    ? (e) => {
+                        e.preventDefault();
+                        scrollToSection(href);
+                      }
+                    : undefined
+                }
               >
                 <Icon size={20} />
               </motion.a>

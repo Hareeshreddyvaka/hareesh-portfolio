@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, MessageCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin, MessageCircle } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -22,14 +22,14 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 2000));
-    
+
     // Reset form
     setFormData({ name: '', email: '', subject: '', message: '' });
     setIsSubmitting(false);
-    
+
     // Show success message (in a real app, you'd handle this properly)
     alert('Message sent successfully!');
   };
@@ -38,20 +38,20 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'john.doe@example.com',
-      link: 'mailto:john.doe@example.com',
+      value: 'vakahareesh.reddy2023@vitstudent.ac.in',
+      link: 'mailto:vakahareesh.reddy2023@vitstudent.ac.in',
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567',
+      value: '+91 9876543210', // replace with your actual number if you want
+      link: 'tel:+919876543210',
     },
     {
       icon: MapPin,
       title: 'Location',
-      value: 'San Francisco, CA',
-      link: 'https://maps.google.com',
+      value: 'Chennai, India',
+      link: 'https://maps.google.com/?q=Chennai,India',
     },
   ];
 
@@ -59,25 +59,19 @@ const Contact = () => {
     {
       icon: Github,
       name: 'GitHub',
-      url: 'https://github.com',
+      url: 'https://github.com/vakahareeshreddy', // replace with your GitHub username
       color: 'hover:text-gray-400',
     },
     {
       icon: Linkedin,
       name: 'LinkedIn',
-      url: 'https://linkedin.com',
-      color: 'hover:text-blue-400',
-    },
-    {
-      icon: Twitter,
-      name: 'Twitter',
-      url: 'https://twitter.com',
+      url: 'https://www.linkedin.com/in/vaka-hareesh-reddy', // replace with your LinkedIn
       color: 'hover:text-blue-400',
     },
     {
       icon: MessageCircle,
       name: 'Discord',
-      url: 'https://discord.com',
+      url: 'https://discord.com/users/your-id', // replace with your Discord
       color: 'hover:text-indigo-400',
     },
   ];
@@ -96,7 +90,7 @@ const Contact = () => {
             Get In <span className="bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">Touch</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Have a project in mind? Let's discuss how we can work together to bring your ideas to life.
+            Let’s connect! Reach out for collaborations, projects, or just a friendly chat about AI, ML, or web development.
           </p>
         </motion.div>
 
@@ -112,8 +106,7 @@ const Contact = () => {
             <div>
               <h3 className="text-2xl font-bold text-white mb-6">Let's Connect</h3>
               <p className="text-gray-400 leading-relaxed mb-8">
-                I'm always open to discussing new opportunities, creative projects, 
-                or even just chatting about the latest in tech. Don't hesitate to reach out!
+                I’m always open to opportunities, collaborations, and discussions about new tech. Don’t hesitate to reach out!
               </p>
 
               <div className="space-y-6">
@@ -182,7 +175,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-dark-200 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-300"
-                    placeholder="John Doe"
+                    placeholder="Vaka Hareesh Reddy"
                   />
                 </div>
                 <div>
@@ -197,7 +190,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-dark-200 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-300"
-                    placeholder="john@example.com"
+                    placeholder="vakahareesh.reddy2023@vitstudent.ac.in"
                   />
                 </div>
               </div>
@@ -214,7 +207,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-dark-200 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-300"
-                  placeholder="Project Discussion"
+                  placeholder="Collaboration or Project"
                 />
               </div>
 

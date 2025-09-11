@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Twitter, Mail, Heart, ArrowUp } from 'lucide-react';
+import { Github, Linkedin, Mail, Heart, ArrowUp } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,25 +9,19 @@ const Footer = () => {
     {
       icon: Github,
       name: 'GitHub',
-      url: 'https://github.com',
+      url: 'https://github.com/vakahareeshreddy', // replace with your actual GitHub
       color: 'hover:text-gray-400',
     },
     {
       icon: Linkedin,
       name: 'LinkedIn',
-      url: 'https://linkedin.com',
-      color: 'hover:text-blue-400',
-    },
-    {
-      icon: Twitter,
-      name: 'Twitter',
-      url: 'https://twitter.com',
+      url: 'https://www.linkedin.com/in/vaka-hareesh-reddy', // replace with your LinkedIn
       color: 'hover:text-blue-400',
     },
     {
       icon: Mail,
       name: 'Email',
-      url: 'mailto:john.doe@example.com',
+      url: 'mailto:vakahareesh.reddy2023@vitstudent.ac.in',
       color: 'hover:text-primary-400',
     },
   ];
@@ -49,10 +43,10 @@ const Footer = () => {
               viewport={{ once: true }}
             >
               <h3 className="text-2xl font-bold bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent mb-2">
-                John Doe
+                Vaka Hareesh Reddy
               </h3>
               <p className="text-gray-400 text-sm">
-                Full Stack Developer & UI/UX Designer
+                Computer Science Engineer (AI & ML) | Web Developer | Tech Enthusiast
               </p>
             </motion.div>
           </div>
@@ -93,7 +87,7 @@ const Footer = () => {
               <ArrowUp size={16} />
               Back to Top
             </motion.button>
-            
+
             <motion.p
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -101,7 +95,7 @@ const Footer = () => {
               viewport={{ once: true }}
               className="text-gray-500 text-sm"
             >
-              © {currentYear} John Doe. All rights reserved.
+              © {currentYear} Vaka Hareesh Reddy. All rights reserved.
             </motion.p>
           </div>
         </div>
