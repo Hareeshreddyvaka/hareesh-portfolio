@@ -78,7 +78,7 @@ const HeroSection: React.FC = () => {
             </Link>
 
             <a
-              href="https://drive.google.com/file/d/1-portfolio-resume/view?usp=sharing"
+              href="https://drive.google.com/file/d/1NMhDpSV9WyFTBOz9GwQihLHWXZrg21v4/view?usp=drivesdk"
               target="_blank"
               rel="noreferrer"
               className="interactive flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-8 py-4 text-base font-medium text-white backdrop-blur-sm transition-all hover:bg-white/10 hover:border-white/20"
