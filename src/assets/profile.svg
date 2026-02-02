@@ -1,0 +1,31 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#22d3ee" />
+    </linearGradient>
+    <linearGradient id="glow" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="rgba(59,130,246,0.75)" />
+      <stop offset="100%" stop-color="rgba(14,165,233,0.15)" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="48" fill="#0f172a" />
+  <circle cx="256" cy="210" r="120" fill="url(#grad)" opacity="0.9" />
+  <ellipse cx="256" cy="434" rx="160" ry="108" fill="url(#glow)" opacity="0.6" />
+  <path
+    d="M256 120c-62 0-112 50-112 112 0 62 50 112 112 112s112-50 112-112c0-62-50-112-112-112zm0 168c-30 0-56-26-56-56s26-56 56-56 56 26 56 56-26 56-56 56z"
+    fill="#0f172a"
+    opacity="0.75"
+  />
+  <circle cx="230" cy="180" r="16" fill="#f8fafc" opacity="0.85" />
+  <circle cx="282" cy="180" r="16" fill="#f8fafc" opacity="0.85" />
+  <path
+    d="M224 232c16 24 48 24 64 0"
+    stroke="#f8fafc"
+    stroke-width="12"
+    stroke-linecap="round"
+    opacity="0.9"
+  />
+</svg>
+
