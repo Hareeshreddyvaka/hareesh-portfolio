@@ -164,17 +164,7 @@ const ContactSection: React.FC = () => {
                 </a>
               ))}
             </div>
-            <div className="relative h-40 overflow-hidden rounded-3xl border border-white/10">
-              <iframe
-                title="VIT Chennai location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.1537128699305!2d80.20932847652884!3d13.089922088259852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52645ec8311319%3A0x41c8060210adb98!2sVIT%20Chennai!5e0!3m2!1sen!2sin!4v1708780000000!5m2!1sen!2sin"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
+
           </motion.div>
         </div>
       </div>

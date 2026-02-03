@@ -1,5 +1,7 @@
 import { motion, Variants } from 'framer-motion';
 import { ArrowDownRight, Download } from 'lucide-react';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa6';
+import { MdEmail } from 'react-icons/md';
 import { Link } from 'react-scroll';
 import profileImage from '../assets/profile.svg';
 import { socialLinks } from '../data/socials';
@@ -49,7 +51,7 @@ const HeroSection: React.FC = () => {
 
           <motion.h1
             variants={childVariant}
-            className="text-5xl font-bold leading-tight text-white md:text-7xl lg:text-8xl tracking-tight"
+            className="text-4xl font-bold leading-tight text-white md:text-7xl lg:text-8xl tracking-tight"
           >
             Vaka <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-400">
@@ -89,24 +91,26 @@ const HeroSection: React.FC = () => {
           </motion.div>
 
           <motion.div variants={childVariant} className="flex items-center gap-6 pt-4">
-            {socialLinks.slice(0, 3).map((social) => (
-              <a
-                key={social.name}
-                href={social.url}
-                target={social.name === 'Email' ? '_self' : '_blank'}
-                rel="noreferrer"
-                className="text-slate-400 transition-colors hover:text-primary-400"
-              >
-                <span className="sr-only">{social.name}</span>
-                {/* Assuming social.icon is a component or we render text if not available. 
-                    The original code rendered text handles. Let's keep it simple or use icons if available.
-                    Original used text. Let's switch to icons if possible, but for now text is safer.
-                */}
-                <span className="text-sm font-mono hover:underline decoration-primary-500/50 underline-offset-4">
-                  {social.handle}
-                </span>
-              </a>
-            ))}
+            {socialLinks.map((social) => {
+              const Icon =
+                social.name === 'GitHub' ? FaGithub :
+                  social.name === 'LinkedIn' ? FaLinkedin :
+                    social.name === 'Twitter' ? FaTwitter :
+                      MdEmail;
+
+              return (
+                <a
+                  key={social.name}
+                  href={social.url}
+                  target={social.name === 'Email' ? '_self' : '_blank'}
+                  rel="noreferrer"
+                  className="text-slate-400 transition-colors hover:text-primary-400"
+                  aria-label={social.name}
+                >
+                  <Icon size={32} className="transition-transform hover:scale-110" />
+                </a>
+              );
+            })}
           </motion.div>
         </motion.div>
 
