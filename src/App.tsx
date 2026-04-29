@@ -1,105 +1,106 @@
-import { Suspense, lazy, useEffect, useMemo, useState } from 'react';
-import { LazyMotion, domAnimation } from 'framer-motion';
-import AnimatedCursor from 'react-animated-cursor';
-import Aos from 'aos';
-import { Helmet } from 'react-helmet-async';
-import { Toaster } from 'react-hot-toast';
+import { useEffect } from 'react';
+import Lenis from '@studio-freight/lenis';
+import { Canvas } from '@react-three/fiber';
+import { AssetProvider } from './contexts/AssetContext';
+import { useAssets } from './contexts/useAssets';
+import AssetPreloader from './components/space/AssetPreloader';
+import { ErrorBoundary } from './utils/errorBoundary';
+import { PlanetarySystem } from './components/space/planetarySystem/PlanetarySystem';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
-import ScrollToTop from './components/layout/ScrollToTop';
-import ChatbotWidget from './components/ui/ChatbotWidget';
-import PageLoader from './components/ui/PageLoader';
-import { useTheme } from './hooks/useTheme';
+import { SettingsMenu } from './components/space/SettingsMenu';
+import { TutorialOverlay } from './components/space/TutorialOverlay';
+import { PhotoMode } from './components/space/PhotoMode';
+import { HelpOverlay } from './components/space/HelpOverlay';
+import { useKeyboardShortcuts } from './hooks/useKeyboardShortcuts';
+import ScrollSections from './components/sections/ScrollSections';
+import ScrollProgress from './components/ui/ScrollProgress';
+import CustomCursor from './components/ui/CustomCursor';
 
-const HeroSection = lazy(() => import('./sections/HeroSection'));
-const AboutSection = lazy(() => import('./sections/AboutSection'));
-const SkillsSection = lazy(() => import('./sections/SkillsSection'));
-const ProjectsSection = lazy(() => import('./sections/ProjectsSection'));
-const ExperienceSection = lazy(() => import('./sections/ExperienceSection'));
-const AchievementsSection = lazy(() => import('./sections/AchievementsSection'));
-const ContactSection = lazy(() => import('./sections/ContactSection'));
 
-function App() {
-  const { isDark } = useTheme();
-  const [showCursor, setShowCursor] = useState(false);
-
-  useEffect(() => {
-    Aos.init({
-      duration: 900,
-      once: true,
-      offset: 80,
-      easing: 'ease-out-cubic',
-    });
-    setShowCursor(true);
-  }, []);
-
-  const cursorColor = useMemo(() => (isDark ? '56,189,248' : '59,130,246'), [isDark]);
+function PortfolioRoot() {
+  const { isLoading, progress } = useAssets();
+  const { showHelp, setShowHelp } = useKeyboardShortcuts();
 
   return (
     <>
-      <Helmet>
-        <title>Vaka Hareesh Reddy | AI & ML Engineer</title>
-        <meta
-          name="description"
-          content="World-class AI & ML developer portfolio of Vaka Hareesh Reddy – projects, skills, experience, and contact information for hiring."
-        />
-        <meta
-          name="keywords"
-          content="Vaka Hareesh Reddy, AI engineer, machine learning, full stack developer, React portfolio, VIT Chennai"
-        />
-        <meta name="author" content="Vaka Hareesh Reddy" />
-        <meta property="og:title" content="Vaka Hareesh Reddy | AI & ML Engineer" />
-        <meta
-          property="og:description"
-          content="Explore the AI & ML projects, experience, and achievements of Vaka Hareesh Reddy."
-        />
-        <meta property="og:type" content="website" />
-      </Helmet>
-      <LazyMotion features={domAnimation}>
-        <div className="relative min-h-screen overflow-hidden bg-surface dark:bg-surface-dark text-foreground dark:text-foreground-dark">
-          {showCursor && (
-            <AnimatedCursor
-              innerSize={10}
-              outerSize={36}
-              color={cursorColor}
-              outerAlpha={0.2}
-              innerScale={0.7}
-              outerScale={2.1}
-              clickables={['a', 'button', '.interactive']}
-            />
-          )}
-          <Navbar />
-          <main className="flex flex-col gap-16 md:gap-24">
-            <Suspense fallback={<PageLoader />}>
-              <HeroSection />
-            </Suspense>
-            <Suspense fallback={<PageLoader />}>
-              <AboutSection />
-            </Suspense>
-            <Suspense fallback={<PageLoader />}>
-              <SkillsSection />
-            </Suspense>
-            <Suspense fallback={<PageLoader />}>
-              <ProjectsSection />
-            </Suspense>
-            <Suspense fallback={<PageLoader />}>
-              <ExperienceSection />
-            </Suspense>
-            <Suspense fallback={<PageLoader />}>
-              <AchievementsSection />
-            </Suspense>
-            <Suspense fallback={<PageLoader />}>
-              <ContactSection />
-            </Suspense>
-          </main>
-          <Footer />
-          <ScrollToTop />
-          <ChatbotWidget />
-        </div>
-      </LazyMotion>
-      <Toaster position="top-right" />
+      <AssetPreloader progress={progress} isLoading={isLoading} />
+      <ScrollProgress />
+
+      {/* 3D Canvas — fixed background */}
+      <div className="fixed inset-0 z-0 bg-black">
+        <Canvas
+          camera={{ position: [0, 0, 20], fov: 55, near: 0.1, far: 500 }}
+          gl={{ 
+            antialias: false,
+            alpha: false, 
+            powerPreference: 'high-performance',
+            stencil: false,
+          }}
+          dpr={[1, 1.5]}
+        >
+          <ErrorBoundary>
+            {!isLoading && <PlanetarySystem />}
+          </ErrorBoundary>
+        </Canvas>
+      </div>
+
+      {/* DOM Overlays */}
+      {!isLoading && (
+        <>
+          {/* Navbar — always visible */}
+          <div className="fixed top-0 left-0 right-0 z-50">
+            <Navbar />
+          </div>
+
+          {/* Scroll-triggered portfolio sections — appear/disappear over the 3D scene */}
+          <ScrollSections />
+
+          {/* Scroll spacer — creates scroll distance for camera movement */}
+          <div className="relative z-10 pointer-events-none">
+            <div className="w-full h-[500vh]" aria-hidden="true" />
+            <div className="pointer-events-auto">
+              <Footer />
+            </div>
+          </div>
+
+          {/* Utility overlays */}
+          <SettingsMenu />
+          <PhotoMode />
+          <TutorialOverlay />
+        </>
+      )}
+
+      <HelpOverlay isOpen={showHelp} onClose={() => setShowHelp(false)} />
     </>
   );
 }
 
-export default App;
+export default function App() {
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.6,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      orientation: 'vertical',
+      gestureOrientation: 'vertical',
+      smoothWheel: true,
+    });
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    return () => lenis.destroy();
+  }, []);
+
+  return (
+    <ErrorBoundary>
+      <AssetProvider preloadPlanets preloadSkybox>
+        <PortfolioRoot />
+        <CustomCursor />
+      </AssetProvider>
+    </ErrorBoundary>
+  );
+}
