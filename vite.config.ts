@@ -1,10 +1,19 @@
 /// <reference types="vitest" />
+import { readFileSync } from 'node:fs'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+
+const portfolioData = JSON.parse(
+  readFileSync(new URL('./public/portfolio.json', import.meta.url), 'utf8'),
+)
 
 // https://vitejs.dev/config/
 export default defineConfig({
   base: './',
+
+  define: {
+    __PORTFOLIO_DATA__: JSON.stringify(portfolioData),
+  },
 
   plugins: [react()],
 

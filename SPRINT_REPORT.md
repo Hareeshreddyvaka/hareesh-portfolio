@@ -13,3 +13,9 @@ Dead imports removed: none
 Duplicate dependencies found: `three` imported as `three` and `three/examples/jsm/loaders/GLTFLoader.js`
 Build size before: `1.41 MB` total assets (`0.40 MB` gzip)
 Build size after: `1.41 MB` total assets (`0.40 MB` gzip)
+
+Sprint 1.1 — Progressive Loading
+Blocking preloader removed: YES
+CSS starfield fallback: YES
+First paint now shows: hero text + CSS stars
+WebGL load strategy: React.lazy + Suspense
