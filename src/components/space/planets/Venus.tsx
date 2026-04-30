@@ -2,11 +2,12 @@
 // Venus — Thick atmosphere with surface beneath
 // ============================================================================
 
-import { useRef, useState, useMemo } from 'react';
+import { useRef, useState } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 import { usePlanetTextures } from '../../../contexts/useAssets';
 import { SPACE_ASSETS } from '../../../config/assetConfig';
+import AtmosphereGlow from '../AtmosphereGlow';
 
 interface VenusProps {
   position?: [number, number, number];
@@ -28,20 +29,6 @@ export default function Venus({
   const atmoRef = useRef<THREE.Mesh>(null);
   const [hovered, setHovered] = useState(false);
   const targetScale = useRef(scale);
-
-  // Atmosphere haze material
-  const hazeMaterial = useMemo(
-    () =>
-      new THREE.MeshBasicMaterial({
-        color: new THREE.Color(1.0, 0.85, 0.5),
-        transparent: true,
-        opacity: 0.06,
-        side: THREE.BackSide,
-        depthWrite: false,
-        blending: THREE.AdditiveBlending,
-      }),
-    [],
-  );
 
   useFrame((_state, delta) => {
     targetScale.current = hovered ? scale * 1.08 : scale;
@@ -81,7 +68,7 @@ export default function Venus({
         />
       </mesh>
 
-      {/* Thick cloudy atmosphere */}
+      {/* Thick cloudy atmosphere layer */}
       {textures.atmosphereMap && (
         <mesh ref={atmoRef}>
           <sphereGeometry args={[radius * 1.02, widthSegments, heightSegments]} />
@@ -94,11 +81,14 @@ export default function Venus({
         </mesh>
       )}
 
-      {/* Outer glow */}
-      <mesh scale={[1.12, 1.12, 1.12]}>
-        <sphereGeometry args={[radius, 32, 32]} />
-        <primitive object={hazeMaterial} attach="material" />
-      </mesh>
+      {/* Orange-yellow Rayleigh rim */}
+      <AtmosphereGlow
+        radius={radius}
+        color={{ r: 0.9, g: 0.7, b: 0.3 }}
+        baseIntensity={0.3}
+        activeIntensity={1.0}
+        lodDistance={20}
+      />
     </group>
   );
 }

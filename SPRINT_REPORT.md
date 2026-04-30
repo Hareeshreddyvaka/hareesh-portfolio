@@ -184,3 +184,25 @@ Manual scroll verification: PASS
 Test status: PASS
 TypeScript status: PASS
 Build status: PASS
+
+## Sprint 3.2 — Planet Shaders
+Atmosphere shader created: YES
+  src/shaders/atmosphere.vert — vNormal + vViewDir rim lighting
+  src/shaders/atmosphere.frag — pow(rim, 3.0) * uIntensity * 0.8
+Shared AtmosphereGlow component: src/components/space/AtmosphereGlow.tsx
+  Imported via Vite ?raw suffix, no plugin needed
+  Dynamic intensity lerp: += (target - current) * 0.03 per frame
+  LOD: activeIntensity at <20u, baseIntensity at far
+Earth blue-white rim: YES (r:0.3, g:0.6, b:1.0)
+Mars reddish rim: YES (r:0.8, g:0.4, b:0.2)
+Venus orange-yellow rim: YES (r:0.9, g:0.7, b:0.3)
+Jupiter pale warm rim: YES (r:0.8, g:0.7, b:0.6)
+Dynamic intensity lerp: YES
+Saturn particle rings 8000 instances: YES
+  InstancedMesh SphereGeometry(1,4,4) x8000
+  Color lerp sandy-tan to white by orbital radius
+  Shimmer: Math.sin(time + i * 0.7) * 0.003 Y offset per frame
+  Original flat RingGeometry removed
+Test status: PASS
+TypeScript status: PASS
+Build status: PASS

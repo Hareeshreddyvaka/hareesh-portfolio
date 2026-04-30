@@ -1,5 +1,5 @@
 // ============================================================================
-// Jupiter — Gas giant with banding and faint glow
+// Jupiter — Gas giant with banding and atmosphere glow
 // ============================================================================
 
 import { useRef, useState } from 'react';
@@ -7,6 +7,7 @@ import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 import { usePlanetTextures } from '../../../contexts/useAssets';
 import { SPACE_ASSETS } from '../../../config/assetConfig';
+import AtmosphereGlow from '../AtmosphereGlow';
 
 interface JupiterProps {
   position?: [number, number, number];
@@ -61,18 +62,14 @@ export default function Jupiter({
         />
       </mesh>
 
-      {/* Subtle atmospheric glow */}
-      <mesh scale={[1.08, 1.08, 1.08]}>
-        <sphereGeometry args={[radius, 32, 32]} />
-        <meshBasicMaterial
-          color={new THREE.Color(0.9, 0.75, 0.5)}
-          transparent
-          opacity={0.04}
-          side={THREE.BackSide}
-          depthWrite={false}
-          blending={THREE.AdditiveBlending}
-        />
-      </mesh>
+      {/* Pale warm atmospheric rim */}
+      <AtmosphereGlow
+        radius={radius}
+        color={{ r: 0.8, g: 0.7, b: 0.6 }}
+        baseIntensity={0.3}
+        activeIntensity={1.0}
+        lodDistance={25}
+      />
     </group>
   );
 }

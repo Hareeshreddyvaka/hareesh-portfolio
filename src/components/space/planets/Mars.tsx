@@ -7,6 +7,7 @@ import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 import { usePlanetTextures } from '../../../contexts/useAssets';
 import { SPACE_ASSETS } from '../../../config/assetConfig';
+import AtmosphereGlow from '../AtmosphereGlow';
 
 interface MarsProps {
   position?: [number, number, number];
@@ -61,18 +62,14 @@ export default function Mars({
         />
       </mesh>
 
-      {/* Faint reddish atmosphere */}
-      <mesh scale={[1.05, 1.05, 1.05]}>
-        <sphereGeometry args={[radius, 32, 32]} />
-        <meshBasicMaterial
-          color={new THREE.Color(0.9, 0.4, 0.2)}
-          transparent
-          opacity={0.03}
-          side={THREE.BackSide}
-          depthWrite={false}
-          blending={THREE.AdditiveBlending}
-        />
-      </mesh>
+      {/* Reddish dusty atmosphere */}
+      <AtmosphereGlow
+        radius={radius}
+        color={{ r: 0.8, g: 0.4, b: 0.2 }}
+        baseIntensity={0.3}
+        activeIntensity={1.0}
+        lodDistance={20}
+      />
     </group>
   );
 }
