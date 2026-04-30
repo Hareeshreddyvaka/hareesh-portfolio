@@ -31,11 +31,13 @@ export default function Earth({
 
   const earthRef = useRef<THREE.Mesh>(null);
   const cloudsRef = useRef<THREE.Mesh>(null);
+  const materialRef = useRef<THREE.MeshStandardMaterial>(null);
+  const currentLOD = useRef(false);
 
   const [hovered, setHovered] = useState(false);
   const targetScale = useRef(scale);
 
-  useFrame((_state, delta) => {
+  useFrame((state, delta) => {
     targetScale.current = hovered ? scale * 1.08 : scale;
 
     if (earthRef.current) {
@@ -52,6 +54,18 @@ export default function Earth({
     if (cloudsRef.current) {
       cloudsRef.current.rotation.y += cfg.animation.rotationSpeed * 1.15;
     }
+
+    const dist = state.camera.position.distanceTo(new THREE.Vector3(...position));
+    const useLOD = dist > cfg.lodDistance!;
+    if (useLOD !== currentLOD.current) {
+      currentLOD.current = useLOD;
+      const baseName = cfg.textures.dayMap.url.substring(0, cfg.textures.dayMap.url.lastIndexOf('.'));
+      const texPath = baseName + (useLOD ? '-512.webp' : '.webp');
+      new THREE.TextureLoader().load(texPath, tex => {
+        tex.colorSpace = THREE.SRGBColorSpace;
+        if (materialRef.current) materialRef.current.map = tex;
+      });
+    }
   });
 
   const { radius, widthSegments, heightSegments } = cfg.geometry;
@@ -67,6 +81,7 @@ export default function Earth({
       >
         <sphereGeometry args={[radius, widthSegments, heightSegments]} />
         <meshStandardMaterial
+          ref={materialRef}
           map={textures.dayMap ?? null}
           normalMap={textures.normalMap ?? null}
           metalnessMap={textures.specularMap ?? null}

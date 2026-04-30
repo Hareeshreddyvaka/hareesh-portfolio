@@ -27,10 +27,13 @@ export default function Venus({
 
   const surfaceRef = useRef<THREE.Mesh>(null);
   const atmoRef = useRef<THREE.Mesh>(null);
+  const materialRef = useRef<THREE.MeshStandardMaterial>(null);
+  const currentLOD = useRef(false);
+
   const [hovered, setHovered] = useState(false);
   const targetScale = useRef(scale);
 
-  useFrame((_state, delta) => {
+  useFrame((state, delta) => {
     targetScale.current = hovered ? scale * 1.08 : scale;
 
     if (surfaceRef.current) {
@@ -48,6 +51,18 @@ export default function Venus({
       // Atmosphere rotates slightly faster
       atmoRef.current.rotation.y += cfg.animation.rotationSpeed * 1.5;
     }
+
+    const dist = state.camera.position.distanceTo(new THREE.Vector3(...position));
+    const useLOD = dist > cfg.lodDistance!;
+    if (useLOD !== currentLOD.current) {
+      currentLOD.current = useLOD;
+      const baseName = cfg.textures.surfaceMap.url.substring(0, cfg.textures.surfaceMap.url.lastIndexOf('.'));
+      const texPath = baseName + (useLOD ? '-512.webp' : '.webp');
+      new THREE.TextureLoader().load(texPath, tex => {
+        tex.colorSpace = THREE.SRGBColorSpace;
+        if (materialRef.current) materialRef.current.map = tex;
+      });
+    }
   });
 
   const { radius, widthSegments, heightSegments } = cfg.geometry;
@@ -62,6 +77,7 @@ export default function Venus({
       >
         <sphereGeometry args={[radius, widthSegments, heightSegments]} />
         <meshStandardMaterial
+          ref={materialRef}
           map={textures.surfaceMap ?? null}
           metalness={0.05}
           roughness={0.9}

@@ -61,6 +61,8 @@ export default function Sun({
   const textures = usePlanetTextures('sun');
 
   const ref = useRef<THREE.Mesh>(null);
+  const materialRef = useRef<THREE.MeshBasicMaterial>(null);
+  const currentLOD = useRef(false);
   const [hovered, setHovered] = useState(false);
   const targetScale = useRef(scale);
 
@@ -95,6 +97,18 @@ export default function Sun({
     }
 
     coronaMaterial.uniforms.uTime.value = state.clock.elapsedTime;
+
+    const dist = state.camera.position.distanceTo(new THREE.Vector3(...position));
+    const useLOD = dist > cfg.lodDistance!;
+    if (useLOD !== currentLOD.current) {
+      currentLOD.current = useLOD;
+      const baseName = cfg.textures.dayMap.url.substring(0, cfg.textures.dayMap.url.lastIndexOf('.'));
+      const texPath = baseName + (useLOD ? '-512.webp' : '.webp');
+      new THREE.TextureLoader().load(texPath, tex => {
+        tex.colorSpace = THREE.SRGBColorSpace;
+        if (materialRef.current) materialRef.current.map = tex;
+      });
+    }
   });
 
   const { radius, widthSegments, heightSegments } = cfg.geometry;
@@ -109,6 +123,7 @@ export default function Sun({
       >
         <sphereGeometry args={[radius, widthSegments, heightSegments]} />
         <meshBasicMaterial
+          ref={materialRef}
           map={textures.dayMap ?? null}
           color={textures.dayMap ? undefined : new THREE.Color(1, 0.8, 0.3)}
         />

@@ -86,6 +86,13 @@ const textureCache = new Map<string, THREE.Texture>();
 const modelCache = new Map<string, GLTF>();
 const textureLoader = new THREE.TextureLoader();
 const gltfLoader = new GLTFLoader();
+const supportsWebP = (): boolean => {
+  if (typeof document === 'undefined') return false;
+  const c = document.createElement('canvas');
+  return c.toDataURL('image/webp').startsWith('data:image/webp');
+};
+
+const hasWebP = supportsWebP();
 
 // ---------------------------------------------------------------------------
 // Hook
@@ -118,7 +125,13 @@ export function useAssetLoader(): UseAssetLoaderReturn {
   // ---- texture loading -----------------------------------------------------
 
   const loadSingleTexture = useCallback(
-    (key: string, url: string): Promise<void> => {
+    (key: string, originalUrl: string): Promise<void> => {
+      // Use WebP if supported, else use original URL
+      let url = originalUrl;
+      if (hasWebP && (url.endsWith('.jpg') || url.endsWith('.png'))) {
+        url = url.substring(0, url.lastIndexOf('.')) + '.webp';
+      }
+
       // Return cached
       if (textureCache.has(url)) {
         const cached = textureCache.get(url)!;

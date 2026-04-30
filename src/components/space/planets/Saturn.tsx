@@ -29,6 +29,8 @@ export default function Saturn({
 
   const groupRef = useRef<THREE.Group>(null);
   const ringsRef = useRef<THREE.InstancedMesh>(null);
+  const materialRef = useRef<THREE.MeshStandardMaterial>(null);
+  const currentLOD = useRef(false);
   const [hovered, setHovered] = useState(false);
   const targetScale = useRef(scale);
 
@@ -113,6 +115,18 @@ export default function Saturn({
       }
       ringsRef.current.instanceMatrix.needsUpdate = true;
     }
+
+    const dist = state.camera.position.distanceTo(new THREE.Vector3(...position));
+    const useLOD = dist > cfg.lodDistance!;
+    if (useLOD !== currentLOD.current) {
+      currentLOD.current = useLOD;
+      const baseName = cfg.textures.dayMap.url.substring(0, cfg.textures.dayMap.url.lastIndexOf('.'));
+      const texPath = baseName + (useLOD ? '-512.webp' : '.webp');
+      new THREE.TextureLoader().load(texPath, tex => {
+        tex.colorSpace = THREE.SRGBColorSpace;
+        if (materialRef.current) materialRef.current.map = tex;
+      });
+    }
   });
 
   return (
@@ -127,6 +141,7 @@ export default function Saturn({
         <mesh>
           <sphereGeometry args={[radius, widthSegments, heightSegments]} />
           <meshStandardMaterial
+            ref={materialRef}
             map={textures.dayMap ?? null}
             metalness={0.05}
             roughness={0.8}

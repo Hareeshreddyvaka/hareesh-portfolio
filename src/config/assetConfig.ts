@@ -37,6 +37,7 @@ export interface PlanetConfig {
     rotationSpeed: number; // radians per frame
     axialTilt: number;     // radians
   };
+  lodDistance?: number;
   metadata: {
     quality: 'excellent' | 'good' | 'basic';
     interactive: boolean;
@@ -128,6 +129,7 @@ export const SPACE_ASSETS: SpaceAssetsConfig = {
       },
       geometry: { radius: 1, widthSegments: 64, heightSegments: 64 },
       animation: { rotationSpeed: 0.0005, axialTilt: 0.4101 },
+      lodDistance: 20,
       metadata: { quality: 'excellent', interactive: true, description: 'Earth with day/night, clouds & atmosphere' },
     },
 
@@ -138,6 +140,7 @@ export const SPACE_ASSETS: SpaceAssetsConfig = {
       },
       geometry: { radius: 2.5, widthSegments: 64, heightSegments: 64 },
       animation: { rotationSpeed: 0.0012, axialTilt: 0.0546 },
+      lodDistance: 35,
       metadata: { quality: 'excellent', interactive: true, description: 'Jupiter with Great Red Spot banding' },
     },
 
@@ -150,6 +153,7 @@ export const SPACE_ASSETS: SpaceAssetsConfig = {
       geometry: { radius: 2.0, widthSegments: 64, heightSegments: 64 },
       ring: { innerRadius: 2.3, outerRadius: 3.8, segments: 64, textureKey: 'ringMap' },
       animation: { rotationSpeed: 0.0010, axialTilt: 0.4665 },
+      lodDistance: 35,
       metadata: { quality: 'excellent', interactive: true, description: 'Saturn with translucent ring system' },
     },
 
@@ -160,6 +164,7 @@ export const SPACE_ASSETS: SpaceAssetsConfig = {
       },
       geometry: { radius: 0.8, widthSegments: 64, heightSegments: 64 },
       animation: { rotationSpeed: 0.0005, axialTilt: 0.4396 },
+      lodDistance: 20,
       metadata: { quality: 'excellent', interactive: true, description: 'Mars — the red planet' },
     },
 
@@ -171,6 +176,7 @@ export const SPACE_ASSETS: SpaceAssetsConfig = {
       },
       geometry: { radius: 0.95, widthSegments: 64, heightSegments: 64 },
       animation: { rotationSpeed: -0.0002, axialTilt: 3.0963 }, // Venus rotates retrograde
+      lodDistance: 20,
       metadata: { quality: 'excellent', interactive: true, description: 'Venus with thick atmosphere layer' },
     },
 
@@ -181,6 +187,7 @@ export const SPACE_ASSETS: SpaceAssetsConfig = {
       },
       geometry: { radius: 5, widthSegments: 64, heightSegments: 64 },
       animation: { rotationSpeed: 0.0003, axialTilt: 0.1265 },
+      lodDistance: 35,
       metadata: { quality: 'excellent', interactive: true, description: 'Sun with emissive corona glow' },
     },
   },

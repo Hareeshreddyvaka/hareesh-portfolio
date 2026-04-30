@@ -1,12 +1,12 @@
 # Graph Report - hareesh-portfolio-1  (2026-04-30)
 
 ## Corpus Check
-- 128 files · ~431,513 words
+- 128 files · ~432,299 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2969 nodes · 7490 edges · 28 communities detected
-- Extraction: 95% EXTRACTED · 5% INFERRED · 0% AMBIGUOUS · INFERRED: 368 edges (avg confidence: 0.8)
+- 2969 nodes · 7491 edges · 26 communities detected
+- Extraction: 95% EXTRACTED · 5% INFERRED · 0% AMBIGUOUS · INFERRED: 369 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
@@ -36,8 +36,6 @@
 - [[_COMMUNITY_Community 23|Community 23]]
 - [[_COMMUNITY_Community 24|Community 24]]
 - [[_COMMUNITY_Community 25|Community 25]]
-- [[_COMMUNITY_Community 26|Community 26]]
-- [[_COMMUNITY_Community 27|Community 27]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `U` - 87 edges
@@ -56,153 +54,143 @@
   docs\assets\HeroSection-PmX2B-S0.js → docs\assets\index-CyENFVze.js
 - `Zt()` --calls--> `constructor()`  [INFERRED]
   docs\assets\HeroSection-PmX2B-S0.js → docs\assets\index-CyENFVze.js
+- `xa()` --calls--> `Nl()`  [INFERRED]
+  docs\assets\HeroSection-PmX2B-S0.js → docs\assets\index-CyENFVze.js
 - `PS()` --calls--> `S()`  [INFERRED]
   docs\assets\HeroSection-PmX2B-S0.js → docs\assets\index-CyENFVze.js
 - `Fa()` --calls--> `t()`  [INFERRED]
-  docs\assets\HeroSection-PmX2B-S0.js → docs\assets\index-CyENFVze.js
-- `Fa()` --calls--> `F()`  [INFERRED]
   docs\assets\HeroSection-PmX2B-S0.js → docs\assets\index-CyENFVze.js
 
 ## Communities
 
 ### Community 0 - "Community 0"
 Cohesion: 0.01
-Nodes (449): C(), Dg(), Dy(), e_(), ES(), f0(), fT(), hx() (+441 more)
+Nodes (432): C(), Dg(), Dy(), e_(), ES(), f0(), fT(), hx() (+424 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.01
-Nodes (257): ah(), am(), Au, ax(), _b(), Ba(), bh(), bl() (+249 more)
+Nodes (262): ah(), am(), Au, ax(), _b(), Ba(), bh(), bl() (+254 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.01
-Nodes (30): resolveCameraCollision(), a0(), an, bS(), CA, Ga, ir, jv (+22 more)
+Cohesion: 0.02
+Nodes (25): resolveCameraCollision(), a0(), an, bS(), Ga, ir, jv, Ka (+17 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.01
-Nodes (58): getAllModelUrls(), getAllTextureUrls(), EnhancedStarfield(), aA, ab(), AS(), bi, bv (+50 more)
+Nodes (58): getAllModelUrls(), getAllTextureUrls(), EnhancedStarfield(), ab(), AS(), bi, bv, CA (+50 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.02
-Nodes (56): xb(), yT, ad(), aE(), aT(), ax(), be(), bk() (+48 more)
+Nodes (75): Ul(), xb(), yT, ad(), aE(), aT(), ax(), be() (+67 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.01
-Nodes (18): easeInOutCubic(), interpolateOrbit(), interpolateVector3(), smoothInterpolation(), Ad, Dc(), Dt, le (+10 more)
+Nodes (21): aA, ap, Av, ct, Df(), eu(), It, lb() (+13 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.02
-Nodes (15): bd(), ct, cy, en(), eu(), It, lm(), Pd() (+7 more)
+Cohesion: 0.01
+Nodes (22): AssetProvider(), easeInOutCubic(), interpolateOrbit(), interpolateVector3(), smoothInterpolation(), Ad, Dc(), Dt (+14 more)
 
 ### Community 7 - "Community 7"
-Cohesion: 0.02
-Nodes (26): ap, Av, Bb, Cv, Df(), Fu, gb(), I() (+18 more)
+Cohesion: 0.03
+Nodes (13): _a(), bd(), cy, en(), gt(), Jt, tM, Ut (+5 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.04
-Nodes (5): ay, ly, qv, tl, uA
+Cohesion: 0.03
+Nodes (8): Ai, ay, ly, pb(), sb(), tl, uA, Uo
 
 ### Community 9 - "Community 9"
-Cohesion: 0.04
-Nodes (9): _a(), gt(), tM, Ut, wi, wS(), Xn(), zn() (+1 more)
+Cohesion: 0.03
+Nodes (14): $d, Fa(), Fv, Gd, gv, Hv, In, Kd (+6 more)
 
 ### Community 10 - "Community 10"
 Cohesion: 0.04
-Nodes (15): AssetProvider(), Br, De, oC(), sf(), To(), Vd(), vu (+7 more)
+Nodes (5): kb, oy, qb, xS(), zb
 
 ### Community 11 - "Community 11"
 Cohesion: 0.04
-Nodes (5): kb, oy, qb, xS(), zb
+Nodes (11): aC(), Kp(), kT, nn, Nr, pf, kE, Ki() (+3 more)
 
 ### Community 12 - "Community 12"
-Cohesion: 0.06
-Nodes (2): ja, Pn
+Cohesion: 0.05
+Nodes (8): Br, De, sf(), To(), Vd(), vu, vx(), yu
 
 ### Community 13 - "Community 13"
-Cohesion: 0.07
-Nodes (8): aC(), kT, pf, kE, Ki(), ri(), vT(), xi()
+Cohesion: 0.1
+Nodes (8): Bb, Fu, gb(), I(), n(), rp(), Td, Yn
 
 ### Community 14 - "Community 14"
 Cohesion: 0.06
-Nodes (18): CameraEffects(), DynamicLighting(), EducationalOverlays(), InteractivePlanet(), Navbar(), ReactiveStarfield(), TutorialOverlay(), useCameraModes() (+10 more)
+Nodes (2): ja, Pn
 
 ### Community 15 - "Community 15"
+Cohesion: 0.06
+Nodes (18): CameraEffects(), DynamicLighting(), EducationalOverlays(), InteractivePlanet(), Navbar(), ReactiveStarfield(), TutorialOverlay(), useCameraModes() (+10 more)
+
+### Community 16 - "Community 16"
 Cohesion: 0.11
 Nodes (11): bg(), Ff(), _p, S0(), tg(), tu(), vc(), wg() (+3 more)
 
-### Community 16 - "Community 16"
-Cohesion: 0.07
-Nodes (6): Fv, gv, Hv, Kd, Uv, zv
-
 ### Community 17 - "Community 17"
-Cohesion: 0.12
-Nodes (3): Kp(), nn, Nr
-
-### Community 18 - "Community 18"
-Cohesion: 0.2
-Nodes (2): Ai, Uo
-
-### Community 19 - "Community 19"
 Cohesion: 0.33
 Nodes (4): Sun(), useAssets(), usePlanetTextures(), Venus()
 
-### Community 20 - "Community 20"
+### Community 18 - "Community 18"
 Cohesion: 0.33
 Nodes (3): HelpOverlay(), Modal(), useFocusTrap()
 
-### Community 21 - "Community 21"
+### Community 19 - "Community 19"
 Cohesion: 0.4
 Nodes (4): read_docx(), close(), handleKey(), open()
 
-### Community 22 - "Community 22"
+### Community 20 - "Community 20"
 Cohesion: 0.33
 Nodes (2): ThemeToggle(), useTheme()
 
-### Community 23 - "Community 23"
-Cohesion: 0.4
-Nodes (1): ErrorBoundary
-
-### Community 24 - "Community 24"
+### Community 21 - "Community 21"
 Cohesion: 0.4
 Nodes (1): AppErrorBoundary
 
-### Community 25 - "Community 25"
+### Community 22 - "Community 22"
+Cohesion: 0.4
+Nodes (1): ErrorBoundary
+
+### Community 23 - "Community 23"
 Cohesion: 0.5
 Nodes (2): ProgressBar(), useIntersectionObserver()
 
-### Community 26 - "Community 26"
+### Community 24 - "Community 24"
 Cohesion: 0.5
 Nodes (2): ScrollProgress(), useScrollPosition()
 
-### Community 27 - "Community 27"
+### Community 25 - "Community 25"
 Cohesion: 0.5
 Nodes (2): useCameraPath(), useScrollToCamera()
 
 ## Knowledge Gaps
-- **Thin community `Community 12`** (46 nodes): `ja`, `.clone()`, `.constructor()`, `.copy()`, `.equals()`, `.fromArray()`, `.images()`, `._onChangeCallback()`, `.order()`, `.reorder()`, `.set()`, `.setFromQuaternion()`, `.setFromVector3()`, `.[Symbol.iterator]()`, `.toArray()`, `.y()`, `Pn`, `.clone()`, `.conjugate()`, `.constructor()`, `.copy()`, `.dot()`, `.equals()`, `.fromArray()`, `.identity()`, `.invert()`, `.length()`, `.lengthSq()`, `.multiply()`, `.multiplyQuaternions()`, `.normalize()`, `._onChange()`, `._onChangeCallback()`, `.premultiply()`, `.rotateTowards()`, `.set()`, `.setFromEuler()`, `.setFromRotationMatrix()`, `.slerp()`, `.slerpQuaternions()`, `.[Symbol.iterator]()`, `.toArray()`, `.x()`, `.y()`, `.z()`, `.angleTo()`
+- **Thin community `Community 14`** (47 nodes): `.lookAt()`, `.setRotationFromMatrix()`, `ja`, `.clone()`, `.constructor()`, `.copy()`, `.equals()`, `.fromArray()`, `.images()`, `._onChangeCallback()`, `.order()`, `.reorder()`, `.set()`, `.setFromQuaternion()`, `.setFromRotationMatrix()`, `.setFromVector3()`, `.[Symbol.iterator]()`, `.toArray()`, `.y()`, `Pn`, `.clone()`, `.conjugate()`, `.constructor()`, `.copy()`, `.dot()`, `.equals()`, `.fromArray()`, `.identity()`, `.invert()`, `.length()`, `.lengthSq()`, `.multiply()`, `.multiplyQuaternions()`, `.normalize()`, `._onChange()`, `._onChangeCallback()`, `.premultiply()`, `.set()`, `.setFromEuler()`, `.setFromRotationMatrix()`, `.slerp()`, `.slerpQuaternions()`, `.[Symbol.iterator]()`, `.toArray()`, `.x()`, `.y()`, `.z()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 18`** (16 nodes): `Ai`, `.clone()`, `.constructor()`, `.getInterpolation()`, `.getValueSize()`, `.InterpolantFactoryMethodDiscrete()`, `.InterpolantFactoryMethodLinear()`, `.InterpolantFactoryMethodSmooth()`, `.optimize()`, `.scale()`, `.setInterpolation()`, `.toJSON()`, `.trim()`, `.validate()`, `Uo`, `.InterpolantFactoryMethodLinear()`
+- **Thin community `Community 20`** (6 nodes): `ThemeToggle.tsx`, `useTheme.tsx`, `ThemeToggle()`, `getInitialTheme()`, `listener()`, `useTheme()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 22`** (6 nodes): `ThemeToggle.tsx`, `useTheme.tsx`, `ThemeToggle()`, `getInitialTheme()`, `listener()`, `useTheme()`
+- **Thin community `Community 21`** (5 nodes): `AppErrorBoundary`, `.componentDidCatch()`, `.getDerivedStateFromError()`, `.render()`, `AppErrorBoundary.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 23`** (5 nodes): `ErrorBoundary`, `.componentDidCatch()`, `.getDerivedStateFromError()`, `.render()`, `errorBoundary.tsx`
+- **Thin community `Community 22`** (5 nodes): `ErrorBoundary`, `.componentDidCatch()`, `.getDerivedStateFromError()`, `.render()`, `errorBoundary.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 24`** (5 nodes): `AppErrorBoundary`, `.componentDidCatch()`, `.getDerivedStateFromError()`, `.render()`, `AppErrorBoundary.tsx`
+- **Thin community `Community 23`** (4 nodes): `ProgressBar()`, `ProgressBar.tsx`, `useIntersectionObserver.ts`, `useIntersectionObserver()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 25`** (4 nodes): `ProgressBar()`, `ProgressBar.tsx`, `useIntersectionObserver.ts`, `useIntersectionObserver()`
+- **Thin community `Community 24`** (4 nodes): `ScrollProgress()`, `ScrollProgress.tsx`, `useScrollPosition.ts`, `useScrollPosition()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 26`** (4 nodes): `ScrollProgress()`, `ScrollProgress.tsx`, `useScrollPosition.ts`, `useScrollPosition()`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 27`** (4 nodes): `useCameraPath.ts`, `useScrollToCamera.ts`, `useCameraPath()`, `useScrollToCamera()`
+- **Thin community `Community 25`** (4 nodes): `useCameraPath.ts`, `useScrollToCamera.ts`, `useCameraPath()`, `useScrollToCamera()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `U` connect `Community 5` to `Community 0`, `Community 1`, `Community 2`, `Community 3`, `Community 4`, `Community 6`, `Community 7`, `Community 9`, `Community 10`, `Community 12`?**
+- **Why does `U` connect `Community 6` to `Community 0`, `Community 1`, `Community 2`, `Community 3`, `Community 4`, `Community 5`, `Community 7`, `Community 13`, `Community 14`?**
   _High betweenness centrality (0.065) - this node is a cross-community bridge._
-- **Why does `t()` connect `Community 0` to `Community 1`, `Community 3`, `Community 4`, `Community 5`, `Community 6`, `Community 7`, `Community 9`?**
+- **Why does `t()` connect `Community 0` to `Community 1`, `Community 3`, `Community 4`, `Community 5`, `Community 6`, `Community 7`, `Community 9`, `Community 13`?**
   _High betweenness centrality (0.040) - this node is a cross-community bridge._
-- **Why does `Dt` connect `Community 5` to `Community 0`, `Community 1`, `Community 2`, `Community 4`, `Community 7`, `Community 9`, `Community 10`?**
+- **Why does `Dt` connect `Community 6` to `Community 0`, `Community 1`, `Community 2`, `Community 4`, `Community 5`, `Community 7`, `Community 13`?**
   _High betweenness centrality (0.033) - this node is a cross-community bridge._
 - **Are the 7 inferred relationships involving `U` (e.g. with `d()` and `S()`) actually correct?**
   _`U` has 7 INFERRED edges - model-reasoned connections that need verification._

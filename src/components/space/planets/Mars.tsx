@@ -26,10 +26,13 @@ export default function Mars({
   const textures = usePlanetTextures('mars');
 
   const ref = useRef<THREE.Mesh>(null);
+  const materialRef = useRef<THREE.MeshStandardMaterial>(null);
+  const currentLOD = useRef(false);
+
   const [hovered, setHovered] = useState(false);
   const targetScale = useRef(scale);
 
-  useFrame((_state, delta) => {
+  useFrame((state, delta) => {
     targetScale.current = hovered ? scale * 1.08 : scale;
 
     if (ref.current) {
@@ -41,6 +44,18 @@ export default function Mars({
         new THREE.Vector3(targetScale.current, targetScale.current, targetScale.current),
         delta * 4,
       );
+    }
+
+    const dist = state.camera.position.distanceTo(new THREE.Vector3(...position));
+    const useLOD = dist > cfg.lodDistance!;
+    if (useLOD !== currentLOD.current) {
+      currentLOD.current = useLOD;
+      const baseName = cfg.textures.dayMap.url.substring(0, cfg.textures.dayMap.url.lastIndexOf('.'));
+      const texPath = baseName + (useLOD ? '-512.webp' : '.webp');
+      new THREE.TextureLoader().load(texPath, tex => {
+        tex.colorSpace = THREE.SRGBColorSpace;
+        if (materialRef.current) materialRef.current.map = tex;
+      });
     }
   });
 
@@ -56,6 +71,7 @@ export default function Mars({
       >
         <sphereGeometry args={[radius, widthSegments, heightSegments]} />
         <meshStandardMaterial
+          ref={materialRef}
           map={textures.dayMap ?? null}
           metalness={0.08}
           roughness={0.9}
