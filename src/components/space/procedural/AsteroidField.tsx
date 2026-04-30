@@ -6,62 +6,55 @@ import * as THREE from 'three';
  * AsteroidField — Instanced dodecahedrons orbiting randomly.
  * Fixed: pre-compute positions, avoid Math.random() in useFrame.
  */
-export function AsteroidField({ count = 80, radius = 40 }) {
+export function AsteroidField({ count = 800 }) {
   const meshRef = useRef<THREE.InstancedMesh>(null);
-  const dummy = useMemo(() => new THREE.Object3D(), []);
   
-  // Pre-compute all orbital parameters ONCE
-  const orbits = useMemo(() => {
-    const arr = [];
-    for (let i = 0; i < count; i++) {
-      arr.push({
-        phase: Math.random() * Math.PI * 2,
-        speed: 0.005 + Math.random() * 0.02,
-        orbitRadius: radius * 0.3 + Math.random() * radius * 0.7,
-        yOffset: (Math.random() - 0.5) * radius * 0.4,
-        eccentricity: 0.8 + Math.random() * 0.4,
-        scale: 0.03 + Math.random() * 0.08,
-        tilt: Math.random() * Math.PI * 0.3,
-      });
-    }
-    return arr;
-  }, [count, radius]);
-
-  useFrame((state) => {
-    const t = state.clock.elapsedTime;
-    
-    orbits.forEach((orbit, i) => {
-      const angle = orbit.phase + t * orbit.speed;
-      
-      dummy.position.set(
-        Math.cos(angle) * orbit.orbitRadius * orbit.eccentricity,
-        orbit.yOffset + Math.sin(t * 0.5 + orbit.phase) * 2,
-        Math.sin(angle) * orbit.orbitRadius
-      );
-      
-      dummy.rotation.set(
-        t * orbit.speed * 3,
-        t * orbit.speed * 2,
-        t * orbit.speed
-      );
-      
-      dummy.scale.setScalar(orbit.scale);
-      dummy.updateMatrix();
-      
-      if (meshRef.current) {
-        meshRef.current.setMatrixAt(i, dummy.matrix);
-      }
+  // Pre-compute once on mount
+  const { geometry, material } = useMemo(() => {
+    const geo = new THREE.IcosahedronGeometry(1, 1);
+    const mat = new THREE.MeshStandardMaterial({
+      color: 0x888877,
+      roughness: 0.9,
+      metalness: 0.1,
     });
+    return { geometry: geo, material: mat };
+  }, []);
+
+  useEffect(() => {
+    if (!meshRef.current) return;
     
+    const dummy = new THREE.Object3D();
+    for (let i = 0; i < count; i++) {
+      dummy.position.set(
+        (Math.random() - 0.5) * 200,
+        (Math.random() - 0.5) * 20,
+        (Math.random() - 0.5) * 200
+      );
+      dummy.rotation.set(
+        Math.random() * Math.PI * 2,
+        Math.random() * Math.PI * 2,
+        0
+      );
+      const s = 0.1 + Math.random() * 0.4;
+      dummy.scale.setScalar(s);
+      dummy.updateMatrix();
+      meshRef.current.setMatrixAt(i, dummy.matrix);
+    }
+    meshRef.current.instanceMatrix.needsUpdate = true;
+  }, [count]);
+
+  // Very slow entire field rotation to keep it alive
+  useFrame((_state, delta) => {
     if (meshRef.current) {
-      meshRef.current.instanceMatrix.needsUpdate = true;
+      meshRef.current.rotation.y += delta * 0.02;
     }
   });
 
   return (
-    <instancedMesh ref={meshRef} args={[undefined, undefined, count]}>
-      <dodecahedronGeometry args={[1, 0]} />
-      <meshStandardMaterial color="#555555" roughness={0.8} />
-    </instancedMesh>
+    <instancedMesh
+      ref={meshRef}
+      args={[geometry, material, count]}
+      frustumCulled={false}
+    />
   );
 }

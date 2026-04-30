@@ -227,3 +227,14 @@ Texture size after: 3.41 MB (full) / 0.16 MB (initial LOD)
 Test status: PASS
 TypeScript status: PASS
 Build status: PASS
+
+## Sprint 4.2 — Geometry Optimization
+Draw calls before: 3
+Draw calls after: 3
+Asteroid InstancedMesh 800 instances: YES 1 draw call
+Nebula shader sphere: YES 1 draw call
+Starfield BufferGeometry Points: YES 1 draw call
+Total background draw calls: 3
+Test status: PASS
+TypeScript status: PASS
+Build status: PASS
