@@ -102,9 +102,11 @@ export function InteractivePlanet({
       onPointerOver={(e) => {
         e.stopPropagation();
         onHover(info.id);
+        document.body.setAttribute('data-cursor', 'planet');
       }}
       onPointerOut={() => {
         onHover(null);
+        document.body.removeAttribute('data-cursor');
       }}
       onDoubleClick={(e) => {
         e.stopPropagation();

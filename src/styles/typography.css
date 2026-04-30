@@ -11,3 +11,7 @@
   --font-primary: 'Inter Variable', sans-serif;
 }
 body { font-family: var(--font-primary); }
+
+html, body, *, *::before, *::after {
+  cursor: none !important;
+}

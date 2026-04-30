@@ -116,4 +116,4 @@ No matching component was found for:
         void main() {
           gl_FragColor = vec4(0.0, 0.0, 0.0, 0.0);
         }
-      `}),[v]);return G.createElement("group",Vf({},O,{ref:ve}),g&&!ke&&G.createElement("mesh",{castShadow:E,receiveShadow:k,ref:te},L||G.createElement("planeGeometry",null),N||G.createElement("shaderMaterial",{side:xv,vertexShader:nl.vertexShader,fragmentShader:nl.fragmentShader})))});export{B_ as C,V_ as G,G_ as H,U_ as R,H_ as _,Px as a,Fy as c,cx as e,W_ as i,un as j,G as r,Tx as u};
+      `}),[v]);return G.createElement("group",Vf({},O,{ref:ve}),g&&!ke&&G.createElement("mesh",{castShadow:E,receiveShadow:k,ref:te},L||G.createElement("planeGeometry",null),N||G.createElement("shaderMaterial",{side:xv,vertexShader:nl.vertexShader,fragmentShader:nl.fragmentShader})))});export{B_ as C,V_ as G,G_ as H,U_ as R,H_ as _,Px as a,bE as b,Fy as c,cx as e,W_ as i,un as j,G as r,Tx as u};

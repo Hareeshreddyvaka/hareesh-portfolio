@@ -4,6 +4,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import '@fontsource-variable/inter';
 import './styles/typography.css';
 import App from './App';
+import CursorSystem from './components/CursorSystem';
 import './index.css';
 import { ThemeProvider } from './hooks/useTheme';
 import AppErrorBoundary from './components/ui/AppErrorBoundary';
@@ -13,6 +14,7 @@ createRoot(document.getElementById('root') as HTMLElement).render(
     <HelmetProvider>
       <AppErrorBoundary>
         <ThemeProvider>
+          <CursorSystem />
           <App />
         </ThemeProvider>
       </AppErrorBoundary>
