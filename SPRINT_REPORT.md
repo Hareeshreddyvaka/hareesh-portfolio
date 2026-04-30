@@ -38,3 +38,13 @@ Notes: Validation exposed a readiness race in `src/PortfolioExperience.tsx` that
 Missing textures resolved: YES
 Method: already present in `public/assets/textures/planets`; references retained
 Build status: PASS
+
+## Sprint 1.2 — Mobile Fallback
+useIsMobile hook: created
+MobilePortfolio component: created
+Breakpoint: < 768px
+Sections covered: Hero, Projects, Skills, Education, Contact
+WebGL on mobile: disabled
+Test status: PASS
+TypeScript status: PASS
+Build status: PASS

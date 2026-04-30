@@ -1,6 +1,8 @@
 import { lazy, Suspense, startTransition, useEffect, useState } from 'react';
 import Lenis from '@studio-freight/lenis';
+import MobilePortfolio from './components/MobilePortfolio';
 import { portfolioSeedData } from './data/portfolioSeed';
+import { useIsMobile } from './hooks/useIsMobile';
 
 const LazyPortfolioExperience = lazy(() => import('./PortfolioExperience'));
 
@@ -34,10 +36,15 @@ function FirstPaintFallback({ isVisible }: FirstPaintFallbackProps) {
 }
 
 export default function App() {
+  const isMobile = useIsMobile();
   const [shouldLoadExperience, setShouldLoadExperience] = useState(false);
   const [isExperienceReady, setIsExperienceReady] = useState(false);
 
   useEffect(() => {
+    if (isMobile) {
+      return undefined;
+    }
+
     const lenis = new Lenis({
       duration: 1.6,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -53,9 +60,15 @@ export default function App() {
     requestAnimationFrame(raf);
 
     return () => lenis.destroy();
-  }, []);
+  }, [isMobile]);
 
   useEffect(() => {
+    if (isMobile) {
+      setShouldLoadExperience(false);
+      setIsExperienceReady(false);
+      return undefined;
+    }
+
     let firstFrame = 0;
     let secondFrame = 0;
 
@@ -71,7 +84,11 @@ export default function App() {
       cancelAnimationFrame(firstFrame);
       cancelAnimationFrame(secondFrame);
     };
-  }, []);
+  }, [isMobile]);
+
+  if (isMobile) {
+    return <MobilePortfolio />;
+  }
 
   return (
     <>
