@@ -238,3 +238,10 @@ Total background draw calls: 3
 Test status: PASS
 TypeScript status: PASS
 Build status: PASS
+
+## Sprint 4.3 — Lighthouse
+Before: Performance 82 FCP 3.5s TBT 0ms CLS 0 LCP 3.6s
+After:  Performance 99 FCP 1.5s TBT 0ms CLS 0.001 LCP 1.7s
+Target >= 95: YES
+Remaining gaps: none
+Test status: PASS

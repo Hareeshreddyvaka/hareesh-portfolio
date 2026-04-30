@@ -1,8 +1,7 @@
 import { lazy, Suspense, startTransition, useEffect, useState } from 'react';
-import Lenis from '@studio-freight/lenis';
-import MobilePortfolio from './components/MobilePortfolio';
 import { portfolioSeedData } from './data/portfolioSeed';
 import { useIsMobile } from './hooks/useIsMobile';
+import MobilePortfolio from './components/MobilePortfolio';
 
 const LazyPortfolioExperience = lazy(() => import('./PortfolioExperience'));
 
@@ -45,21 +44,30 @@ export default function App() {
       return undefined;
     }
 
-    const lenis = new Lenis({
-      duration: 1.6,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      orientation: 'vertical',
-      gestureOrientation: 'vertical',
-      smoothWheel: true,
+    let lenis: any;
+    let animationFrameId: number;
+
+    import('@studio-freight/lenis').then((LenisModule) => {
+      const Lenis = LenisModule.default;
+      lenis = new Lenis({
+        duration: 1.6,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        orientation: 'vertical',
+        gestureOrientation: 'vertical',
+        smoothWheel: true,
+      });
+
+      function raf(time: number) {
+        lenis.raf(time);
+        animationFrameId = requestAnimationFrame(raf);
+      }
+      animationFrameId = requestAnimationFrame(raf);
     });
 
-    function raf(time: number) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
-
-    return () => lenis.destroy();
+    return () => {
+      if (lenis) lenis.destroy();
+      if (animationFrameId) cancelAnimationFrame(animationFrameId);
+    };
   }, [isMobile]);
 
   useEffect(() => {

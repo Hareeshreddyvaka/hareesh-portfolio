@@ -25513,7 +25513,7 @@
       "label": "NebulaCloud()",
       "file_type": "code",
       "source_file": "src\\components\\space\\procedural\\NebulaCloud.tsx",
-      "source_location": "L67",
+      "source_location": "L12",
       "id": "nebulacloud_nebulacloud",
       "community": 3,
       "norm_label": "nebulacloud()"
@@ -44052,18 +44052,6 @@
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
-      "source_file": "src\\components\\space\\procedural\\NebulaCloud.tsx",
-      "source_location": "L78",
-      "weight": 1.0,
-      "_src": "herosection_pmx2b_s0_u_floor",
-      "_tgt": "nebulacloud_nebulacloud",
-      "source": "herosection_pmx2b_s0_u_floor",
-      "target": "nebulacloud_nebulacloud"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
       "source_file": "src\\components\\space\\procedural\\SpiralGalaxy.tsx",
       "source_location": "L63",
       "weight": 1.0,
@@ -44083,6 +44071,18 @@
       "_tgt": "usespacecameracontroller_valuenoise2d",
       "source": "herosection_pmx2b_s0_u_floor",
       "target": "usespacecameracontroller_valuenoise2d"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\components\\space\\procedural\\NebulaCloud.tsx",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_src": "herosection_pmx2b_s0_u_floor",
+      "_tgt": "nebulacloud_nebulacloud",
+      "source": "herosection_pmx2b_s0_u_floor",
+      "target": "nebulacloud_nebulacloud"
     },
     {
       "relation": "calls",
@@ -50304,18 +50304,6 @@
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
-      "source_file": "src\\components\\space\\procedural\\NebulaCloud.tsx",
-      "source_location": "L77",
-      "weight": 1.0,
-      "_src": "herosection_pmx2b_s0_xs_test",
-      "_tgt": "nebulacloud_nebulacloud",
-      "source": "herosection_pmx2b_s0_xs_test",
-      "target": "nebulacloud_nebulacloud"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
       "source_file": "src\\components\\space\\procedural\\SpiralGalaxy.tsx",
       "source_location": "L62",
       "weight": 1.0,
@@ -50323,6 +50311,18 @@
       "_tgt": "spiralgalaxy_spiralgalaxy",
       "source": "herosection_pmx2b_s0_xs_test",
       "target": "spiralgalaxy_spiralgalaxy"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\components\\space\\procedural\\NebulaCloud.tsx",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_src": "herosection_pmx2b_s0_xs_test",
+      "_tgt": "nebulacloud_nebulacloud",
+      "source": "herosection_pmx2b_s0_xs_test",
+      "target": "nebulacloud_nebulacloud"
     },
     {
       "relation": "calls",
@@ -115572,7 +115572,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src\\components\\space\\procedural\\NebulaCloud.tsx",
-      "source_location": "L67",
+      "source_location": "L12",
       "weight": 1.0,
       "_src": "src_components_space_procedural_nebulacloud_tsx",
       "_tgt": "nebulacloud_nebulacloud",

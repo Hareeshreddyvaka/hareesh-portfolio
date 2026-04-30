@@ -6,7 +6,10 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/vite.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/inter-variable.woff2">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" as="style" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" /></noscript>
     <link rel="manifest" href="/manifest.json" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -29,6 +32,7 @@
     <meta property="og:image" content="https://hareesh.dev/og-preview.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Vaka Hareesh Reddy | AI & ML Engineer" />
+
     <meta
       name="twitter:description"
       content="World-class portfolio showcasing AI, ML, and full stack engineering work by Hareesh."
@@ -36,9 +40,28 @@
     <meta name="twitter:image" content="https://hareesh.dev/og-preview.png" />
     <meta name="theme-color" content="#0f172a" />
     <title>Vaka Hareesh Reddy — AI & ML Engineer</title>
+    <style>
+      body { margin: 0; background: #050510; }
+      .progressive-fallback {
+        position: fixed; inset: 0; z-index: 10; display: flex; align-items: center; justify-content: center; padding: 0 1.5rem; text-align: center;
+      }
+      .pf-title { font-family: 'Space Grotesk', sans-serif; font-size: 3rem; font-weight: bold; color: white; line-height: 0.95; margin: 0; }
+      .pf-subtitle { font-family: 'Inter Variable', sans-serif; font-size: 1.125rem; color: rgba(255,255,255,0.72); margin-top: 1.5rem; }
+      .pf-label { font-family: 'Inter Variable', sans-serif; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.35em; color: rgba(255,255,255,0.55); margin-bottom: 1rem; }
+      @media (min-width: 768px) { .pf-title { font-size: 4.5rem; } .pf-subtitle { font-size: 1.25rem; } }
+      @media (min-width: 1024px) { .pf-title { font-size: 5.5rem; } }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="progressive-fallback">
+        <div style="position: relative; z-index: 10; max-width: 56rem; margin: 0 auto;">
+          <p class="pf-label">Portfolio Loading</p>
+          <h1 class="pf-title">Vaka Hareesh Reddy</h1>
+          <p class="pf-subtitle">CS Engineering | AI/ML Specialist | Full-Stack Developer</p>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
