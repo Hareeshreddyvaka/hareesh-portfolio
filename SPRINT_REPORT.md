@@ -19,3 +19,9 @@ Blocking preloader removed: YES
 CSS starfield fallback: YES
 First paint now shows: hero text + CSS stars
 WebGL load strategy: React.lazy + Suspense
+
+## Sprint 0.2 — Closed
+Duplicate dependency fixed: YES
+Imports consolidated: `src/hooks/useAssetLoader.ts` switched `GLTFLoader` and `GLTF` imports from `three/examples/jsm/loaders/GLTFLoader.js` to `three-stdlib`; `src/contexts/AssetContextShared.ts` switched the shared `GLTF` type import to `three-stdlib`; `package.json` and `package-lock.json` now declare `three-stdlib` directly.
+Test status: PASS
+Build status: PASS

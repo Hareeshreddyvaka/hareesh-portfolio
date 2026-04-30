@@ -1,6 +1,6 @@
 import { createContext } from 'react';
 import type * as THREE from 'three';
-import type { GLTF } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import type { GLTF } from 'three-stdlib';
 import type { LoadedAssets } from '../hooks/useAssetLoader';
 
 export interface AssetContextValue {
