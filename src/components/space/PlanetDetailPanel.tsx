@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { PlanetInfo } from '../../hooks/usePlanetInteraction';
 import { usePortfolioData } from '../../hooks/usePortfolioData';
 import { X, ExternalLink, Github, Mail, Linkedin, Twitter, GraduationCap, Award, Code, Briefcase, User } from 'lucide-react';
+import { useFocusTrap } from '../../hooks/useFocusTrap';
 
 interface PlanetDetailPanelProps {
   planet: PlanetInfo | null;
@@ -11,6 +12,8 @@ interface PlanetDetailPanelProps {
 export function PlanetDetailPanel({ planet, onClose }: PlanetDetailPanelProps) {
   const { data } = usePortfolioData();
   const [isVisible, setIsVisible] = useState(false);
+  const trapRef = useFocusTrap(!!planet);
+  const titleId = 'planet-detail-title';
 
   useEffect(() => {
     if (planet) {
@@ -38,7 +41,7 @@ export function PlanetDetailPanel({ planet, onClose }: PlanetDetailPanelProps) {
         return (
           <div className="space-y-6">
             <div className="flex items-center gap-3 mb-2">
-              <User className="text-[#00D4FF]" size={20} />
+              <User className="text-[#00D4FF]" size={20} aria-hidden="true" />
               <h3 className="text-sm uppercase tracking-widest text-[#00D4FF]">Personal</h3>
             </div>
             <div>
@@ -48,18 +51,18 @@ export function PlanetDetailPanel({ planet, onClose }: PlanetDetailPanelProps) {
             <p className="text-gray-300 leading-relaxed">{data.personal.bio}</p>
             <div className="space-y-3 pt-4 border-t border-white/10">
               <a href={`mailto:${data.personal.email}`} className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors">
-                <Mail size={16} className="text-[#3A86FF]" />
+                <Mail size={16} className="text-[#3A86FF]" aria-hidden="true" />
                 <span className="text-sm">{data.personal.email}</span>
               </a>
               {data.personal.social.github && (
-                <a href={data.personal.social.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors">
-                  <Github size={16} className="text-[#9D4EDD]" />
+                <a href={data.personal.social.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors">
+                  <Github size={16} className="text-[#9D4EDD]" aria-hidden="true" />
                   <span className="text-sm">GitHub</span>
                 </a>
               )}
               {data.personal.social.linkedin && (
-                <a href={data.personal.social.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors">
-                  <Linkedin size={16} className="text-[#3A86FF]" />
+                <a href={data.personal.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors">
+                  <Linkedin size={16} className="text-[#3A86FF]" aria-hidden="true" />
                   <span className="text-sm">LinkedIn</span>
                 </a>
               )}
@@ -71,7 +74,7 @@ export function PlanetDetailPanel({ planet, onClose }: PlanetDetailPanelProps) {
         return (
           <div className="space-y-4">
             <div className="flex items-center gap-3 mb-2">
-              <Code className="text-[#FF4422]" size={20} />
+              <Code className="text-[#FF4422]" size={20} aria-hidden="true" />
               <h3 className="text-sm uppercase tracking-widest text-[#FF4422]">Projects</h3>
             </div>
             <div className="grid grid-cols-1 gap-3 max-h-[50vh] overflow-y-auto pr-2 custom-scrollbar">
@@ -86,13 +89,13 @@ export function PlanetDetailPanel({ planet, onClose }: PlanetDetailPanelProps) {
                   </div>
                   <div className="flex gap-3">
                     {p.githubLink && (
-                      <a href={p.githubLink} target="_blank" rel="noopener noreferrer" className="text-xs text-[#3A86FF] hover:text-white flex items-center gap-1 transition-colors">
-                        <Github size={12} /> Code
+                      <a href={p.githubLink} target="_blank" rel="noopener noreferrer" aria-label={`${p.title} source code`} className="text-xs text-[#3A86FF] hover:text-white flex items-center gap-1 transition-colors">
+                        <Github size={12} aria-hidden="true" /> Code
                       </a>
                     )}
                     {p.liveLink && (
-                      <a href={p.liveLink} target="_blank" rel="noopener noreferrer" className="text-xs text-[#00D9FF] hover:text-white flex items-center gap-1 transition-colors">
-                        <ExternalLink size={12} /> Live
+                      <a href={p.liveLink} target="_blank" rel="noopener noreferrer" aria-label={`${p.title} live demo`} className="text-xs text-[#00D9FF] hover:text-white flex items-center gap-1 transition-colors">
+                        <ExternalLink size={12} aria-hidden="true" /> Live
                       </a>
                     )}
                   </div>
@@ -106,7 +109,7 @@ export function PlanetDetailPanel({ planet, onClose }: PlanetDetailPanelProps) {
         return (
           <div className="space-y-5">
             <div className="flex items-center gap-3 mb-2">
-              <Briefcase className="text-[#FFAA00]" size={20} />
+              <Briefcase className="text-[#FFAA00]" size={20} aria-hidden="true" />
               <h3 className="text-sm uppercase tracking-widest text-[#FFAA00]">Skills</h3>
             </div>
             <div className="space-y-5 max-h-[55vh] overflow-y-auto pr-2 custom-scrollbar">
@@ -117,10 +120,10 @@ export function PlanetDetailPanel({ planet, onClose }: PlanetDetailPanelProps) {
                     {cat.items.map(skill => (
                       <div key={skill.name} className="flex items-center gap-3">
                         <span className="text-sm text-gray-300 w-32 shrink-0">{skill.name}</span>
-                        <div className="flex-1 h-1.5 bg-white/5 rounded-full overflow-hidden">
+                        <div className="flex-1 h-1.5 bg-white/5 rounded-full overflow-hidden" role="progressbar" aria-label={`${skill.name} proficiency`} aria-valuenow={skill.level} aria-valuemin={0} aria-valuemax={100}>
                           <div className="h-full rounded-full bg-gradient-to-r from-[#9D4EDD] to-[#00D9FF]" style={{ width: `${skill.level}%` }} />
                         </div>
-                        <span className="text-xs text-gray-500 w-8 text-right">{skill.level}</span>
+                        <span className="text-xs text-gray-500 w-8 text-right" aria-hidden="true">{skill.level}</span>
                       </div>
                     ))}
                   </div>
@@ -134,7 +137,7 @@ export function PlanetDetailPanel({ planet, onClose }: PlanetDetailPanelProps) {
         return (
           <div className="space-y-4">
             <div className="flex items-center gap-3 mb-2">
-              <Award className="text-[#EEDB9A]" size={20} />
+              <Award className="text-[#EEDB9A]" size={20} aria-hidden="true" />
               <h3 className="text-sm uppercase tracking-widest text-[#EEDB9A]">Certifications</h3>
             </div>
             <div className="space-y-3">
@@ -142,7 +145,7 @@ export function PlanetDetailPanel({ planet, onClose }: PlanetDetailPanelProps) {
                 <div key={cert.id} className="bg-black/30 border border-[#EEDB9A]/10 rounded-xl p-4">
                   <div className="flex items-start gap-4">
                     {cert.certificateImage && (
-                      <img src={cert.certificateImage} alt={cert.title} className="w-16 h-12 rounded object-cover border border-white/10" loading="lazy" />
+                      <img src={cert.certificateImage} alt="" className="w-16 h-12 rounded object-cover border border-white/10" loading="lazy" />
                     )}
                     <div className="flex-1">
                       <h4 className="text-white font-semibold">{cert.title}</h4>
@@ -152,7 +155,7 @@ export function PlanetDetailPanel({ planet, onClose }: PlanetDetailPanelProps) {
                   </div>
                   {cert.credentialUrl && cert.credentialUrl !== '#' && (
                     <a href={cert.credentialUrl} target="_blank" rel="noopener noreferrer" className="mt-3 block text-xs text-[#3A86FF] hover:text-white flex items-center gap-1 transition-colors">
-                      <ExternalLink size={12} /> Verify Credential
+                      <ExternalLink size={12} aria-hidden="true" /> Verify Credential
                     </a>
                   )}
                 </div>
@@ -165,30 +168,30 @@ export function PlanetDetailPanel({ planet, onClose }: PlanetDetailPanelProps) {
         return (
           <div className="space-y-6">
             <div className="flex items-center gap-3 mb-2">
-              <Mail className="text-[#FFB973]" size={20} />
+              <Mail className="text-[#FFB973]" size={20} aria-hidden="true" />
               <h3 className="text-sm uppercase tracking-widest text-[#FFB973]">Contact</h3>
             </div>
             <p className="text-gray-300">Let's connect across the cosmos. Reach out via email or social.</p>
             <div className="space-y-3">
               <a href={`mailto:${data.personal.email}`} className="flex items-center gap-3 p-3 bg-black/30 rounded-xl border border-white/5 hover:border-[#3A86FF]/30 transition-colors">
-                <Mail size={18} className="text-[#3A86FF]" />
+                <Mail size={18} className="text-[#3A86FF]" aria-hidden="true" />
                 <span className="text-sm text-gray-300">{data.personal.email}</span>
               </a>
               {data.personal.social.github && (
-                <a href={data.personal.social.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 bg-black/30 rounded-xl border border-white/5 hover:border-[#9D4EDD]/30 transition-colors">
-                  <Github size={18} className="text-[#9D4EDD]" />
+                <a href={data.personal.social.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" className="flex items-center gap-3 p-3 bg-black/30 rounded-xl border border-white/5 hover:border-[#9D4EDD]/30 transition-colors">
+                  <Github size={18} className="text-[#9D4EDD]" aria-hidden="true" />
                   <span className="text-sm text-gray-300">GitHub</span>
                 </a>
               )}
               {data.personal.social.linkedin && (
-                <a href={data.personal.social.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 bg-black/30 rounded-xl border border-white/5 hover:border-[#3A86FF]/30 transition-colors">
-                  <Linkedin size={18} className="text-[#3A86FF]" />
+                <a href={data.personal.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" className="flex items-center gap-3 p-3 bg-black/30 rounded-xl border border-white/5 hover:border-[#3A86FF]/30 transition-colors">
+                  <Linkedin size={18} className="text-[#3A86FF]" aria-hidden="true" />
                   <span className="text-sm text-gray-300">LinkedIn</span>
                 </a>
               )}
               {data.personal.social.twitter && (
-                <a href={data.personal.social.twitter} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 bg-black/30 rounded-xl border border-white/5 hover:border-[#00D9FF]/30 transition-colors">
-                  <Twitter size={18} className="text-[#00D9FF]" />
+                <a href={data.personal.social.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter / X profile" className="flex items-center gap-3 p-3 bg-black/30 rounded-xl border border-white/5 hover:border-[#00D9FF]/30 transition-colors">
+                  <Twitter size={18} className="text-[#00D9FF]" aria-hidden="true" />
                   <span className="text-sm text-gray-300">Twitter / X</span>
                 </a>
               )}
@@ -200,7 +203,7 @@ export function PlanetDetailPanel({ planet, onClose }: PlanetDetailPanelProps) {
         return (
           <div className="space-y-6">
             <div className="flex items-center gap-3 mb-2">
-              <GraduationCap className="text-[#274687]" size={20} />
+              <GraduationCap className="text-[#274687]" size={20} aria-hidden="true" />
               <h3 className="text-sm uppercase tracking-widest text-[#6B8FD4]">Education</h3>
             </div>
             <div className="bg-black/30 border border-[#274687]/20 rounded-xl p-5">
@@ -250,14 +253,19 @@ export function PlanetDetailPanel({ planet, onClose }: PlanetDetailPanelProps) {
         planet ? 'opacity-100' : 'opacity-0'
       }`}
     >
-      {/* Dim overlay */}
+      {/* Dim overlay — click to close, hidden from AT since panel is the dialog */}
       <div
         className="absolute inset-0 bg-black/40 pointer-events-auto backdrop-blur-sm"
         onClick={onClose}
+        aria-hidden="true"
       />
 
-      {/* Panel */}
+      {/* Panel — the actual dialog */}
       <div
+        ref={trapRef as React.RefObject<HTMLDivElement>}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby={titleId}
         className={`relative z-10 w-full max-w-md max-h-[85vh] bg-[#0A0D12]/90 backdrop-blur-xl border border-white/10 rounded-2xl shadow-[0_0_60px_rgba(0,0,0,0.8)] pointer-events-auto transform transition-all duration-500 ease-out flex flex-col overflow-hidden ${
           planet ? 'translate-x-0 scale-100' : 'translate-x-[120%] scale-95'
         }`}
@@ -265,7 +273,7 @@ export function PlanetDetailPanel({ planet, onClose }: PlanetDetailPanelProps) {
         {/* Header */}
         <div className="flex items-center justify-between p-6 pb-0">
           <div>
-            <h2 className="text-2xl font-bold font-outfit" style={{ color: planet?.color || '#fff' }}>
+            <h2 id={titleId} className="text-2xl font-bold font-outfit" style={{ color: planet?.color || '#fff' }}>
               {planet?.name}
             </h2>
             <p className="text-xs text-gray-500 uppercase tracking-widest mt-1">
@@ -274,9 +282,10 @@ export function PlanetDetailPanel({ planet, onClose }: PlanetDetailPanelProps) {
           </div>
           <button
             onClick={onClose}
+            aria-label="Close panel"
             className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-gray-400 hover:text-white transition-colors border border-white/5"
           >
-            <X size={18} />
+            <X size={18} aria-hidden="true" />
           </button>
         </div>
 

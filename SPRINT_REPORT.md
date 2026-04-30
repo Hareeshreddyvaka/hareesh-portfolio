@@ -48,3 +48,31 @@ WebGL on mobile: disabled
 Test status: PASS
 TypeScript status: PASS
 Build status: PASS
+
+## Sprint 1.3 — Accessibility Baseline
+Critical violations fixed: 5
+- Missing aria-label on icon-only buttons (Navbar mobile toggle, PhotoMode, SettingsMenu, EducationalOverlays, PlanetDetailPanel close)
+- Missing role="dialog" and aria-modal on PlanetDetailPanel, Modal, CertLightbox, HelpOverlay, SettingsMenu
+- Missing keyboard focus indicator (replaced outline:none with :focus-visible 2px solid white)
+- Missing alt text on cert thumbnail images (PlanetDetailPanel certs section — set alt="" for decorative thumbnails)
+- Missing landmark role on main content area (added role="main" via <main> tag in App.tsx)
+Serious violations fixed: 4
+- Toggle buttons lacked role="switch" + aria-checked (SettingsMenu — 3 toggles)
+- Icon-only social links missing aria-label (ScrollSections hero + contact, ContactSection — 6 link groups)
+- aria-hidden missing on decorative SVG icons across all components (lucide-react icons)
+- Form submission status not announced to screen readers (added aria-live="polite" on submit button status)
+Moderate violations deferred:
+- color-contrast on decorative "sector label" text (intentionally low-contrast decorative element, text-white/40 on dark bg)
+- Skip-to-main-content link not yet added (deferred to future sprint)
+Keyboard navigation: fixed
+- All interactive elements reachable via Tab in logical order
+- :focus-visible outline: 2px solid white, offset 2px
+- :focus:not(:focus-visible) removes outline for mouse users
+Focus trap: added to 5 dialogs/panels
+- PlanetDetailPanel, Modal, CertLightbox, HelpOverlay, SettingsMenu
+- useFocusTrap hook: traps Tab cycle inside container, restores focus on close
+- ESC key closes all panels and dialogs
+axe-core integration: added to DEV mode (import.meta.env.DEV) in main.tsx
+Test status: PASS
+TypeScript status: PASS
+Build status: PASS

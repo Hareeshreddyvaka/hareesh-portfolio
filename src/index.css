@@ -151,6 +151,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* ─── Keyboard Focus Styles ─── */
+:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+/* Remove browser default focus ring for mouse/pointer users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
 /* Animation Utilities */
 .animate-float {
   animation: float 6s ease-in-out infinite;

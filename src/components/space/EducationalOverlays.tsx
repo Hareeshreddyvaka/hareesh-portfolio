@@ -19,18 +19,21 @@ export function EducationalOverlays() {
   return (
     <>
       {/* Toggle Button */}
-      <button 
+      <button
         onClick={() => setShowFacts(!showFacts)}
+        aria-label={showFacts ? 'Hide space facts' : 'Show space facts'}
+        aria-expanded={showFacts}
         className={`fixed top-24 right-6 md:right-10 z-50 p-2 rounded-full border transition-all backdrop-blur-md ${
           showFacts ? 'bg-[#9D4EDD]/20 border-[#9D4EDD] text-white' : 'bg-black/40 border-white/10 text-gray-400 hover:text-white'
         }`}
-        title="Toggle Space Facts"
       >
-        <Info size={18} />
+        <Info size={18} aria-hidden="true" />
       </button>
 
       {/* Fact Panel */}
-      <div 
+      <div
+        aria-live="polite"
+        aria-atomic="true"
         className={`fixed top-36 right-6 md:right-10 z-40 w-64 p-4 rounded-xl bg-black/60 backdrop-blur-xl border border-white/10 text-sm transition-all duration-500 origin-top-right ${
           showFacts && currentFact ? 'scale-100 opacity-100' : 'scale-90 opacity-0 pointer-events-none'
         }`}

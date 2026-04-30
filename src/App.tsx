@@ -91,7 +91,7 @@ export default function App() {
   }
 
   return (
-    <>
+    <main role="main">
       <FirstPaintFallback isVisible={!isExperienceReady} />
 
       {shouldLoadExperience ? (
@@ -99,6 +99,6 @@ export default function App() {
           <LazyPortfolioExperience onReady={() => setIsExperienceReady(true)} />
         </Suspense>
       ) : null}
-    </>
+    </main>
   );
 }

@@ -17,3 +17,10 @@ createRoot(document.getElementById('root') as HTMLElement).render(
     </HelmetProvider>
   </StrictMode>,
 );
+
+if (import.meta.env.DEV) {
+  const React = await import('react');
+  const ReactDOM = await import('react-dom');
+  const axe = await import('@axe-core/react');
+  axe.default(React.default, ReactDOM.default, 1000);
+}

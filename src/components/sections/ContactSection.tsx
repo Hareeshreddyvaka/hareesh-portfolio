@@ -49,18 +49,18 @@ export default function ContactSection() {
             
             <div className="flex gap-4 pt-6 mt-6 border-t border-white/10">
               {personal.social.github && (
-                <a href={personal.social.github} target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/5 text-gray-400 hover:bg-[#9D4EDD]/20 hover:text-[#9D4EDD] transition-colors border border-transparent hover:border-[#9D4EDD]/50">
-                  <Github size={24} />
+              <a href={personal.social.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" className="p-3 rounded-full bg-white/5 text-gray-400 hover:bg-[#9D4EDD]/20 hover:text-[#9D4EDD] transition-colors border border-transparent hover:border-[#9D4EDD]/50">
+                  <Github size={24} aria-hidden="true" />
                 </a>
               )}
               {personal.social.linkedin && (
-                <a href={personal.social.linkedin} target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/5 text-gray-400 hover:bg-[#3A86FF]/20 hover:text-[#3A86FF] transition-colors border border-transparent hover:border-[#3A86FF]/50">
-                  <Linkedin size={24} />
+                <a href={personal.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" className="p-3 rounded-full bg-white/5 text-gray-400 hover:bg-[#3A86FF]/20 hover:text-[#3A86FF] transition-colors border border-transparent hover:border-[#3A86FF]/50">
+                  <Linkedin size={24} aria-hidden="true" />
                 </a>
               )}
               {personal.social.twitter && (
-                <a href={personal.social.twitter} target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/5 text-gray-400 hover:bg-[#00D9FF]/20 hover:text-[#00D9FF] transition-colors border border-transparent hover:border-[#00D9FF]/50">
-                  <Twitter size={24} />
+                <a href={personal.social.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter profile" className="p-3 rounded-full bg-white/5 text-gray-400 hover:bg-[#00D9FF]/20 hover:text-[#00D9FF] transition-colors border border-transparent hover:border-[#00D9FF]/50">
+                  <Twitter size={24} aria-hidden="true" />
                 </a>
               )}
             </div>
@@ -123,7 +123,7 @@ export default function ContactSection() {
               ) : (
                 <>
                   <span>Send Message</span>
-                  <Send size={18} />
+                  <Send size={18} aria-hidden="true" />
                 </>
               )}
             </button>

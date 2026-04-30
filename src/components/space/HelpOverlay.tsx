@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { X } from 'lucide-react';
+import { useFocusTrap } from '../../hooks/useFocusTrap';
 
 interface HelpOverlayProps {
   isOpen: boolean;
@@ -16,23 +17,42 @@ const SHORTCUTS = [
 ];
 
 export function HelpOverlay({ isOpen, onClose }: HelpOverlayProps) {
+  const trapRef = useFocusTrap(isOpen);
+  const titleId = 'help-overlay-title';
+
+  useEffect(() => {
+    if (!isOpen) return undefined;
+    const handleKey = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose(); };
+    window.addEventListener('keydown', handleKey);
+    return () => window.removeEventListener('keydown', handleKey);
+  }, [isOpen, onClose]);
+
   if (!isOpen) return null;
 
   return (
-    <div 
+    <div
       className="fixed inset-0 z-[200] flex items-center justify-center bg-black/70 backdrop-blur-sm"
       onClick={onClose}
+      aria-hidden="true"
     >
-      <div 
+      <div
+        ref={trapRef as React.RefObject<HTMLDivElement>}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby={titleId}
         className="bg-[#0A0D14]/95 border border-white/10 rounded-2xl p-8 max-w-md w-full mx-4 shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-xl font-bold text-white font-['Space_Grotesk']">
+          <h2 id={titleId} className="text-xl font-bold text-white font-['Space_Grotesk']">
             Navigation Controls
           </h2>
-          <button onClick={onClose} className="text-white/50 hover:text-white transition-colors">
-            <X size={20} />
+          <button
+            onClick={onClose}
+            aria-label="Close help"
+            className="text-white/50 hover:text-white transition-colors"
+          >
+            <X size={20} aria-hidden="true" />
           </button>
         </div>
 

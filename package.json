@@ -39,6 +39,7 @@
     "three-stdlib": "^2.36.1"
   },
   "devDependencies": {
+    "@axe-core/react": "^4.11.2",
     "@eslint/js": "^9.9.1",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
@@ -49,6 +50,7 @@
     "@types/react-scroll": "^1.8.7",
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.18",
+    "axe-core": "^4.11.4",
     "eslint": "^9.9.1",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.11",

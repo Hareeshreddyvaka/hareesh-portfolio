@@ -59,7 +59,7 @@ export default function ScrollSections() {
         <div className="text-center px-6 max-w-4xl">
           <div className="mb-6">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-[#00D9FF] text-xs font-mono tracking-widest uppercase">
-              <Sparkles size={12} /> Welcome to my universe
+              <Sparkles size={12} aria-hidden="true" /> Welcome to my universe
             </span>
           </div>
           <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-bold text-white mb-5 font-['Space_Grotesk'] tracking-tight leading-[0.95]">
@@ -76,28 +76,28 @@ export default function ScrollSections() {
           </p>
           <div className="flex items-center justify-center gap-4">
             {personal.social.github && (
-              <a href={personal.social.github} target="_blank" rel="noopener noreferrer"
+              <a href={personal.social.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"
                 className="group p-3 rounded-full bg-white/5 border border-white/10 text-white/60 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all duration-300">
-                <Github size={20} />
+                <Github size={20} aria-hidden="true" />
               </a>
             )}
             {personal.social.linkedin && (
-              <a href={personal.social.linkedin} target="_blank" rel="noopener noreferrer"
+              <a href={personal.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"
                 className="group p-3 rounded-full bg-white/5 border border-white/10 text-white/60 hover:text-[#3A86FF] hover:bg-[#3A86FF]/10 hover:border-[#3A86FF]/30 transition-all duration-300">
-                <Linkedin size={20} />
+                <Linkedin size={20} aria-hidden="true" />
               </a>
             )}
             {personal.social.twitter && (
-              <a href={personal.social.twitter} target="_blank" rel="noopener noreferrer"
+              <a href={personal.social.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter profile"
                 className="group p-3 rounded-full bg-white/5 border border-white/10 text-white/60 hover:text-[#00D9FF] hover:bg-[#00D9FF]/10 hover:border-[#00D9FF]/30 transition-all duration-300">
-                <Twitter size={20} />
+                <Twitter size={20} aria-hidden="true" />
               </a>
             )}
           </div>
           {/* Scroll hint */}
           <div className="mt-16 flex flex-col items-center opacity-40">
             <span className="text-[10px] tracking-[4px] uppercase text-white/60 font-mono mb-2">Scroll to explore</span>
-            <ChevronDown size={16} className="text-white/40 animate-bounce" />
+            <ChevronDown size={16} className="text-white/40 animate-bounce" aria-hidden="true" />
           </div>
         </div>
       </div>
@@ -251,18 +251,18 @@ export default function ScrollSections() {
 
             <div className="flex gap-3 pt-4 border-t border-white/5">
               {personal.social.github && (
-                <a href={personal.social.github} target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/5 text-white/40 hover:bg-[#9D4EDD]/20 hover:text-[#9D4EDD] transition-all border border-transparent hover:border-[#9D4EDD]/30">
-                  <Github size={22} />
+                <a href={personal.social.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" className="p-3 rounded-full bg-white/5 text-white/40 hover:bg-[#9D4EDD]/20 hover:text-[#9D4EDD] transition-all border border-transparent hover:border-[#9D4EDD]/30">
+                  <Github size={22} aria-hidden="true" />
                 </a>
               )}
               {personal.social.linkedin && (
-                <a href={personal.social.linkedin} target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/5 text-white/40 hover:bg-[#3A86FF]/20 hover:text-[#3A86FF] transition-all border border-transparent hover:border-[#3A86FF]/30">
-                  <Linkedin size={22} />
+                <a href={personal.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" className="p-3 rounded-full bg-white/5 text-white/40 hover:bg-[#3A86FF]/20 hover:text-[#3A86FF] transition-all border border-transparent hover:border-[#3A86FF]/30">
+                  <Linkedin size={22} aria-hidden="true" />
                 </a>
               )}
               {personal.social.twitter && (
-                <a href={personal.social.twitter} target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/5 text-white/40 hover:bg-[#00D9FF]/20 hover:text-[#00D9FF] transition-all border border-transparent hover:border-[#00D9FF]/30">
-                  <Twitter size={22} />
+                <a href={personal.social.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter profile" className="p-3 rounded-full bg-white/5 text-white/40 hover:bg-[#00D9FF]/20 hover:text-[#00D9FF] transition-all border border-transparent hover:border-[#00D9FF]/30">
+                  <Twitter size={22} aria-hidden="true" />
                 </a>
               )}
             </div>
@@ -295,13 +295,15 @@ export default function ScrollSections() {
                     ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
                     : 'bg-gradient-to-r from-[#9D4EDD] to-[#3A86FF] text-white hover:shadow-[0_0_25px_rgba(58,134,255,0.3)] hover:scale-[1.01]'
                 }`}>
-                {isSubmitting ? (
-                  <span className="animate-pulse">Sending...</span>
-                ) : isSuccess ? (
-                  <span>Transmission Received!</span>
-                ) : (
-                  <><span>Send Message</span><Send size={16} /></>
-                )}
+                <span aria-live="polite">
+                  {isSubmitting ? (
+                    <span className="animate-pulse">Sending...</span>
+                  ) : isSuccess ? (
+                    <span>Transmission Received!</span>
+                  ) : (
+                    <><span>Send Message</span><Send size={16} aria-hidden="true" /></>
+                  )}
+                </span>
               </button>
             </form>
           </div>
