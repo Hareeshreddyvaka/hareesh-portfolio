@@ -206,3 +206,13 @@ Saturn particle rings 8000 instances: YES
 Test status: PASS
 TypeScript status: PASS
 Build status: PASS
+
+## Sprint 3.3 — Post Processing
+Per-section bloom targets: YES
+Smooth lerp factor 0.05: YES
+Depth of field on panel open: YES
+Vignette during travel: YES
+FPS fallback at 50fps: YES
+Test status: PASS
+TypeScript status: PASS
+Build status: PASS

@@ -18,8 +18,14 @@ export function PlanetDetailPanel({ planet, onClose }: PlanetDetailPanelProps) {
   useEffect(() => {
     if (planet) {
       requestAnimationFrame(() => setIsVisible(true));
+      // Notify CameraEffects to enable DOF
+      const notify = (window as Record<string, unknown>).__cameraEffectsSetPanel;
+      if (typeof notify === 'function') notify(planet.id);
     } else {
       setIsVisible(false);
+      // Notify CameraEffects to disable DOF
+      const notify = (window as Record<string, unknown>).__cameraEffectsSetPanel;
+      if (typeof notify === 'function') notify(null);
     }
   }, [planet]);
 
