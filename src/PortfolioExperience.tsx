@@ -27,8 +27,8 @@ function PortfolioExperienceRoot({ onReady }: PortfolioExperienceProps) {
   useEffect(() => {
     if (isLoading || hasSignaledReady.current) return;
 
-    hasSignaledReady.current = true;
     const frame = requestAnimationFrame(() => {
+      hasSignaledReady.current = true;
       onReady();
     });
 

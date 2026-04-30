@@ -25,3 +25,11 @@ Duplicate dependency fixed: YES
 Imports consolidated: `src/hooks/useAssetLoader.ts` switched `GLTFLoader` and `GLTF` imports from `three/examples/jsm/loaders/GLTFLoader.js` to `three-stdlib`; `src/contexts/AssetContextShared.ts` switched the shared `GLTF` type import to `three-stdlib`; `package.json` and `package-lock.json` now declare `three-stdlib` directly.
 Test status: PASS
 Build status: PASS
+
+## Sprint 1.1 — Closed
+Test status: PASS
+TypeScript status: PASS
+Build status: PASS
+First paint verified: YES
+WebGL fade-in verified: YES
+Notes: Validation exposed a readiness race in `src/PortfolioExperience.tsx` that kept the first-paint fallback mounted after the scene was ready; fixed by setting the ready latch inside the scheduled animation frame instead of before it. Browser validation confirmed fallback hero text renders before WebGL with the CSS starfield visible and no blocking spinner. Dev-console warnings still report missing `/assets/textures/planets/earth_normal.jpg` and `/assets/textures/planets/earth_specular.jpg`.
