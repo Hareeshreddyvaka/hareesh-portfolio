@@ -10,7 +10,7 @@ export const logger = {
   error: (message: string, error?: unknown) => {
     console.error(`[ERROR] ${message}`, error); // Always log errors
   },
-  perf: (message: string, timeInMs: number) => {
-    if (isDev) console.log(`[PERF] ${message}: ${timeInMs.toFixed(2)}ms`);
+  perf: () => {
+    // Disabled in production
   }
 };

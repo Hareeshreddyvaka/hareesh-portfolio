@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { PlanetInfo } from '../../hooks/usePlanetInteraction';
 import { usePortfolioData } from '../../hooks/usePortfolioData';
 import { X, ExternalLink, Github, Mail, Linkedin, Twitter, GraduationCap, Award, Code, Briefcase, User } from 'lucide-react';

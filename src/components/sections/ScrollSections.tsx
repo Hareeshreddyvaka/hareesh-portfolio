@@ -116,14 +116,32 @@ export default function ScrollSections() {
     };
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setTimeout(() => {
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+      if (response.ok) {
+        setIsSuccess(true);
+        form.reset();
+      } else {
+        alert('Failed to send message. Please try again.');
+      }
+    } catch {
+      alert('Network error. Please try again.');
+    } finally {
       setIsSubmitting(false);
-      setIsSuccess(true);
       setTimeout(() => setIsSuccess(false), 5000);
-    }, 1500);
+    }
   };
 
   if (isLoading || !data) return null;
@@ -208,7 +226,7 @@ export default function ScrollSections() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((project: Project, i: number) => (
+            {projects.map((project: Project) => (
               <div key={project.id} className="section-content">
                 <ProjectCard project={project} />
               </div>
@@ -241,7 +259,7 @@ export default function ScrollSections() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {skills.map((category: SkillCategory, catIdx: number) => (
+            {skills.map((category: SkillCategory) => (
               <div key={category.category} className="bg-white/[0.03] backdrop-blur-sm rounded-2xl border border-white/5 p-6 section-content">
                 <h3 className="text-sm font-bold text-[#00D9FF] mb-5 font-mono uppercase tracking-widest pb-3 border-b border-white/5">
                   {category.category}
@@ -360,17 +378,17 @@ export default function ScrollSections() {
             <form onSubmit={handleSubmit} className="relative z-10 flex flex-col gap-5">
               <div className="flex flex-col gap-1.5">
                 <label className="text-xs font-mono text-white/30 uppercase tracking-wider">Name</label>
-                <input required type="text" placeholder="Your name"
+                <input required type="text" name="name" placeholder="Your name"
                   className="bg-black/40 border border-white/5 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-[#3A86FF]/50 focus:ring-1 focus:ring-[#3A86FF]/30 transition-all placeholder:text-white/15" />
               </div>
               <div className="flex flex-col gap-1.5">
                 <label className="text-xs font-mono text-white/30 uppercase tracking-wider">Email</label>
-                <input required type="email" placeholder="you@example.com"
+                <input required type="email" name="email" placeholder="you@example.com"
                   className="bg-black/40 border border-white/5 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-[#3A86FF]/50 focus:ring-1 focus:ring-[#3A86FF]/30 transition-all placeholder:text-white/15" />
               </div>
               <div className="flex flex-col gap-1.5">
                 <label className="text-xs font-mono text-white/30 uppercase tracking-wider">Message</label>
-                <textarea required rows={3} placeholder="Your message..."
+                <textarea required rows={3} name="message" placeholder="Your message..."
                   className="bg-black/40 border border-white/5 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-[#3A86FF]/50 focus:ring-1 focus:ring-[#3A86FF]/30 transition-all resize-none placeholder:text-white/15" />
               </div>
               <button type="submit" disabled={isSubmitting || isSuccess}

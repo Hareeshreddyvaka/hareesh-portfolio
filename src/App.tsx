@@ -1,9 +1,36 @@
-import { lazy, Suspense, startTransition, useEffect, useState } from 'react';
+import { lazy, Suspense, startTransition, useEffect, useState, Component, ErrorInfo, ReactNode } from 'react';
 import { portfolioSeedData } from './data/portfolioSeed';
 import { useIsMobile } from './hooks/useIsMobile';
 import MobilePortfolio from './components/MobilePortfolio';
 
 const LazyPortfolioExperience = lazy(() => import('./PortfolioExperience'));
+
+interface ErrorBoundaryProps {
+  children: ReactNode;
+  fallback: ReactNode;
+}
+
+class WebGLErrorBoundary extends Component<ErrorBoundaryProps, { hasError: boolean }> {
+  constructor(props: ErrorBoundaryProps) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError(): { hasError: boolean } {
+    return { hasError: true };
+  }
+
+  componentDidCatch(error: Error, errorInfo: ErrorInfo) {
+    console.error('WebGL Context Lost or Initialization Error:', error, errorInfo);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return this.props.fallback;
+    }
+    return this.props.children;
+  }
+}
 
 interface FirstPaintFallbackProps {
   isVisible: boolean;
@@ -44,7 +71,7 @@ export default function App() {
       return undefined;
     }
 
-    let lenis: any;
+    let lenis: unknown;
     let animationFrameId: number;
 
     import('@studio-freight/lenis').then((LenisModule) => {
@@ -103,9 +130,22 @@ export default function App() {
       <FirstPaintFallback isVisible={!isExperienceReady} />
 
       {shouldLoadExperience ? (
-        <Suspense fallback={<FirstPaintFallback isVisible />}>
-          <LazyPortfolioExperience onReady={() => setIsExperienceReady(true)} />
-        </Suspense>
+        <WebGLErrorBoundary
+          fallback={
+            <div className="min-h-screen bg-[#050510]">
+              <div className="flex h-screen items-center justify-center px-6 text-center">
+                <p className="max-w-md text-lg text-white/70">
+                  For the full experience, open in a modern desktop browser with hardware acceleration enabled.
+                </p>
+              </div>
+              <MobilePortfolio />
+            </div>
+          }
+        >
+          <Suspense fallback={<FirstPaintFallback isVisible />}>
+            <LazyPortfolioExperience onReady={() => setIsExperienceReady(true)} />
+          </Suspense>
+        </WebGLErrorBoundary>
       ) : null}
     </main>
   );
