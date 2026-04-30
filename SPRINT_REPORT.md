@@ -245,3 +245,15 @@ After:  Performance 99 FCP 1.5s TBT 0ms CLS 0.001 LCP 1.7s
 Target >= 95: YES
 Remaining gaps: none
 Test status: PASS
+
+## Sprint 5.1 — SEO and Deep Linking
+OG meta tags: added
+Twitter card: added
+JSON-LD Person schema: added
+Canonical URL: added
+og-image.jpg: created (manual replacement needed: NO)
+Hash deep linking: implemented
+Navbar updated: YES
+Test status: PASS
+TypeScript status: PASS
+Build status: PASS

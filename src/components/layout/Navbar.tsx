@@ -22,7 +22,9 @@ export default function Navbar() {
     { id: 'contact', label: 'Contact', scrollPct: 0.92 },
   ];
 
-  const scrollToPct = (pct: number) => {
+  const scrollToPct = (pct: number, id: string) => {
+    const hash = id === 'hero' ? 'about' : id;
+    window.history.replaceState(null, '', '#' + hash);
     const maxScroll = document.body.scrollHeight - window.innerHeight;
     window.scrollTo({ top: maxScroll * pct, behavior: 'smooth' });
   };
@@ -39,7 +41,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 w-full flex items-center justify-between">
         {/* Logo */}
         <button
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          onClick={() => {
+            window.history.replaceState(null, '', '#about');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
           className="text-white font-bold font-outfit text-lg tracking-tight flex items-center gap-2.5 group"
           aria-label="Scroll to top"
         >
@@ -62,7 +67,7 @@ export default function Navbar() {
               <button
                 key={item.id}
                 role="listitem"
-                onClick={() => scrollToPct(item.scrollPct)}
+                onClick={() => scrollToPct(item.scrollPct, item.id)}
                 aria-current={isActive ? 'page' : undefined}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                   isActive

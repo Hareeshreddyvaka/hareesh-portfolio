@@ -47,10 +47,16 @@ export function useScrollOrchestrator(): ScrollState {
             }
           }
 
-          setScrollState({
-            totalProgress: progress,
-            sectionProgress,
-            currentSection,
+          setScrollState(prev => {
+            if (prev.currentSection !== currentSection) {
+              const hash = currentSection === 'hero' ? 'about' : currentSection;
+              window.history.replaceState(null, '', '#' + hash);
+            }
+            return {
+              totalProgress: progress,
+              sectionProgress,
+              currentSection,
+            };
           });
 
           ticking = false;
@@ -60,6 +66,20 @@ export function useScrollOrchestrator(): ScrollState {
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
+    
+    // Initial hash routing
+    const hash = window.location.hash.slice(1);
+    if (hash) {
+      const section = hash === 'about' ? 'hero' : hash;
+      const bounds = SECTION_BOUNDARIES[section as keyof typeof SECTION_BOUNDARIES];
+      if (bounds) {
+        setTimeout(() => {
+          const maxScroll = document.body.scrollHeight - window.innerHeight;
+          window.scrollTo({ top: maxScroll * bounds[0] });
+        }, 100);
+      }
+    }
+
     // Trigger once on mount
     handleScroll();
 
