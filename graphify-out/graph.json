@@ -9,7 +9,7 @@
       "source_file": "eslint.config.js",
       "source_location": "L1",
       "id": "eslint_config_js",
-      "community": 65,
+      "community": 59,
       "norm_label": "eslint.config.js"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "postcss.config.js",
       "source_location": "L1",
       "id": "postcss_config_js",
-      "community": 66,
+      "community": 60,
       "norm_label": "postcss.config.js"
     },
     {
@@ -27,7 +27,7 @@
       "source_file": "read_docx.py",
       "source_location": "L1",
       "id": "read_docx_py",
-      "community": 32,
+      "community": 18,
       "norm_label": "read_docx.py"
     },
     {
@@ -36,7 +36,7 @@
       "source_file": "read_docx.py",
       "source_location": "L4",
       "id": "read_docx_read_docx",
-      "community": 32,
+      "community": 18,
       "norm_label": "read_docx()"
     },
     {
@@ -45,7 +45,7 @@
       "source_file": "tailwind.config.js",
       "source_location": "L1",
       "id": "tailwind_config_js",
-      "community": 67,
+      "community": 61,
       "norm_label": "tailwind.config.js"
     },
     {
@@ -54,7 +54,7 @@
       "source_file": "vite.config.ts",
       "source_location": "L1",
       "id": "vite_config_ts",
-      "community": 68,
+      "community": 62,
       "norm_label": "vite.config.ts"
     },
     {
@@ -63,7 +63,7 @@
       "source_file": "docs\\assets\\AboutSection-CipgubIe.js",
       "source_location": "L1",
       "id": "docs_assets_aboutsection_cipgubie_js",
-      "community": 33,
+      "community": 30,
       "norm_label": "aboutsection-cipgubie.js"
     },
     {
@@ -72,7 +72,7 @@
       "source_file": "docs\\assets\\AboutSection-CipgubIe.js",
       "source_location": "L1",
       "id": "aboutsection_cipgubie_l",
-      "community": 33,
+      "community": 30,
       "norm_label": "l()"
     },
     {
@@ -81,7 +81,7 @@
       "source_file": "docs\\assets\\AchievementsSection-BvBPC4GY.js",
       "source_location": "L1",
       "id": "docs_assets_achievementssection_bvbpc4gy_js",
-      "community": 25,
+      "community": 24,
       "norm_label": "achievementssection-bvbpc4gy.js"
     },
     {
@@ -90,7 +90,7 @@
       "source_file": "docs\\assets\\AchievementsSection-BvBPC4GY.js",
       "source_location": "L6",
       "id": "achievementssection_bvbpc4gy_m",
-      "community": 25,
+      "community": 24,
       "norm_label": "m()"
     },
     {
@@ -99,7 +99,7 @@
       "source_file": "docs\\assets\\AchievementsSection-BvBPC4GY.js",
       "source_location": "L6",
       "id": "achievementssection_bvbpc4gy_f",
-      "community": 25,
+      "community": 24,
       "norm_label": "f()"
     },
     {
@@ -108,7 +108,7 @@
       "source_file": "docs\\assets\\ContactSection-D-Rz239d.js",
       "source_location": "L1",
       "id": "docs_assets_contactsection_d_rz239d_js",
-      "community": 34,
+      "community": 31,
       "norm_label": "contactsection-d-rz239d.js"
     },
     {
@@ -117,7 +117,7 @@
       "source_file": "docs\\assets\\ContactSection-D-Rz239d.js",
       "source_location": "L16",
       "id": "contactsection_d_rz239d_f",
-      "community": 34,
+      "community": 31,
       "norm_label": "f()"
     },
     {
@@ -126,7 +126,7 @@
       "source_file": "docs\\assets\\ExperienceSection-eKj2Aa8u.js",
       "source_location": "L1",
       "id": "docs_assets_experiencesection_ekj2aa8u_js",
-      "community": 26,
+      "community": 25,
       "norm_label": "experiencesection-ekj2aa8u.js"
     },
     {
@@ -135,7 +135,7 @@
       "source_file": "docs\\assets\\ExperienceSection-eKj2Aa8u.js",
       "source_location": "L16",
       "id": "experiencesection_ekj2aa8u_h",
-      "community": 26,
+      "community": 25,
       "norm_label": "h()"
     },
     {
@@ -144,7 +144,7 @@
       "source_file": "docs\\assets\\ExperienceSection-eKj2Aa8u.js",
       "source_location": "L16",
       "id": "experiencesection_ekj2aa8u_u",
-      "community": 26,
+      "community": 25,
       "norm_label": "u()"
     },
     {
@@ -234,7 +234,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L6",
       "id": "herosection_pmx2b_s0_e",
-      "community": 7,
+      "community": 0,
       "norm_label": "e_()"
     },
     {
@@ -297,7 +297,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ni",
-      "community": 9,
+      "community": 3,
       "norm_label": "ni()"
     },
     {
@@ -315,7 +315,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_vd",
-      "community": 11,
+      "community": 12,
       "norm_label": "vd()"
     },
     {
@@ -342,7 +342,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_xa",
-      "community": 8,
+      "community": 4,
       "norm_label": "xa()"
     },
     {
@@ -360,7 +360,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_xs",
-      "community": 10,
+      "community": 6,
       "norm_label": "xs()"
     },
     {
@@ -387,7 +387,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_es",
-      "community": 5,
+      "community": 0,
       "norm_label": "es()"
     },
     {
@@ -459,7 +459,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ps",
-      "community": 9,
+      "community": 3,
       "norm_label": "ps()"
     },
     {
@@ -684,7 +684,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_le_dividescalar",
-      "community": 1,
+      "community": 5,
       "norm_label": ".dividescalar()"
     },
     {
@@ -1242,7 +1242,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_fa",
-      "community": 9,
+      "community": 3,
       "norm_label": "fa()"
     },
     {
@@ -1260,7 +1260,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_to",
-      "community": 11,
+      "community": 12,
       "norm_label": "to()"
     },
     {
@@ -1278,7 +1278,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_gd",
-      "community": 9,
+      "community": 3,
       "norm_label": "gd"
     },
     {
@@ -1287,7 +1287,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_gd_getdataurl",
-      "community": 9,
+      "community": 3,
       "norm_label": ".getdataurl()"
     },
     {
@@ -1296,7 +1296,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_gd_srgbtolinear",
-      "community": 9,
+      "community": 3,
       "norm_label": ".srgbtolinear()"
     },
     {
@@ -1305,7 +1305,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ps_constructor",
-      "community": 9,
+      "community": 3,
       "norm_label": ".constructor()"
     },
     {
@@ -1314,7 +1314,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ps_needsupdate",
-      "community": 9,
+      "community": 3,
       "norm_label": ".needsupdate()"
     },
     {
@@ -1323,7 +1323,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ps_tojson",
-      "community": 9,
+      "community": 3,
       "norm_label": ".tojson()"
     },
     {
@@ -1332,7 +1332,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_qh",
-      "community": 9,
+      "community": 3,
       "norm_label": "qh()"
     },
     {
@@ -1953,7 +1953,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_wi",
-      "community": 8,
+      "community": 2,
       "norm_label": "wi"
     },
     {
@@ -1962,7 +1962,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_wi_constructor",
-      "community": 8,
+      "community": 2,
       "norm_label": ".constructor()"
     },
     {
@@ -2043,7 +2043,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_zs",
-      "community": 1,
+      "community": 3,
       "norm_label": "zs"
     },
     {
@@ -2052,7 +2052,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_zs_constructor",
-      "community": 1,
+      "community": 3,
       "norm_label": ".constructor()"
     },
     {
@@ -2061,7 +2061,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_zs_setsize",
-      "community": 1,
+      "community": 3,
       "norm_label": ".setsize()"
     },
     {
@@ -2070,7 +2070,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_zs_copy",
-      "community": 1,
+      "community": 3,
       "norm_label": ".copy()"
     },
     {
@@ -2079,7 +2079,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn",
-      "community": 12,
+      "community": 10,
       "norm_label": "pn"
     },
     {
@@ -2088,7 +2088,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_constructor",
-      "community": 12,
+      "community": 10,
       "norm_label": ".constructor()"
     },
     {
@@ -2115,7 +2115,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_x",
-      "community": 12,
+      "community": 10,
       "norm_label": ".x()"
     },
     {
@@ -2124,7 +2124,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_y",
-      "community": 12,
+      "community": 10,
       "norm_label": ".y()"
     },
     {
@@ -2133,7 +2133,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_z",
-      "community": 12,
+      "community": 10,
       "norm_label": ".z()"
     },
     {
@@ -2151,7 +2151,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_set",
-      "community": 12,
+      "community": 10,
       "norm_label": ".set()"
     },
     {
@@ -2160,7 +2160,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_clone",
-      "community": 12,
+      "community": 10,
       "norm_label": ".clone()"
     },
     {
@@ -2169,7 +2169,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_copy",
-      "community": 12,
+      "community": 10,
       "norm_label": ".copy()"
     },
     {
@@ -2178,7 +2178,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_setfromeuler",
-      "community": 12,
+      "community": 10,
       "norm_label": ".setfromeuler()"
     },
     {
@@ -2196,7 +2196,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_setfromrotationmatrix",
-      "community": 12,
+      "community": 10,
       "norm_label": ".setfromrotationmatrix()"
     },
     {
@@ -2223,7 +2223,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_rotatetowards",
-      "community": 12,
+      "community": 10,
       "norm_label": ".rotatetowards()"
     },
     {
@@ -2232,7 +2232,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_identity",
-      "community": 12,
+      "community": 10,
       "norm_label": ".identity()"
     },
     {
@@ -2241,7 +2241,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_invert",
-      "community": 12,
+      "community": 10,
       "norm_label": ".invert()"
     },
     {
@@ -2250,7 +2250,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_conjugate",
-      "community": 12,
+      "community": 10,
       "norm_label": ".conjugate()"
     },
     {
@@ -2259,7 +2259,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_dot",
-      "community": 12,
+      "community": 10,
       "norm_label": ".dot()"
     },
     {
@@ -2268,7 +2268,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_lengthsq",
-      "community": 12,
+      "community": 10,
       "norm_label": ".lengthsq()"
     },
     {
@@ -2277,7 +2277,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_length",
-      "community": 12,
+      "community": 10,
       "norm_label": ".length()"
     },
     {
@@ -2286,7 +2286,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_normalize",
-      "community": 12,
+      "community": 10,
       "norm_label": ".normalize()"
     },
     {
@@ -2295,7 +2295,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_multiply",
-      "community": 12,
+      "community": 10,
       "norm_label": ".multiply()"
     },
     {
@@ -2304,7 +2304,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_premultiply",
-      "community": 12,
+      "community": 10,
       "norm_label": ".premultiply()"
     },
     {
@@ -2313,7 +2313,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_multiplyquaternions",
-      "community": 12,
+      "community": 10,
       "norm_label": ".multiplyquaternions()"
     },
     {
@@ -2322,7 +2322,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_slerp",
-      "community": 12,
+      "community": 10,
       "norm_label": ".slerp()"
     },
     {
@@ -2331,7 +2331,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_slerpquaternions",
-      "community": 12,
+      "community": 10,
       "norm_label": ".slerpquaternions()"
     },
     {
@@ -2349,7 +2349,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_equals",
-      "community": 12,
+      "community": 10,
       "norm_label": ".equals()"
     },
     {
@@ -2358,7 +2358,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_fromarray",
-      "community": 12,
+      "community": 10,
       "norm_label": ".fromarray()"
     },
     {
@@ -2367,7 +2367,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_toarray",
-      "community": 12,
+      "community": 10,
       "norm_label": ".toarray()"
     },
     {
@@ -2385,7 +2385,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_tojson",
-      "community": 3,
+      "community": 7,
       "norm_label": ".tojson()"
     },
     {
@@ -2394,7 +2394,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_onchange",
-      "community": 12,
+      "community": 10,
       "norm_label": "._onchange()"
     },
     {
@@ -2403,7 +2403,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_onchangecallback",
-      "community": 12,
+      "community": 10,
       "norm_label": "._onchangecallback()"
     },
     {
@@ -2412,7 +2412,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_pn_symbol_iterator",
-      "community": 12,
+      "community": 10,
       "norm_label": ".[symbol.iterator]()"
     },
     {
@@ -2826,7 +2826,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_u_manhattanlength",
-      "community": 8,
+      "community": 5,
       "norm_label": ".manhattanlength()"
     },
     {
@@ -2916,7 +2916,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_u_angleto",
-      "community": 12,
+      "community": 10,
       "norm_label": ".angleto()"
     },
     {
@@ -4077,7 +4077,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ct_makeperspective",
-      "community": 14,
+      "community": 11,
       "norm_label": ".makeperspective()"
     },
     {
@@ -4086,7 +4086,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ct_makeorthographic",
-      "community": 14,
+      "community": 11,
       "norm_label": ".makeorthographic()"
     },
     {
@@ -4122,7 +4122,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ja",
-      "community": 12,
+      "community": 10,
       "norm_label": "ja"
     },
     {
@@ -4131,7 +4131,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ja_constructor",
-      "community": 12,
+      "community": 10,
       "norm_label": ".constructor()"
     },
     {
@@ -4149,7 +4149,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ja_y",
-      "community": 12,
+      "community": 10,
       "norm_label": ".y()"
     },
     {
@@ -4167,7 +4167,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ja_order",
-      "community": 12,
+      "community": 10,
       "norm_label": ".order()"
     },
     {
@@ -4176,7 +4176,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ja_set",
-      "community": 12,
+      "community": 10,
       "norm_label": ".set()"
     },
     {
@@ -4185,7 +4185,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ja_clone",
-      "community": 12,
+      "community": 10,
       "norm_label": ".clone()"
     },
     {
@@ -4194,7 +4194,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ja_copy",
-      "community": 12,
+      "community": 10,
       "norm_label": ".copy()"
     },
     {
@@ -4212,7 +4212,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ja_setfromquaternion",
-      "community": 12,
+      "community": 10,
       "norm_label": ".setfromquaternion()"
     },
     {
@@ -4221,7 +4221,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ja_setfromvector3",
-      "community": 12,
+      "community": 10,
       "norm_label": ".setfromvector3()"
     },
     {
@@ -4230,7 +4230,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ja_reorder",
-      "community": 12,
+      "community": 10,
       "norm_label": ".reorder()"
     },
     {
@@ -4239,7 +4239,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ja_equals",
-      "community": 12,
+      "community": 10,
       "norm_label": ".equals()"
     },
     {
@@ -4248,7 +4248,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ja_fromarray",
-      "community": 12,
+      "community": 10,
       "norm_label": ".fromarray()"
     },
     {
@@ -4257,7 +4257,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ja_toarray",
-      "community": 12,
+      "community": 10,
       "norm_label": ".toarray()"
     },
     {
@@ -4275,7 +4275,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ja_onchangecallback",
-      "community": 12,
+      "community": 10,
       "norm_label": "._onchangecallback()"
     },
     {
@@ -4284,7 +4284,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ja_symbol_iterator",
-      "community": 12,
+      "community": 10,
       "norm_label": ".[symbol.iterator]()"
     },
     {
@@ -4293,7 +4293,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_xs_constructor",
-      "community": 10,
+      "community": 6,
       "norm_label": ".constructor()"
     },
     {
@@ -4302,7 +4302,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_xs_set",
-      "community": 10,
+      "community": 6,
       "norm_label": ".set()"
     },
     {
@@ -4311,7 +4311,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_xs_enable",
-      "community": 10,
+      "community": 6,
       "norm_label": ".enable()"
     },
     {
@@ -4320,7 +4320,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_xs_enableall",
-      "community": 10,
+      "community": 6,
       "norm_label": ".enableall()"
     },
     {
@@ -4329,7 +4329,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_xs_toggle",
-      "community": 10,
+      "community": 6,
       "norm_label": ".toggle()"
     },
     {
@@ -4338,7 +4338,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_xs_disable",
-      "community": 10,
+      "community": 6,
       "norm_label": ".disable()"
     },
     {
@@ -4347,7 +4347,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_xs_disableall",
-      "community": 10,
+      "community": 6,
       "norm_label": ".disableall()"
     },
     {
@@ -4365,7 +4365,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_xs_isenabled",
-      "community": 10,
+      "community": 6,
       "norm_label": ".isenabled()"
     },
     {
@@ -4770,7 +4770,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_it_tojson",
-      "community": 3,
+      "community": 0,
       "norm_label": ".tojson()"
     },
     {
@@ -4806,7 +4806,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ti_constructor",
-      "community": 1,
+      "community": 9,
       "norm_label": ".constructor()"
     },
     {
@@ -4878,7 +4878,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ti_setfromattributeandindices",
-      "community": 8,
+      "community": 1,
       "norm_label": ".setfromattributeandindices()"
     },
     {
@@ -4896,7 +4896,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ti_copy",
-      "community": 1,
+      "community": 11,
       "norm_label": ".copy()"
     },
     {
@@ -4959,7 +4959,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_sf",
-      "community": 11,
+      "community": 12,
       "norm_label": "sf()"
     },
     {
@@ -4968,7 +4968,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de",
-      "community": 11,
+      "community": 12,
       "norm_label": "de"
     },
     {
@@ -4977,7 +4977,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_constructor",
-      "community": 11,
+      "community": 12,
       "norm_label": ".constructor()"
     },
     {
@@ -4986,7 +4986,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_set",
-      "community": 11,
+      "community": 12,
       "norm_label": ".set()"
     },
     {
@@ -4995,7 +4995,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_setscalar",
-      "community": 2,
+      "community": 12,
       "norm_label": ".setscalar()"
     },
     {
@@ -5004,7 +5004,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_sethex",
-      "community": 11,
+      "community": 12,
       "norm_label": ".sethex()"
     },
     {
@@ -5013,7 +5013,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_setrgb",
-      "community": 11,
+      "community": 12,
       "norm_label": ".setrgb()"
     },
     {
@@ -5022,7 +5022,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_sethsl",
-      "community": 11,
+      "community": 12,
       "norm_label": ".sethsl()"
     },
     {
@@ -5031,7 +5031,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_setstyle",
-      "community": 11,
+      "community": 12,
       "norm_label": ".setstyle()"
     },
     {
@@ -5040,7 +5040,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_setcolorname",
-      "community": 11,
+      "community": 12,
       "norm_label": ".setcolorname()"
     },
     {
@@ -5049,7 +5049,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_clone",
-      "community": 11,
+      "community": 12,
       "norm_label": ".clone()"
     },
     {
@@ -5058,7 +5058,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_copy",
-      "community": 11,
+      "community": 12,
       "norm_label": ".copy()"
     },
     {
@@ -5067,7 +5067,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_copysrgbtolinear",
-      "community": 11,
+      "community": 12,
       "norm_label": ".copysrgbtolinear()"
     },
     {
@@ -5076,7 +5076,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_copylineartosrgb",
-      "community": 11,
+      "community": 12,
       "norm_label": ".copylineartosrgb()"
     },
     {
@@ -5085,7 +5085,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_convertsrgbtolinear",
-      "community": 11,
+      "community": 12,
       "norm_label": ".convertsrgbtolinear()"
     },
     {
@@ -5094,7 +5094,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_convertlineartosrgb",
-      "community": 11,
+      "community": 12,
       "norm_label": ".convertlineartosrgb()"
     },
     {
@@ -5103,7 +5103,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_gethex",
-      "community": 11,
+      "community": 7,
       "norm_label": ".gethex()"
     },
     {
@@ -5112,7 +5112,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_gethexstring",
-      "community": 11,
+      "community": 7,
       "norm_label": ".gethexstring()"
     },
     {
@@ -5121,7 +5121,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_gethsl",
-      "community": 11,
+      "community": 12,
       "norm_label": ".gethsl()"
     },
     {
@@ -5130,7 +5130,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_getrgb",
-      "community": 11,
+      "community": 12,
       "norm_label": ".getrgb()"
     },
     {
@@ -5148,7 +5148,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_offsethsl",
-      "community": 11,
+      "community": 12,
       "norm_label": ".offsethsl()"
     },
     {
@@ -5157,7 +5157,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_add",
-      "community": 11,
+      "community": 12,
       "norm_label": ".add()"
     },
     {
@@ -5166,7 +5166,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_addcolors",
-      "community": 11,
+      "community": 12,
       "norm_label": ".addcolors()"
     },
     {
@@ -5211,7 +5211,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_lerp",
-      "community": 11,
+      "community": 12,
       "norm_label": ".lerp()"
     },
     {
@@ -5220,7 +5220,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_lerpcolors",
-      "community": 11,
+      "community": 12,
       "norm_label": ".lerpcolors()"
     },
     {
@@ -5229,7 +5229,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_lerphsl",
-      "community": 11,
+      "community": 12,
       "norm_label": ".lerphsl()"
     },
     {
@@ -5238,7 +5238,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_setfromvector3",
-      "community": 11,
+      "community": 12,
       "norm_label": ".setfromvector3()"
     },
     {
@@ -5247,7 +5247,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_applymatrix3",
-      "community": 11,
+      "community": 12,
       "norm_label": ".applymatrix3()"
     },
     {
@@ -5256,7 +5256,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_equals",
-      "community": 11,
+      "community": 12,
       "norm_label": ".equals()"
     },
     {
@@ -5265,7 +5265,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_fromarray",
-      "community": 11,
+      "community": 12,
       "norm_label": ".fromarray()"
     },
     {
@@ -5274,7 +5274,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_toarray",
-      "community": 11,
+      "community": 12,
       "norm_label": ".toarray()"
     },
     {
@@ -5283,7 +5283,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_frombufferattribute",
-      "community": 8,
+      "community": 1,
       "norm_label": ".frombufferattribute()"
     },
     {
@@ -5292,7 +5292,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_tojson",
-      "community": 11,
+      "community": 7,
       "norm_label": ".tojson()"
     },
     {
@@ -5301,7 +5301,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_de_symbol_iterator",
-      "community": 11,
+      "community": 12,
       "norm_label": ".[symbol.iterator]()"
     },
     {
@@ -5319,7 +5319,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_in_constructor",
-      "community": 9,
+      "community": 3,
       "norm_label": ".constructor()"
     },
     {
@@ -5373,7 +5373,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_in_setvalues",
-      "community": 1,
+      "community": 9,
       "norm_label": ".setvalues()"
     },
     {
@@ -5382,7 +5382,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_in_tojson",
-      "community": 11,
+      "community": 7,
       "norm_label": ".tojson()"
     },
     {
@@ -5436,7 +5436,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_fr_constructor",
-      "community": 1,
+      "community": 9,
       "norm_label": ".constructor()"
     },
     {
@@ -5589,7 +5589,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ut_applymatrix4",
-      "community": 8,
+      "community": 1,
       "norm_label": ".applymatrix4()"
     },
     {
@@ -5598,7 +5598,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ut_applynormalmatrix",
-      "community": 8,
+      "community": 1,
       "norm_label": ".applynormalmatrix()"
     },
     {
@@ -5607,7 +5607,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_ut_transformdirection",
-      "community": 8,
+      "community": 1,
       "norm_label": ".transformdirection()"
     },
     {
@@ -6039,7 +6039,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_mt_constructor",
-      "community": 9,
+      "community": 3,
       "norm_label": ".constructor()"
     },
     {
@@ -6318,7 +6318,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_an_constructor",
-      "community": 3,
+      "community": 14,
       "norm_label": ".constructor()"
     },
     {
@@ -6417,7 +6417,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_co",
-      "community": 1,
+      "community": 11,
       "norm_label": "co()"
     },
     {
@@ -6426,7 +6426,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L10",
       "id": "herosection_pmx2b_s0_on",
-      "community": 1,
+      "community": 11,
       "norm_label": "on()"
     },
     {
@@ -6453,7 +6453,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L14",
       "id": "herosection_pmx2b_s0_ti_tojson",
-      "community": 11,
+      "community": 7,
       "norm_label": ".tojson()"
     },
     {
@@ -6525,7 +6525,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L14",
       "id": "herosection_pmx2b_s0_nn",
-      "community": 14,
+      "community": 11,
       "norm_label": "nn"
     },
     {
@@ -6534,7 +6534,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L14",
       "id": "herosection_pmx2b_s0_nn_constructor",
-      "community": 14,
+      "community": 11,
       "norm_label": ".constructor()"
     },
     {
@@ -6543,7 +6543,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L14",
       "id": "herosection_pmx2b_s0_nn_copy",
-      "community": 14,
+      "community": 11,
       "norm_label": ".copy()"
     },
     {
@@ -6552,7 +6552,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L14",
       "id": "herosection_pmx2b_s0_nn_setfocallength",
-      "community": 14,
+      "community": 11,
       "norm_label": ".setfocallength()"
     },
     {
@@ -6561,7 +6561,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L14",
       "id": "herosection_pmx2b_s0_nn_getfocallength",
-      "community": 14,
+      "community": 11,
       "norm_label": ".getfocallength()"
     },
     {
@@ -6570,7 +6570,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L14",
       "id": "herosection_pmx2b_s0_nn_geteffectivefov",
-      "community": 14,
+      "community": 11,
       "norm_label": ".geteffectivefov()"
     },
     {
@@ -6579,7 +6579,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L14",
       "id": "herosection_pmx2b_s0_nn_getfilmwidth",
-      "community": 14,
+      "community": 11,
       "norm_label": ".getfilmwidth()"
     },
     {
@@ -6588,7 +6588,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L14",
       "id": "herosection_pmx2b_s0_nn_getfilmheight",
-      "community": 14,
+      "community": 11,
       "norm_label": ".getfilmheight()"
     },
     {
@@ -6597,7 +6597,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L14",
       "id": "herosection_pmx2b_s0_nn_getviewbounds",
-      "community": 14,
+      "community": 11,
       "norm_label": ".getviewbounds()"
     },
     {
@@ -6606,7 +6606,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L14",
       "id": "herosection_pmx2b_s0_nn_getviewsize",
-      "community": 14,
+      "community": 11,
       "norm_label": ".getviewsize()"
     },
     {
@@ -6615,7 +6615,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L14",
       "id": "herosection_pmx2b_s0_nn_setviewoffset",
-      "community": 14,
+      "community": 11,
       "norm_label": ".setviewoffset()"
     },
     {
@@ -6624,7 +6624,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L14",
       "id": "herosection_pmx2b_s0_nn_clearviewoffset",
-      "community": 14,
+      "community": 11,
       "norm_label": ".clearviewoffset()"
     },
     {
@@ -6633,7 +6633,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L14",
       "id": "herosection_pmx2b_s0_nn_updateprojectionmatrix",
-      "community": 14,
+      "community": 11,
       "norm_label": ".updateprojectionmatrix()"
     },
     {
@@ -6642,7 +6642,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L14",
       "id": "herosection_pmx2b_s0_nn_tojson",
-      "community": 3,
+      "community": 7,
       "norm_label": ".tojson()"
     },
     {
@@ -6687,7 +6687,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L14",
       "id": "herosection_pmx2b_s0_ja_images",
-      "community": 12,
+      "community": 10,
       "norm_label": ".images()"
     },
     {
@@ -6696,7 +6696,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L14",
       "id": "herosection_pmx2b_s0_jd",
-      "community": 1,
+      "community": 11,
       "norm_label": "jd"
     },
     {
@@ -6705,7 +6705,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L14",
       "id": "herosection_pmx2b_s0_jd_constructor",
-      "community": 1,
+      "community": 11,
       "norm_label": ".constructor()"
     },
     {
@@ -6714,7 +6714,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L14",
       "id": "herosection_pmx2b_s0_jd_fromequirectangulartexture",
-      "community": 1,
+      "community": 11,
       "norm_label": ".fromequirectangulartexture()"
     },
     {
@@ -6723,7 +6723,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L49",
       "id": "herosection_pmx2b_s0_jd_clear",
-      "community": 1,
+      "community": 11,
       "norm_label": ".clear()"
     },
     {
@@ -7119,7 +7119,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3517",
       "id": "herosection_pmx2b_s0_nr",
-      "community": 14,
+      "community": 11,
       "norm_label": "nr"
     },
     {
@@ -7128,7 +7128,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3517",
       "id": "herosection_pmx2b_s0_nr_constructor",
-      "community": 14,
+      "community": 11,
       "norm_label": ".constructor()"
     },
     {
@@ -7137,7 +7137,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3517",
       "id": "herosection_pmx2b_s0_nr_copy",
-      "community": 14,
+      "community": 11,
       "norm_label": ".copy()"
     },
     {
@@ -7146,7 +7146,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3517",
       "id": "herosection_pmx2b_s0_nr_setviewoffset",
-      "community": 14,
+      "community": 11,
       "norm_label": ".setviewoffset()"
     },
     {
@@ -7155,7 +7155,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3517",
       "id": "herosection_pmx2b_s0_nr_clearviewoffset",
-      "community": 14,
+      "community": 11,
       "norm_label": ".clearviewoffset()"
     },
     {
@@ -7164,7 +7164,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3517",
       "id": "herosection_pmx2b_s0_nr_updateprojectionmatrix",
-      "community": 14,
+      "community": 11,
       "norm_label": ".updateprojectionmatrix()"
     },
     {
@@ -7173,7 +7173,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3517",
       "id": "herosection_pmx2b_s0_nr_tojson",
-      "community": 14,
+      "community": 11,
       "norm_label": ".tojson()"
     },
     {
@@ -7227,7 +7227,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3517",
       "id": "herosection_pmx2b_s0_yd_dispose",
-      "community": 1,
+      "community": 3,
       "norm_label": ".dispose()"
     },
     {
@@ -7434,7 +7434,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3667",
       "id": "herosection_pmx2b_s0_jd_copy",
-      "community": 1,
+      "community": 11,
       "norm_label": ".copy()"
     },
     {
@@ -7443,7 +7443,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3667",
       "id": "herosection_pmx2b_s0_jd_tojson",
-      "community": 1,
+      "community": 11,
       "norm_label": ".tojson()"
     },
     {
@@ -7776,7 +7776,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3669",
       "id": "herosection_pmx2b_s0_dg",
-      "community": 2,
+      "community": 0,
       "norm_label": "dg()"
     },
     {
@@ -7794,7 +7794,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3673",
       "id": "herosection_pmx2b_s0_nt",
-      "community": 1,
+      "community": 11,
       "norm_label": "nt()"
     },
     {
@@ -7875,7 +7875,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3696",
       "id": "herosection_pmx2b_s0_ft",
-      "community": 2,
+      "community": 0,
       "norm_label": "ft()"
     },
     {
@@ -7956,7 +7956,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3717",
       "id": "herosection_pmx2b_s0_yt_dispose",
-      "community": 1,
+      "community": 11,
       "norm_label": ".dispose()"
     },
     {
@@ -8037,7 +8037,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3717",
       "id": "herosection_pmx2b_s0_kd",
-      "community": 1,
+      "community": 9,
       "norm_label": "kd"
     },
     {
@@ -8046,7 +8046,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3717",
       "id": "herosection_pmx2b_s0_kd_constructor",
-      "community": 1,
+      "community": 9,
       "norm_label": ".constructor()"
     },
     {
@@ -8055,7 +8055,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3717",
       "id": "herosection_pmx2b_s0_kd_copy",
-      "community": 1,
+      "community": 9,
       "norm_label": ".copy()"
     },
     {
@@ -8262,7 +8262,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_vt",
-      "community": 2,
+      "community": 1,
       "norm_label": "vt()"
     },
     {
@@ -8271,7 +8271,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_d",
-      "community": 9,
+      "community": 3,
       "norm_label": "$d"
     },
     {
@@ -8289,7 +8289,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_d_coordinatesystem",
-      "community": 9,
+      "community": 3,
       "norm_label": ".coordinatesystem()"
     },
     {
@@ -8298,7 +8298,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_d_outputcolorspace",
-      "community": 9,
+      "community": 3,
       "norm_label": ".outputcolorspace()"
     },
     {
@@ -8307,7 +8307,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_d_outputencoding",
-      "community": 9,
+      "community": 3,
       "norm_label": ".outputencoding()"
     },
     {
@@ -8316,7 +8316,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_d_uselegacylights",
-      "community": 9,
+      "community": 3,
       "norm_label": ".uselegacylights()"
     },
     {
@@ -8325,7 +8325,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_gv",
-      "community": 1,
+      "community": 9,
       "norm_label": "gv"
     },
     {
@@ -8334,7 +8334,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_vu",
-      "community": 11,
+      "community": 7,
       "norm_label": "vu"
     },
     {
@@ -8343,7 +8343,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_vu_constructor",
-      "community": 11,
+      "community": 7,
       "norm_label": ".constructor()"
     },
     {
@@ -8352,7 +8352,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_vu_clone",
-      "community": 11,
+      "community": 7,
       "norm_label": ".clone()"
     },
     {
@@ -8361,7 +8361,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_vu_tojson",
-      "community": 11,
+      "community": 7,
       "norm_label": ".tojson()"
     },
     {
@@ -8370,7 +8370,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_yu",
-      "community": 11,
+      "community": 7,
       "norm_label": "yu"
     },
     {
@@ -8379,7 +8379,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_yu_constructor",
-      "community": 11,
+      "community": 7,
       "norm_label": ".constructor()"
     },
     {
@@ -8388,7 +8388,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_yu_clone",
-      "community": 11,
+      "community": 7,
       "norm_label": ".clone()"
     },
     {
@@ -8397,7 +8397,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_yu_tojson",
-      "community": 11,
+      "community": 7,
       "norm_label": ".tojson()"
     },
     {
@@ -8406,7 +8406,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ep",
-      "community": 9,
+      "community": 2,
       "norm_label": "ep"
     },
     {
@@ -8415,7 +8415,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ep_constructor",
-      "community": 9,
+      "community": 2,
       "norm_label": ".constructor()"
     },
     {
@@ -8424,7 +8424,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ep_copy",
-      "community": 9,
+      "community": 2,
       "norm_label": ".copy()"
     },
     {
@@ -8433,7 +8433,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ep_tojson",
-      "community": 9,
+      "community": 2,
       "norm_label": ".tojson()"
     },
     {
@@ -8442,7 +8442,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_xu",
-      "community": 9,
+      "community": 3,
       "norm_label": "xu"
     },
     {
@@ -8451,7 +8451,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_xu_constructor",
-      "community": 9,
+      "community": 3,
       "norm_label": ".constructor()"
     },
     {
@@ -8460,7 +8460,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_xu_onuploadcallback",
-      "community": 9,
+      "community": 3,
       "norm_label": ".onuploadcallback()"
     },
     {
@@ -8469,7 +8469,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_xu_needsupdate",
-      "community": 9,
+      "community": 3,
       "norm_label": ".needsupdate()"
     },
     {
@@ -8487,7 +8487,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_xu_setusage",
-      "community": 9,
+      "community": 3,
       "norm_label": ".setusage()"
     },
     {
@@ -8496,7 +8496,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_xu_addupdaterange",
-      "community": 9,
+      "community": 3,
       "norm_label": ".addupdaterange()"
     },
     {
@@ -8505,7 +8505,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_xu_clearupdateranges",
-      "community": 9,
+      "community": 3,
       "norm_label": ".clearupdateranges()"
     },
     {
@@ -8514,7 +8514,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_xu_copy",
-      "community": 9,
+      "community": 3,
       "norm_label": ".copy()"
     },
     {
@@ -8523,7 +8523,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_xu_copyat",
-      "community": 9,
+      "community": 3,
       "norm_label": ".copyat()"
     },
     {
@@ -8532,7 +8532,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_xu_set",
-      "community": 9,
+      "community": 3,
       "norm_label": ".set()"
     },
     {
@@ -8541,7 +8541,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_xu_clone",
-      "community": 9,
+      "community": 3,
       "norm_label": ".clone()"
     },
     {
@@ -8550,7 +8550,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_xu_onupload",
-      "community": 9,
+      "community": 3,
       "norm_label": ".onupload()"
     },
     {
@@ -8559,7 +8559,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_xu_tojson",
-      "community": 9,
+      "community": 3,
       "norm_label": ".tojson()"
     },
     {
@@ -8604,7 +8604,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ws_applymatrix4",
-      "community": 8,
+      "community": 1,
       "norm_label": ".applymatrix4()"
     },
     {
@@ -8613,7 +8613,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ws_applynormalmatrix",
-      "community": 8,
+      "community": 1,
       "norm_label": ".applynormalmatrix()"
     },
     {
@@ -8622,7 +8622,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ws_transformdirection",
-      "community": 8,
+      "community": 1,
       "norm_label": ".transformdirection()"
     },
     {
@@ -8685,7 +8685,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ws_getx",
-      "community": 8,
+      "community": 1,
       "norm_label": ".getx()"
     },
     {
@@ -8730,7 +8730,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ws_setxyz",
-      "community": 8,
+      "community": 1,
       "norm_label": ".setxyz()"
     },
     {
@@ -8775,7 +8775,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_tp_constructor",
-      "community": 1,
+      "community": 9,
       "norm_label": ".constructor()"
     },
     {
@@ -9000,7 +9000,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_xv_normalizeskinweights",
-      "community": 8,
+      "community": 1,
       "norm_label": ".normalizeskinweights()"
     },
     {
@@ -9162,7 +9162,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ro",
-      "community": 3,
+      "community": 7,
       "norm_label": "ro"
     },
     {
@@ -9171,7 +9171,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ro_constructor",
-      "community": 3,
+      "community": 7,
       "norm_label": ".constructor()"
     },
     {
@@ -9180,7 +9180,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ro_copy",
-      "community": 3,
+      "community": 7,
       "norm_label": ".copy()"
     },
     {
@@ -9189,7 +9189,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ro_tojson",
-      "community": 3,
+      "community": 7,
       "norm_label": ".tojson()"
     },
     {
@@ -9522,7 +9522,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_hn_constructor",
-      "community": 1,
+      "community": 9,
       "norm_label": ".constructor()"
     },
     {
@@ -9540,7 +9540,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ur",
-      "community": 3,
+      "community": 14,
       "norm_label": "ur"
     },
     {
@@ -9549,7 +9549,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ur_constructor",
-      "community": 3,
+      "community": 14,
       "norm_label": ".constructor()"
     },
     {
@@ -9558,7 +9558,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ur_copy",
-      "community": 3,
+      "community": 14,
       "norm_label": ".copy()"
     },
     {
@@ -9567,7 +9567,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ur_computelinedistances",
-      "community": 3,
+      "community": 1,
       "norm_label": ".computelinedistances()"
     },
     {
@@ -9585,7 +9585,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ur_updatemorphtargets",
-      "community": 3,
+      "community": 14,
       "norm_label": ".updatemorphtargets()"
     },
     {
@@ -9594,7 +9594,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_wi_computelinedistances",
-      "community": 8,
+      "community": 1,
       "norm_label": ".computelinedistances()"
     },
     {
@@ -9630,7 +9630,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ip_constructor",
-      "community": 1,
+      "community": 9,
       "norm_label": ".constructor()"
     },
     {
@@ -9648,7 +9648,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_wv",
-      "community": 3,
+      "community": 14,
       "norm_label": "wv"
     },
     {
@@ -9657,7 +9657,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_wv_constructor",
-      "community": 3,
+      "community": 14,
       "norm_label": ".constructor()"
     },
     {
@@ -9666,7 +9666,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_wv_copy",
-      "community": 3,
+      "community": 14,
       "norm_label": ".copy()"
     },
     {
@@ -9684,7 +9684,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_wv_updatemorphtargets",
-      "community": 3,
+      "community": 14,
       "norm_label": ".updatemorphtargets()"
     },
     {
@@ -9837,7 +9837,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_bi_getspacedpoints",
-      "community": 3,
+      "community": 7,
       "norm_label": ".getspacedpoints()"
     },
     {
@@ -10017,7 +10017,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_bv",
-      "community": 3,
+      "community": 7,
       "norm_label": "bv"
     },
     {
@@ -10026,7 +10026,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_bv_constructor",
-      "community": 3,
+      "community": 7,
       "norm_label": ".constructor()"
     },
     {
@@ -10035,7 +10035,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_bv_getpoint",
-      "community": 3,
+      "community": 7,
       "norm_label": ".getpoint()"
     },
     {
@@ -10044,7 +10044,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_bv_copy",
-      "community": 3,
+      "community": 7,
       "norm_label": ".copy()"
     },
     {
@@ -10053,7 +10053,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_bv_tojson",
-      "community": 3,
+      "community": 7,
       "norm_label": ".tojson()"
     },
     {
@@ -10062,7 +10062,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_bv_fromjson",
-      "community": 3,
+      "community": 7,
       "norm_label": ".fromjson()"
     },
     {
@@ -10080,7 +10080,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_nb",
-      "community": 7,
+      "community": 2,
       "norm_label": "nb()"
     },
     {
@@ -10089,7 +10089,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ib",
-      "community": 7,
+      "community": 2,
       "norm_label": "ib()"
     },
     {
@@ -10107,7 +10107,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_sa",
-      "community": 7,
+      "community": 2,
       "norm_label": "sa()"
     },
     {
@@ -10134,7 +10134,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ab",
-      "community": 3,
+      "community": 7,
       "norm_label": "ab()"
     },
     {
@@ -10269,7 +10269,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_op",
-      "community": 1,
+      "community": 7,
       "norm_label": "op"
     },
     {
@@ -10278,7 +10278,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_op_constructor",
-      "community": 1,
+      "community": 7,
       "norm_label": ".constructor()"
     },
     {
@@ -10305,7 +10305,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_op_gettangent",
-      "community": 1,
+      "community": 7,
       "norm_label": ".gettangent()"
     },
     {
@@ -10314,7 +10314,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_op_gettangentat",
-      "community": 3,
+      "community": 7,
       "norm_label": ".gettangentat()"
     },
     {
@@ -10323,7 +10323,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_op_copy",
-      "community": 1,
+      "community": 7,
       "norm_label": ".copy()"
     },
     {
@@ -10332,7 +10332,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_op_tojson",
-      "community": 1,
+      "community": 7,
       "norm_label": ".tojson()"
     },
     {
@@ -10341,7 +10341,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_op_fromjson",
-      "community": 1,
+      "community": 7,
       "norm_label": ".fromjson()"
     },
     {
@@ -10350,7 +10350,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_cv",
-      "community": 3,
+      "community": 7,
       "norm_label": "cv"
     },
     {
@@ -10359,7 +10359,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_cv_constructor",
-      "community": 3,
+      "community": 7,
       "norm_label": ".constructor()"
     },
     {
@@ -10377,7 +10377,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_cv_getpointat",
-      "community": 3,
+      "community": 7,
       "norm_label": ".getpointat()"
     },
     {
@@ -10386,7 +10386,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_cv_gettangent",
-      "community": 3,
+      "community": 7,
       "norm_label": ".gettangent()"
     },
     {
@@ -10395,7 +10395,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_cv_gettangentat",
-      "community": 3,
+      "community": 7,
       "norm_label": ".gettangentat()"
     },
     {
@@ -10404,7 +10404,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_cv_copy",
-      "community": 3,
+      "community": 7,
       "norm_label": ".copy()"
     },
     {
@@ -10413,7 +10413,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_cv_tojson",
-      "community": 3,
+      "community": 7,
       "norm_label": ".tojson()"
     },
     {
@@ -10422,7 +10422,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_cv_fromjson",
-      "community": 3,
+      "community": 7,
       "norm_label": ".fromjson()"
     },
     {
@@ -10773,7 +10773,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_za_tojson",
-      "community": 3,
+      "community": 7,
       "norm_label": ".tojson()"
     },
     {
@@ -10791,7 +10791,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_qa",
-      "community": 1,
+      "community": 3,
       "norm_label": "qa"
     },
     {
@@ -10809,7 +10809,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_qa_copy",
-      "community": 1,
+      "community": 3,
       "norm_label": ".copy()"
     },
     {
@@ -10818,7 +10818,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_qa_fromjson",
-      "community": 1,
+      "community": 3,
       "norm_label": ".fromjson()"
     },
     {
@@ -11259,7 +11259,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_vi",
-      "community": 16,
+      "community": 3,
       "norm_label": "vi"
     },
     {
@@ -11268,7 +11268,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_vi_area",
-      "community": 16,
+      "community": 3,
       "norm_label": ".area()"
     },
     {
@@ -11277,7 +11277,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_vi_isclockwise",
-      "community": 16,
+      "community": 3,
       "norm_label": ".isclockwise()"
     },
     {
@@ -11286,7 +11286,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_vi_triangulateshape",
-      "community": 16,
+      "community": 3,
       "norm_label": ".triangulateshape()"
     },
     {
@@ -11295,7 +11295,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_u0",
-      "community": 16,
+      "community": 1,
       "norm_label": "u0()"
     },
     {
@@ -11304,7 +11304,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_h0",
-      "community": 16,
+      "community": 3,
       "norm_label": "h0()"
     },
     {
@@ -11340,7 +11340,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ru_tojson",
-      "community": 3,
+      "community": 7,
       "norm_label": ".tojson()"
     },
     {
@@ -11691,7 +11691,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_f0",
-      "community": 1,
+      "community": 0,
       "norm_label": "f0()"
     },
     {
@@ -11700,7 +11700,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_uv",
-      "community": 1,
+      "community": 9,
       "norm_label": "uv"
     },
     {
@@ -11709,7 +11709,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_uv_constructor",
-      "community": 1,
+      "community": 9,
       "norm_label": ".constructor()"
     },
     {
@@ -11718,7 +11718,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_uv_copy",
-      "community": 1,
+      "community": 9,
       "norm_label": ".copy()"
     },
     {
@@ -11745,7 +11745,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_up_constructor",
-      "community": 1,
+      "community": 9,
       "norm_label": ".constructor()"
     },
     {
@@ -11763,7 +11763,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_fv",
-      "community": 5,
+      "community": 9,
       "norm_label": "fv"
     },
     {
@@ -11772,7 +11772,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_fv_constructor",
-      "community": 5,
+      "community": 9,
       "norm_label": ".constructor()"
     },
     {
@@ -11781,7 +11781,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_fv_anisotropy",
-      "community": 5,
+      "community": 9,
       "norm_label": ".anisotropy()"
     },
     {
@@ -11790,7 +11790,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_fv_clearcoat",
-      "community": 5,
+      "community": 9,
       "norm_label": ".clearcoat()"
     },
     {
@@ -11799,7 +11799,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_fv_iridescence",
-      "community": 5,
+      "community": 9,
       "norm_label": ".iridescence()"
     },
     {
@@ -11808,7 +11808,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_fv_sheen",
-      "community": 5,
+      "community": 9,
       "norm_label": ".sheen()"
     },
     {
@@ -11817,7 +11817,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_fv_transmission",
-      "community": 5,
+      "community": 9,
       "norm_label": ".transmission()"
     },
     {
@@ -11826,7 +11826,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_fv_copy",
-      "community": 5,
+      "community": 9,
       "norm_label": ".copy()"
     },
     {
@@ -11835,7 +11835,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_zv",
-      "community": 1,
+      "community": 9,
       "norm_label": "zv"
     },
     {
@@ -11844,7 +11844,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_zv_constructor",
-      "community": 1,
+      "community": 9,
       "norm_label": ".constructor()"
     },
     {
@@ -11853,7 +11853,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_zv_copy",
-      "community": 1,
+      "community": 9,
       "norm_label": ".copy()"
     },
     {
@@ -11889,7 +11889,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_hv",
-      "community": 1,
+      "community": 9,
       "norm_label": "hv"
     },
     {
@@ -11898,7 +11898,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_hv_constructor",
-      "community": 1,
+      "community": 9,
       "norm_label": ".constructor()"
     },
     {
@@ -11907,7 +11907,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_hv_copy",
-      "community": 1,
+      "community": 9,
       "norm_label": ".copy()"
     },
     {
@@ -11916,7 +11916,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_gv_constructor",
-      "community": 1,
+      "community": 9,
       "norm_label": ".constructor()"
     },
     {
@@ -11925,7 +11925,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_gv_copy",
-      "community": 1,
+      "community": 9,
       "norm_label": ".copy()"
     },
     {
@@ -12078,7 +12078,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ai",
-      "community": 3,
+      "community": 14,
       "norm_label": "ai"
     },
     {
@@ -12087,7 +12087,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ai_constructor",
-      "community": 3,
+      "community": 14,
       "norm_label": ".constructor()"
     },
     {
@@ -12096,7 +12096,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ai_tojson",
-      "community": 3,
+      "community": 14,
       "norm_label": ".tojson()"
     },
     {
@@ -12105,7 +12105,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ai_interpolantfactorymethoddiscrete",
-      "community": 3,
+      "community": 14,
       "norm_label": ".interpolantfactorymethoddiscrete()"
     },
     {
@@ -12114,7 +12114,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ai_interpolantfactorymethodlinear",
-      "community": 3,
+      "community": 14,
       "norm_label": ".interpolantfactorymethodlinear()"
     },
     {
@@ -12123,7 +12123,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ai_interpolantfactorymethodsmooth",
-      "community": 3,
+      "community": 14,
       "norm_label": ".interpolantfactorymethodsmooth()"
     },
     {
@@ -12132,7 +12132,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ai_setinterpolation",
-      "community": 3,
+      "community": 14,
       "norm_label": ".setinterpolation()"
     },
     {
@@ -12141,7 +12141,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ai_getinterpolation",
-      "community": 3,
+      "community": 14,
       "norm_label": ".getinterpolation()"
     },
     {
@@ -12150,7 +12150,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ai_getvaluesize",
-      "community": 3,
+      "community": 14,
       "norm_label": ".getvaluesize()"
     },
     {
@@ -12159,7 +12159,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ai_shift",
-      "community": 3,
+      "community": 0,
       "norm_label": ".shift()"
     },
     {
@@ -12168,7 +12168,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ai_scale",
-      "community": 3,
+      "community": 14,
       "norm_label": ".scale()"
     },
     {
@@ -12177,7 +12177,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ai_trim",
-      "community": 3,
+      "community": 14,
       "norm_label": ".trim()"
     },
     {
@@ -12186,7 +12186,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ai_validate",
-      "community": 3,
+      "community": 14,
       "norm_label": ".validate()"
     },
     {
@@ -12195,7 +12195,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ai_optimize",
-      "community": 3,
+      "community": 14,
       "norm_label": ".optimize()"
     },
     {
@@ -12204,7 +12204,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ai_clone",
-      "community": 3,
+      "community": 14,
       "norm_label": ".clone()"
     },
     {
@@ -12222,7 +12222,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_va",
-      "community": 1,
+      "community": 3,
       "norm_label": "va"
     },
     {
@@ -12258,7 +12258,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_uo",
-      "community": 3,
+      "community": 14,
       "norm_label": "uo"
     },
     {
@@ -12267,7 +12267,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_uo_interpolantfactorymethodlinear",
-      "community": 3,
+      "community": 14,
       "norm_label": ".interpolantfactorymethodlinear()"
     },
     {
@@ -12537,7 +12537,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ur_setmimetype",
-      "community": 3,
+      "community": 14,
       "norm_label": ".setmimetype()"
     },
     {
@@ -12591,7 +12591,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_xa_constructor",
-      "community": 8,
+      "community": 4,
       "norm_label": ".constructor()"
     },
     {
@@ -12627,7 +12627,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_zb",
-      "community": 10,
+      "community": 6,
       "norm_label": "zb"
     },
     {
@@ -12636,7 +12636,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_zb_constructor",
-      "community": 10,
+      "community": 6,
       "norm_label": ".constructor()"
     },
     {
@@ -12681,7 +12681,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_br",
-      "community": 11,
+      "community": 7,
       "norm_label": "br"
     },
     {
@@ -12690,7 +12690,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_br_constructor",
-      "community": 11,
+      "community": 7,
       "norm_label": ".constructor()"
     },
     {
@@ -12699,7 +12699,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_br_dispose",
-      "community": 11,
+      "community": 7,
       "norm_label": ".dispose()"
     },
     {
@@ -12708,7 +12708,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_br_copy",
-      "community": 11,
+      "community": 7,
       "norm_label": ".copy()"
     },
     {
@@ -12717,7 +12717,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_br_tojson",
-      "community": 11,
+      "community": 7,
       "norm_label": ".tojson()"
     },
     {
@@ -12735,7 +12735,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_mp",
-      "community": 1,
+      "community": 11,
       "norm_label": "mp"
     },
     {
@@ -12744,7 +12744,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_mp_constructor",
-      "community": 1,
+      "community": 11,
       "norm_label": ".constructor()"
     },
     {
@@ -12753,7 +12753,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_mp_getviewportcount",
-      "community": 1,
+      "community": 11,
       "norm_label": ".getviewportcount()"
     },
     {
@@ -12762,7 +12762,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_mp_getfrustum",
-      "community": 1,
+      "community": 11,
       "norm_label": ".getfrustum()"
     },
     {
@@ -12780,7 +12780,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_mp_getviewport",
-      "community": 1,
+      "community": 11,
       "norm_label": ".getviewport()"
     },
     {
@@ -12789,7 +12789,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_mp_getframeextents",
-      "community": 1,
+      "community": 11,
       "norm_label": ".getframeextents()"
     },
     {
@@ -12798,7 +12798,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_mp_dispose",
-      "community": 1,
+      "community": 11,
       "norm_label": ".dispose()"
     },
     {
@@ -12807,7 +12807,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_mp_copy",
-      "community": 1,
+      "community": 11,
       "norm_label": ".copy()"
     },
     {
@@ -12816,7 +12816,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_mp_clone",
-      "community": 1,
+      "community": 11,
       "norm_label": ".clone()"
     },
     {
@@ -12825,7 +12825,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_mp_tojson",
-      "community": 1,
+      "community": 11,
       "norm_label": ".tojson()"
     },
     {
@@ -12834,7 +12834,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_kb",
-      "community": 10,
+      "community": 6,
       "norm_label": "kb"
     },
     {
@@ -12843,7 +12843,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_kb_constructor",
-      "community": 10,
+      "community": 6,
       "norm_label": ".constructor()"
     },
     {
@@ -12852,7 +12852,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_kb_updatematrices",
-      "community": 10,
+      "community": 6,
       "norm_label": ".updatematrices()"
     },
     {
@@ -12861,7 +12861,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_kb_copy",
-      "community": 10,
+      "community": 6,
       "norm_label": ".copy()"
     },
     {
@@ -13167,7 +13167,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ny_toarray",
-      "community": 3,
+      "community": 7,
       "norm_label": ".toarray()"
     },
     {
@@ -13185,7 +13185,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_iy",
-      "community": 3,
+      "community": 7,
       "norm_label": "iy"
     },
     {
@@ -13194,7 +13194,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_iy_constructor",
-      "community": 3,
+      "community": 7,
       "norm_label": ".constructor()"
     },
     {
@@ -13203,7 +13203,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_iy_copy",
-      "community": 3,
+      "community": 7,
       "norm_label": ".copy()"
     },
     {
@@ -13221,7 +13221,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_iy_tojson",
-      "community": 3,
+      "community": 7,
       "norm_label": ".tojson()"
     },
     {
@@ -13284,7 +13284,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_td",
-      "community": 7,
+      "community": 4,
       "norm_label": "td"
     },
     {
@@ -13293,7 +13293,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_td_decodetext",
-      "community": 7,
+      "community": 4,
       "norm_label": ".decodetext()"
     },
     {
@@ -13320,7 +13320,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ry",
-      "community": 3,
+      "community": 7,
       "norm_label": "ry"
     },
     {
@@ -13329,7 +13329,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ry_constructor",
-      "community": 3,
+      "community": 7,
       "norm_label": ".constructor()"
     },
     {
@@ -13338,7 +13338,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ry_copy",
-      "community": 3,
+      "community": 7,
       "norm_label": ".copy()"
     },
     {
@@ -13347,7 +13347,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ry_tojson",
-      "community": 3,
+      "community": 7,
       "norm_label": ".tojson()"
     },
     {
@@ -13356,7 +13356,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_sy",
-      "community": 2,
+      "community": 12,
       "norm_label": "sy"
     },
     {
@@ -13365,7 +13365,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_sy_constructor",
-      "community": 2,
+      "community": 12,
       "norm_label": ".constructor()"
     },
     {
@@ -13563,7 +13563,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_gp_getcontext",
-      "community": 9,
+      "community": 3,
       "norm_label": ".getcontext()"
     },
     {
@@ -13599,7 +13599,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_qb",
-      "community": 10,
+      "community": 6,
       "norm_label": "qb"
     },
     {
@@ -13608,7 +13608,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_qb_constructor",
-      "community": 10,
+      "community": 6,
       "norm_label": ".constructor()"
     },
     {
@@ -13689,7 +13689,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_zb_getinput",
-      "community": 10,
+      "community": 6,
       "norm_label": ".getinput()"
     },
     {
@@ -13698,7 +13698,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_zb_removefilter",
-      "community": 10,
+      "community": 6,
       "norm_label": ".removefilter()"
     },
     {
@@ -13707,7 +13707,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_zb_getfilter",
-      "community": 10,
+      "community": 6,
       "norm_label": ".getfilter()"
     },
     {
@@ -13716,7 +13716,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_zb_setfilter",
-      "community": 10,
+      "community": 6,
       "norm_label": ".setfilter()"
     },
     {
@@ -13725,7 +13725,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_zb_getmastervolume",
-      "community": 10,
+      "community": 6,
       "norm_label": ".getmastervolume()"
     },
     {
@@ -13734,7 +13734,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_zb_setmastervolume",
-      "community": 10,
+      "community": 6,
       "norm_label": ".setmastervolume()"
     },
     {
@@ -13752,7 +13752,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy",
-      "community": 10,
+      "community": 6,
       "norm_label": "oy"
     },
     {
@@ -13761,7 +13761,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_constructor",
-      "community": 10,
+      "community": 6,
       "norm_label": ".constructor()"
     },
     {
@@ -13770,7 +13770,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_getoutput",
-      "community": 10,
+      "community": 6,
       "norm_label": ".getoutput()"
     },
     {
@@ -13779,7 +13779,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_setnodesource",
-      "community": 10,
+      "community": 6,
       "norm_label": ".setnodesource()"
     },
     {
@@ -13788,7 +13788,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_setmediaelementsource",
-      "community": 10,
+      "community": 6,
       "norm_label": ".setmediaelementsource()"
     },
     {
@@ -13797,7 +13797,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_setmediastreamsource",
-      "community": 10,
+      "community": 6,
       "norm_label": ".setmediastreamsource()"
     },
     {
@@ -13806,7 +13806,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_setbuffer",
-      "community": 10,
+      "community": 6,
       "norm_label": ".setbuffer()"
     },
     {
@@ -13815,7 +13815,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_play",
-      "community": 10,
+      "community": 6,
       "norm_label": ".play()"
     },
     {
@@ -13824,7 +13824,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_pause",
-      "community": 10,
+      "community": 6,
       "norm_label": ".pause()"
     },
     {
@@ -13833,7 +13833,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_stop",
-      "community": 10,
+      "community": 6,
       "norm_label": ".stop()"
     },
     {
@@ -13842,7 +13842,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_connect",
-      "community": 10,
+      "community": 6,
       "norm_label": ".connect()"
     },
     {
@@ -13851,7 +13851,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_disconnect",
-      "community": 10,
+      "community": 6,
       "norm_label": ".disconnect()"
     },
     {
@@ -13860,7 +13860,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_getfilters",
-      "community": 10,
+      "community": 6,
       "norm_label": ".getfilters()"
     },
     {
@@ -13869,7 +13869,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_setfilters",
-      "community": 10,
+      "community": 6,
       "norm_label": ".setfilters()"
     },
     {
@@ -13878,7 +13878,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_setdetune",
-      "community": 10,
+      "community": 6,
       "norm_label": ".setdetune()"
     },
     {
@@ -13887,7 +13887,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_getdetune",
-      "community": 10,
+      "community": 6,
       "norm_label": ".getdetune()"
     },
     {
@@ -13896,7 +13896,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_getfilter",
-      "community": 10,
+      "community": 6,
       "norm_label": ".getfilter()"
     },
     {
@@ -13905,7 +13905,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_setfilter",
-      "community": 10,
+      "community": 6,
       "norm_label": ".setfilter()"
     },
     {
@@ -13914,7 +13914,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_setplaybackrate",
-      "community": 10,
+      "community": 6,
       "norm_label": ".setplaybackrate()"
     },
     {
@@ -13923,7 +13923,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_getplaybackrate",
-      "community": 10,
+      "community": 6,
       "norm_label": ".getplaybackrate()"
     },
     {
@@ -13932,7 +13932,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_onended",
-      "community": 10,
+      "community": 6,
       "norm_label": ".onended()"
     },
     {
@@ -13941,7 +13941,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_getloop",
-      "community": 10,
+      "community": 6,
       "norm_label": ".getloop()"
     },
     {
@@ -13950,7 +13950,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_setloop",
-      "community": 10,
+      "community": 6,
       "norm_label": ".setloop()"
     },
     {
@@ -13959,7 +13959,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_setloopstart",
-      "community": 10,
+      "community": 6,
       "norm_label": ".setloopstart()"
     },
     {
@@ -13968,7 +13968,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_setloopend",
-      "community": 10,
+      "community": 6,
       "norm_label": ".setloopend()"
     },
     {
@@ -13977,7 +13977,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_getvolume",
-      "community": 10,
+      "community": 6,
       "norm_label": ".getvolume()"
     },
     {
@@ -13986,7 +13986,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_oy_setvolume",
-      "community": 10,
+      "community": 6,
       "norm_label": ".setvolume()"
     },
     {
@@ -13995,7 +13995,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_kb_connect",
-      "community": 10,
+      "community": 6,
       "norm_label": ".connect()"
     },
     {
@@ -14004,7 +14004,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_kb_disconnect",
-      "community": 10,
+      "community": 6,
       "norm_label": ".disconnect()"
     },
     {
@@ -14013,7 +14013,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_kb_getoutput",
-      "community": 10,
+      "community": 6,
       "norm_label": ".getoutput()"
     },
     {
@@ -14022,7 +14022,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_kb_getrefdistance",
-      "community": 10,
+      "community": 6,
       "norm_label": ".getrefdistance()"
     },
     {
@@ -14031,7 +14031,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_kb_setrefdistance",
-      "community": 10,
+      "community": 6,
       "norm_label": ".setrefdistance()"
     },
     {
@@ -14040,7 +14040,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_kb_getrollofffactor",
-      "community": 10,
+      "community": 6,
       "norm_label": ".getrollofffactor()"
     },
     {
@@ -14049,7 +14049,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_kb_setrollofffactor",
-      "community": 10,
+      "community": 6,
       "norm_label": ".setrollofffactor()"
     },
     {
@@ -14058,7 +14058,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_kb_getdistancemodel",
-      "community": 10,
+      "community": 6,
       "norm_label": ".getdistancemodel()"
     },
     {
@@ -14067,7 +14067,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_kb_setdistancemodel",
-      "community": 10,
+      "community": 6,
       "norm_label": ".setdistancemodel()"
     },
     {
@@ -14076,7 +14076,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_kb_getmaxdistance",
-      "community": 10,
+      "community": 6,
       "norm_label": ".getmaxdistance()"
     },
     {
@@ -14085,7 +14085,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_kb_setmaxdistance",
-      "community": 10,
+      "community": 6,
       "norm_label": ".setmaxdistance()"
     },
     {
@@ -14094,7 +14094,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_kb_setdirectionalcone",
-      "community": 10,
+      "community": 6,
       "norm_label": ".setdirectionalcone()"
     },
     {
@@ -14112,7 +14112,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_qb_getfrequencydata",
-      "community": 10,
+      "community": 6,
       "norm_label": ".getfrequencydata()"
     },
     {
@@ -14121,7 +14121,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_qb_getaveragefrequency",
-      "community": 10,
+      "community": 6,
       "norm_label": ".getaveragefrequency()"
     },
     {
@@ -14400,7 +14400,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ct_getvalue_toarray",
-      "community": 3,
+      "community": 7,
       "norm_label": "._getvalue_toarray()"
     },
     {
@@ -14634,7 +14634,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ly_play",
-      "community": 10,
+      "community": 6,
       "norm_label": ".play()"
     },
     {
@@ -14643,7 +14643,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ly_stop",
-      "community": 10,
+      "community": 6,
       "norm_label": ".stop()"
     },
     {
@@ -15084,7 +15084,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ua_stopallaction",
-      "community": 10,
+      "community": 6,
       "norm_label": ".stopallaction()"
     },
     {
@@ -15174,7 +15174,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_fa_constructor",
-      "community": 9,
+      "community": 3,
       "norm_label": ".constructor()"
     },
     {
@@ -15201,7 +15201,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_fa_setname",
-      "community": 9,
+      "community": 3,
       "norm_label": ".setname()"
     },
     {
@@ -15210,7 +15210,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_fa_setusage",
-      "community": 9,
+      "community": 3,
       "norm_label": ".setusage()"
     },
     {
@@ -15228,7 +15228,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_fa_copy",
-      "community": 9,
+      "community": 3,
       "norm_label": ".copy()"
     },
     {
@@ -15237,7 +15237,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_fa_clone",
-      "community": 9,
+      "community": 3,
       "norm_label": ".clone()"
     },
     {
@@ -15246,7 +15246,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_da",
-      "community": 1,
+      "community": 3,
       "norm_label": "da"
     },
     {
@@ -15255,7 +15255,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_da_constructor",
-      "community": 1,
+      "community": 3,
       "norm_label": ".constructor()"
     },
     {
@@ -15264,7 +15264,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_da_copy",
-      "community": 1,
+      "community": 3,
       "norm_label": ".copy()"
     },
     {
@@ -15273,7 +15273,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_da_clone",
-      "community": 1,
+      "community": 3,
       "norm_label": ".clone()"
     },
     {
@@ -15282,7 +15282,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_da_tojson",
-      "community": 3,
+      "community": 7,
       "norm_label": ".tojson()"
     },
     {
@@ -15687,7 +15687,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ga_getparameter",
-      "community": 2,
+      "community": 1,
       "norm_label": ".getparameter()"
     },
     {
@@ -15876,7 +15876,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_va_dispose",
-      "community": 1,
+      "community": 3,
       "norm_label": ".dispose()"
     },
     {
@@ -15894,7 +15894,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ya",
-      "community": 2,
+      "community": 3,
       "norm_label": "ya"
     },
     {
@@ -15921,7 +15921,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ya_dispose",
-      "community": 2,
+      "community": 3,
       "norm_label": ".dispose()"
     },
     {
@@ -15939,7 +15939,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_xa_dispose",
-      "community": 8,
+      "community": 4,
       "norm_label": ".dispose()"
     },
     {
@@ -16074,7 +16074,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ba_dispose",
-      "community": 1,
+      "community": 3,
       "norm_label": ".dispose()"
     },
     {
@@ -16128,7 +16128,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ca",
-      "community": 1,
+      "community": 3,
       "norm_label": "ca"
     },
     {
@@ -16155,7 +16155,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_ca_dispose",
-      "community": 1,
+      "community": 3,
       "norm_label": ".dispose()"
     },
     {
@@ -16254,7 +16254,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3769",
       "id": "herosection_pmx2b_s0_la_dispose",
-      "community": 1,
+      "community": 3,
       "norm_label": ".dispose()"
     },
     {
@@ -16335,7 +16335,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3777",
       "id": "herosection_pmx2b_s0_oa",
-      "community": 1,
+      "community": 3,
       "norm_label": "oa()"
     },
     {
@@ -16956,7 +16956,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3797",
       "id": "herosection_pmx2b_s0_kp",
-      "community": 14,
+      "community": 11,
       "norm_label": "kp()"
     },
     {
@@ -17469,7 +17469,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3799",
       "id": "herosection_pmx2b_s0_vx",
-      "community": 11,
+      "community": 7,
       "norm_label": "vx()"
     },
     {
@@ -17532,7 +17532,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3811",
       "id": "herosection_pmx2b_s0_lf",
-      "community": 2,
+      "community": 12,
       "norm_label": "lf()"
     },
     {
@@ -17541,7 +17541,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3811",
       "id": "herosection_pmx2b_s0_my",
-      "community": 2,
+      "community": 12,
       "norm_label": "my()"
     },
     {
@@ -17586,7 +17586,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3811",
       "id": "herosection_pmx2b_s0_cd",
-      "community": 16,
+      "community": 0,
       "norm_label": "cd()"
     },
     {
@@ -17604,7 +17604,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3811",
       "id": "herosection_pmx2b_s0_nf",
-      "community": 2,
+      "community": 12,
       "norm_label": "nf()"
     },
     {
@@ -17613,7 +17613,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3811",
       "id": "herosection_pmx2b_s0_rd",
-      "community": 2,
+      "community": 12,
       "norm_label": "rd()"
     },
     {
@@ -17631,7 +17631,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3811",
       "id": "herosection_pmx2b_s0_df",
-      "community": 0,
+      "community": 7,
       "norm_label": "df()"
     },
     {
@@ -17694,7 +17694,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3811",
       "id": "herosection_pmx2b_s0_oc",
-      "community": 2,
+      "community": 0,
       "norm_label": "oc()"
     },
     {
@@ -17703,7 +17703,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3811",
       "id": "herosection_pmx2b_s0_ac",
-      "community": 9,
+      "community": 0,
       "norm_label": "ac()"
     },
     {
@@ -17784,7 +17784,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3811",
       "id": "herosection_pmx2b_s0_ac_constructor",
-      "community": 9,
+      "community": 0,
       "norm_label": ".constructor()"
     },
     {
@@ -17802,7 +17802,7 @@
       "source_file": "docs\\assets\\HeroSection-PmX2B-S0.js",
       "source_location": "L3811",
       "id": "herosection_pmx2b_s0_ac_haseventlistener",
-      "community": 9,
+      "community": 0,
       "norm_label": ".haseventlistener()"
     },
     {
@@ -18549,7 +18549,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L38",
       "id": "index_cyenfvze_k0",
-      "community": 16,
+      "community": 1,
       "norm_label": "k0()"
     },
     {
@@ -19350,7 +19350,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L39",
       "id": "index_cyenfvze_nl",
-      "community": 2,
+      "community": 0,
       "norm_label": "nl()"
     },
     {
@@ -19944,7 +19944,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L41",
       "id": "index_cyenfvze_fd",
-      "community": 0,
+      "community": 4,
       "norm_label": "fd()"
     },
     {
@@ -20160,7 +20160,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L41",
       "id": "index_cyenfvze_be",
-      "community": 0,
+      "community": 4,
       "norm_label": "be()"
     },
     {
@@ -20241,7 +20241,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L41",
       "id": "index_cyenfvze_xd",
-      "community": 0,
+      "community": 4,
       "norm_label": "xd()"
     },
     {
@@ -20817,7 +20817,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L41",
       "id": "index_cyenfvze_fi",
-      "community": 0,
+      "community": 4,
       "norm_label": "fi()"
     },
     {
@@ -20925,7 +20925,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L41",
       "id": "index_cyenfvze_rg",
-      "community": 4,
+      "community": 0,
       "norm_label": "rg()"
     },
     {
@@ -20952,7 +20952,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L41",
       "id": "index_cyenfvze_ig",
-      "community": 4,
+      "community": 0,
       "norm_label": "ig()"
     },
     {
@@ -21096,7 +21096,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L41",
       "id": "index_cyenfvze_cu",
-      "community": 0,
+      "community": 4,
       "norm_label": "cu()"
     },
     {
@@ -21123,7 +21123,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L41",
       "id": "index_cyenfvze_wc",
-      "community": 0,
+      "community": 4,
       "norm_label": "wc()"
     },
     {
@@ -21204,7 +21204,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L41",
       "id": "index_cyenfvze_yc_initanimation",
-      "community": 0,
+      "community": 4,
       "norm_label": ".initanimation()"
     },
     {
@@ -21744,7 +21744,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L41",
       "id": "index_cyenfvze_wx_attachtimeline",
-      "community": 4,
+      "community": 0,
       "norm_label": ".attachtimeline()"
     },
     {
@@ -21825,7 +21825,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L41",
       "id": "index_cyenfvze_ax_onkeyframesresolved",
-      "community": 0,
+      "community": 4,
       "norm_label": ".onkeyframesresolved()"
     },
     {
@@ -21906,7 +21906,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L41",
       "id": "index_cyenfvze_ax_attachtimeline",
-      "community": 0,
+      "community": 4,
       "norm_label": ".attachtimeline()"
     },
     {
@@ -22023,7 +22023,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L41",
       "id": "index_cyenfvze_fx_measureinitialstate",
-      "community": 4,
+      "community": 0,
       "norm_label": ".measureinitialstate()"
     },
     {
@@ -22032,7 +22032,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L41",
       "id": "index_cyenfvze_fx_measureendstate",
-      "community": 4,
+      "community": 0,
       "norm_label": ".measureendstate()"
     },
     {
@@ -22059,7 +22059,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L41",
       "id": "index_cyenfvze_hx",
-      "community": 4,
+      "community": 0,
       "norm_label": "hx()"
     },
     {
@@ -22158,7 +22158,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L41",
       "id": "index_cyenfvze_ux_jump",
-      "community": 4,
+      "community": 0,
       "norm_label": ".jump()"
     },
     {
@@ -22212,7 +22212,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L41",
       "id": "index_cyenfvze_ux_getvelocity",
-      "community": 4,
+      "community": 0,
       "norm_label": ".getvelocity()"
     },
     {
@@ -22428,7 +22428,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_tp",
-      "community": 0,
+      "community": 4,
       "norm_label": "tp()"
     },
     {
@@ -22464,7 +22464,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_sk",
-      "community": 4,
+      "community": 0,
       "norm_label": "sk()"
     },
     {
@@ -22554,7 +22554,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_mk",
-      "community": 4,
+      "community": 0,
       "norm_label": "mk()"
     },
     {
@@ -22563,7 +22563,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_yk",
-      "community": 4,
+      "community": 0,
       "norm_label": "yk()"
     },
     {
@@ -22581,7 +22581,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_zg",
-      "community": 4,
+      "community": 0,
       "norm_label": "zg()"
     },
     {
@@ -22788,7 +22788,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_k",
-      "community": 0,
+      "community": 4,
       "norm_label": "$k()"
     },
     {
@@ -22806,7 +22806,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_hk_constructor",
-      "community": 4,
+      "community": 0,
       "norm_label": ".constructor()"
     },
     {
@@ -22878,7 +22878,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_hk_triggerbuild",
-      "community": 4,
+      "community": 0,
       "norm_label": ".triggerbuild()"
     },
     {
@@ -22887,7 +22887,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_hk_measureviewportbox",
-      "community": 4,
+      "community": 0,
       "norm_label": ".measureviewportbox()"
     },
     {
@@ -22905,7 +22905,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_hk_setstaticvalue",
-      "community": 2,
+      "community": 0,
       "norm_label": ".setstaticvalue()"
     },
     {
@@ -23049,7 +23049,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_hk_notify",
-      "community": 0,
+      "community": 4,
       "norm_label": ".notify()"
     },
     {
@@ -23157,7 +23157,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_wk_scrapemotionvaluesfromprops",
-      "community": 4,
+      "community": 0,
       "norm_label": ".scrapemotionvaluesfromprops()"
     },
     {
@@ -23166,7 +23166,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_yk_constructor",
-      "community": 4,
+      "community": 0,
       "norm_label": ".constructor()"
     },
     {
@@ -23184,7 +23184,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_yk_readvaluefrominstance",
-      "community": 4,
+      "community": 0,
       "norm_label": ".readvaluefrominstance()"
     },
     {
@@ -23202,7 +23202,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_yk_build",
-      "community": 4,
+      "community": 0,
       "norm_label": ".build()"
     },
     {
@@ -23211,7 +23211,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_yk_renderinstance",
-      "community": 4,
+      "community": 0,
       "norm_label": ".renderinstance()"
     },
     {
@@ -23220,7 +23220,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_yk_mount",
-      "community": 4,
+      "community": 0,
       "norm_label": ".mount()"
     },
     {
@@ -23265,7 +23265,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_ev",
-      "community": 4,
+      "community": 0,
       "norm_label": "ev()"
     },
     {
@@ -23328,7 +23328,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_nv",
-      "community": 0,
+      "community": 4,
       "norm_label": "nv()"
     },
     {
@@ -23337,7 +23337,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_at",
-      "community": 0,
+      "community": 4,
       "norm_label": "at()"
     },
     {
@@ -23346,7 +23346,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_lt",
-      "community": 0,
+      "community": 4,
       "norm_label": "lt()"
     },
     {
@@ -23391,7 +23391,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_pp",
-      "community": 0,
+      "community": 4,
       "norm_label": "pp()"
     },
     {
@@ -23400,7 +23400,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_mn",
-      "community": 27,
+      "community": 0,
       "norm_label": "mn"
     },
     {
@@ -23409,7 +23409,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_mn_constructor",
-      "community": 27,
+      "community": 0,
       "norm_label": ".constructor()"
     },
     {
@@ -23418,7 +23418,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_mn_update",
-      "community": 27,
+      "community": 0,
       "norm_label": ".update()"
     },
     {
@@ -23481,7 +23481,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_gt_update",
-      "community": 4,
+      "community": 0,
       "norm_label": ".update()"
     },
     {
@@ -23526,7 +23526,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_vt",
-      "community": 4,
+      "community": 0,
       "norm_label": "vt()"
     },
     {
@@ -23607,7 +23607,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_uv",
-      "community": 0,
+      "community": 4,
       "norm_label": "uv"
     },
     {
@@ -23715,7 +23715,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_rt_constructor",
-      "community": 4,
+      "community": 0,
       "norm_label": ".constructor()"
     },
     {
@@ -23877,7 +23877,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_vt_constructor",
-      "community": 4,
+      "community": 0,
       "norm_label": ".constructor()"
     },
     {
@@ -23886,7 +23886,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_vt_mount",
-      "community": 4,
+      "community": 0,
       "norm_label": ".mount()"
     },
     {
@@ -23895,7 +23895,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_vt_unmount",
-      "community": 4,
+      "community": 0,
       "norm_label": ".unmount()"
     },
     {
@@ -23967,7 +23967,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_t_getsnapshotbeforeupdate",
-      "community": 0,
+      "community": 4,
       "norm_label": ".getsnapshotbeforeupdate()"
     },
     {
@@ -23985,7 +23985,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_t_componentwillunmount",
-      "community": 0,
+      "community": 2,
       "norm_label": ".componentwillunmount()"
     },
     {
@@ -23994,7 +23994,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_t_safetoremove",
-      "community": 0,
+      "community": 4,
       "norm_label": ".safetoremove()"
     },
     {
@@ -24003,7 +24003,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_t_render",
-      "community": 0,
+      "community": 4,
       "norm_label": ".render()"
     },
     {
@@ -24147,7 +24147,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_ee",
-      "community": 0,
+      "community": 4,
       "norm_label": "ee"
     },
     {
@@ -24156,7 +24156,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_ee_constructor",
-      "community": 0,
+      "community": 4,
       "norm_label": ".constructor()"
     },
     {
@@ -24165,7 +24165,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_ee_add",
-      "community": 0,
+      "community": 4,
       "norm_label": ".add()"
     },
     {
@@ -24174,7 +24174,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_ee_remove",
-      "community": 0,
+      "community": 4,
       "norm_label": ".remove()"
     },
     {
@@ -24183,7 +24183,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_ee_relegate",
-      "community": 0,
+      "community": 4,
       "norm_label": ".relegate()"
     },
     {
@@ -24192,7 +24192,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_ee_promote",
-      "community": 0,
+      "community": 4,
       "norm_label": ".promote()"
     },
     {
@@ -24210,7 +24210,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_ee_schedulerender",
-      "community": 0,
+      "community": 4,
       "norm_label": ".schedulerender()"
     },
     {
@@ -24219,7 +24219,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_ee_removeleadsnapshot",
-      "community": 0,
+      "community": 4,
       "norm_label": ".removeleadsnapshot()"
     },
     {
@@ -24237,7 +24237,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_yv",
-      "community": 4,
+      "community": 0,
       "norm_label": "yv()"
     },
     {
@@ -24309,7 +24309,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_ce",
-      "community": 4,
+      "community": 0,
       "norm_label": "ce()"
     },
     {
@@ -24336,7 +24336,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_ve",
-      "community": 2,
+      "community": 0,
       "norm_label": "ve()"
     },
     {
@@ -24372,7 +24372,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_ke",
-      "community": 19,
+      "community": 0,
       "norm_label": "ke"
     },
     {
@@ -24381,7 +24381,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_ke_constructor",
-      "community": 19,
+      "community": 0,
       "norm_label": ".constructor()"
     },
     {
@@ -24390,7 +24390,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_ke_onfocus",
-      "community": 19,
+      "community": 0,
       "norm_label": ".onfocus()"
     },
     {
@@ -24399,7 +24399,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_ke_onblur",
-      "community": 19,
+      "community": 0,
       "norm_label": ".onblur()"
     },
     {
@@ -24417,7 +24417,7 @@
       "source_file": "docs\\assets\\index-CyENFVze.js",
       "source_location": "L49",
       "id": "index_cyenfvze_ke_unmount",
-      "community": 19,
+      "community": 0,
       "norm_label": ".unmount()"
     },
     {
@@ -24678,7 +24678,7 @@
       "source_file": "docs\\assets\\profile-DY0Q1Qnj.js",
       "source_location": "L1",
       "id": "docs_assets_profile_dy0q1qnj_js",
-      "community": 69,
+      "community": 63,
       "norm_label": "profile-dy0q1qnj.js"
     },
     {
@@ -24687,7 +24687,7 @@
       "source_file": "docs\\assets\\ProjectsSection-Ctwozgnu.js",
       "source_location": "L1",
       "id": "docs_assets_projectssection_ctwozgnu_js",
-      "community": 28,
+      "community": 26,
       "norm_label": "projectssection-ctwozgnu.js"
     },
     {
@@ -24696,7 +24696,7 @@
       "source_file": "docs\\assets\\ProjectsSection-Ctwozgnu.js",
       "source_location": "L6",
       "id": "projectssection_ctwozgnu_p",
-      "community": 28,
+      "community": 26,
       "norm_label": "p()"
     },
     {
@@ -24705,7 +24705,7 @@
       "source_file": "docs\\assets\\ProjectsSection-Ctwozgnu.js",
       "source_location": "L6",
       "id": "projectssection_ctwozgnu_n",
-      "community": 28,
+      "community": 26,
       "norm_label": "n()"
     },
     {
@@ -24714,7 +24714,7 @@
       "source_file": "docs\\assets\\SectionHeading-ByThUDAY.js",
       "source_location": "L1",
       "id": "docs_assets_sectionheading_bythuday_js",
-      "community": 2,
+      "community": 0,
       "norm_label": "sectionheading-bythuday.js"
     },
     {
@@ -24723,7 +24723,7 @@
       "source_file": "docs\\assets\\SectionHeading-ByThUDAY.js",
       "source_location": "L1",
       "id": "sectionheading_bythuday_x",
-      "community": 2,
+      "community": 0,
       "norm_label": "x()"
     },
     {
@@ -24759,7 +24759,7 @@
       "source_file": "src\\App.tsx",
       "source_location": "L1",
       "id": "src_app_tsx",
-      "community": 29,
+      "community": 27,
       "norm_label": "app.tsx"
     },
     {
@@ -24768,7 +24768,7 @@
       "source_file": "src\\App.tsx",
       "source_location": "L13",
       "id": "app_firstpaintfallback",
-      "community": 29,
+      "community": 27,
       "norm_label": "firstpaintfallback()"
     },
     {
@@ -24777,7 +24777,7 @@
       "source_file": "src\\App.tsx",
       "source_location": "L56",
       "id": "app_raf",
-      "community": 29,
+      "community": 27,
       "norm_label": "raf()"
     },
     {
@@ -24786,7 +24786,7 @@
       "source_file": "src\\main.tsx",
       "source_location": "L1",
       "id": "src_main_tsx",
-      "community": 70,
+      "community": 64,
       "norm_label": "main.tsx"
     },
     {
@@ -24795,7 +24795,7 @@
       "source_file": "src\\PortfolioExperience.tsx",
       "source_location": "L1",
       "id": "src_portfolioexperience_tsx",
-      "community": 71,
+      "community": 65,
       "norm_label": "portfolioexperience.tsx"
     },
     {
@@ -24804,7 +24804,7 @@
       "source_file": "src\\vite-env.d.ts",
       "source_location": "L1",
       "id": "src_vite_env_d_ts",
-      "community": 72,
+      "community": 66,
       "norm_label": "vite-env.d.ts"
     },
     {
@@ -24813,7 +24813,7 @@
       "source_file": "src\\animations\\cinematicSequences.ts",
       "source_location": "L1",
       "id": "src_animations_cinematicsequences_ts",
-      "community": 73,
+      "community": 67,
       "norm_label": "cinematicsequences.ts"
     },
     {
@@ -24822,7 +24822,7 @@
       "source_file": "src\\components\\MobilePortfolio.tsx",
       "source_location": "L1",
       "id": "src_components_mobileportfolio_tsx",
-      "community": 35,
+      "community": 32,
       "norm_label": "mobileportfolio.tsx"
     },
     {
@@ -24831,7 +24831,7 @@
       "source_file": "src\\components\\MobilePortfolio.tsx",
       "source_location": "L8",
       "id": "mobileportfolio_sectionshell",
-      "community": 35,
+      "community": 32,
       "norm_label": "sectionshell()"
     },
     {
@@ -24840,7 +24840,7 @@
       "source_file": "src\\components\\layout\\Footer.tsx",
       "source_location": "L1",
       "id": "src_components_layout_footer_tsx",
-      "community": 74,
+      "community": 68,
       "norm_label": "footer.tsx"
     },
     {
@@ -24867,7 +24867,7 @@
       "source_file": "src\\components\\layout\\ScrollToTop.tsx",
       "source_location": "L1",
       "id": "src_components_layout_scrolltotop_tsx",
-      "community": 36,
+      "community": 33,
       "norm_label": "scrolltotop.tsx"
     },
     {
@@ -24876,7 +24876,7 @@
       "source_file": "src\\components\\layout\\ScrollToTop.tsx",
       "source_location": "L5",
       "id": "scrolltotop_scrolltotop",
-      "community": 36,
+      "community": 33,
       "norm_label": "scrolltotop()"
     },
     {
@@ -24885,7 +24885,7 @@
       "source_file": "src\\components\\sections\\CertificationsSection.tsx",
       "source_location": "L1",
       "id": "src_components_sections_certificationssection_tsx",
-      "community": 75,
+      "community": 69,
       "norm_label": "certificationssection.tsx"
     },
     {
@@ -24894,7 +24894,7 @@
       "source_file": "src\\components\\sections\\ContactSection.tsx",
       "source_location": "L1",
       "id": "src_components_sections_contactsection_tsx",
-      "community": 37,
+      "community": 34,
       "norm_label": "contactsection.tsx"
     },
     {
@@ -24903,7 +24903,7 @@
       "source_file": "src\\components\\sections\\ContactSection.tsx",
       "source_location": "L12",
       "id": "contactsection_handlesubmit",
-      "community": 37,
+      "community": 34,
       "norm_label": "handlesubmit()"
     },
     {
@@ -24912,7 +24912,7 @@
       "source_file": "src\\components\\sections\\HeroSection.tsx",
       "source_location": "L1",
       "id": "src_components_sections_herosection_tsx",
-      "community": 76,
+      "community": 70,
       "norm_label": "herosection.tsx"
     },
     {
@@ -24921,7 +24921,7 @@
       "source_file": "src\\components\\sections\\ProjectsSection.tsx",
       "source_location": "L1",
       "id": "src_components_sections_projectssection_tsx",
-      "community": 77,
+      "community": 71,
       "norm_label": "projectssection.tsx"
     },
     {
@@ -24946,7 +24946,7 @@
       "label": "sectionTransform()",
       "file_type": "code",
       "source_file": "src\\components\\sections\\ScrollSections.tsx",
-      "source_location": "L30",
+      "source_location": "L32",
       "id": "scrollsections_sectiontransform",
       "community": 13,
       "norm_label": "sectiontransform()"
@@ -24955,7 +24955,7 @@
       "label": "handleSubmit()",
       "file_type": "code",
       "source_file": "src\\components\\sections\\ScrollSections.tsx",
-      "source_location": "L42",
+      "source_location": "L44",
       "id": "scrollsections_handlesubmit",
       "community": 13,
       "norm_label": "handlesubmit()"
@@ -24966,7 +24966,7 @@
       "source_file": "src\\components\\sections\\SkillsSection.tsx",
       "source_location": "L1",
       "id": "src_components_sections_skillssection_tsx",
-      "community": 78,
+      "community": 72,
       "norm_label": "skillssection.tsx"
     },
     {
@@ -24975,7 +24975,7 @@
       "source_file": "src\\components\\space\\AmbientEffects.tsx",
       "source_location": "L1",
       "id": "src_components_space_ambienteffects_tsx",
-      "community": 79,
+      "community": 73,
       "norm_label": "ambienteffects.tsx"
     },
     {
@@ -24984,7 +24984,7 @@
       "source_file": "src\\components\\space\\AssetPreloader.tsx",
       "source_location": "L1",
       "id": "src_components_space_assetpreloader_tsx",
-      "community": 38,
+      "community": 35,
       "norm_label": "assetpreloader.tsx"
     },
     {
@@ -24993,7 +24993,7 @@
       "source_file": "src\\components\\space\\AssetPreloader.tsx",
       "source_location": "L56",
       "id": "assetpreloader_handleengage",
-      "community": 38,
+      "community": 35,
       "norm_label": "handleengage()"
     },
     {
@@ -25038,7 +25038,7 @@
       "source_file": "src\\components\\space\\EasterEggs.tsx",
       "source_location": "L1",
       "id": "src_components_space_eastereggs_tsx",
-      "community": 39,
+      "community": 36,
       "norm_label": "eastereggs.tsx"
     },
     {
@@ -25047,7 +25047,7 @@
       "source_file": "src\\components\\space\\EasterEggs.tsx",
       "source_location": "L19",
       "id": "eastereggs_handlediscover",
-      "community": 39,
+      "community": 36,
       "norm_label": "handlediscover()"
     },
     {
@@ -25074,16 +25074,16 @@
       "source_file": "src\\components\\space\\HelpOverlay.tsx",
       "source_location": "L1",
       "id": "src_components_space_helpoverlay_tsx",
-      "community": 40,
+      "community": 17,
       "norm_label": "helpoverlay.tsx"
     },
     {
       "label": "HelpOverlay()",
       "file_type": "code",
       "source_file": "src\\components\\space\\HelpOverlay.tsx",
-      "source_location": "L18",
+      "source_location": "L19",
       "id": "helpoverlay_helpoverlay",
-      "community": 40,
+      "community": 17,
       "norm_label": "helpoverlay()"
     },
     {
@@ -25092,7 +25092,7 @@
       "source_file": "src\\components\\space\\InteractionHints.tsx",
       "source_location": "L1",
       "id": "src_components_space_interactionhints_tsx",
-      "community": 41,
+      "community": 37,
       "norm_label": "interactionhints.tsx"
     },
     {
@@ -25101,7 +25101,7 @@
       "source_file": "src\\components\\space\\InteractionHints.tsx",
       "source_location": "L8",
       "id": "interactionhints_interactionhints",
-      "community": 41,
+      "community": 37,
       "norm_label": "interactionhints()"
     },
     {
@@ -25128,7 +25128,7 @@
       "source_file": "src\\components\\space\\PhotoMode.tsx",
       "source_location": "L1",
       "id": "src_components_space_photomode_tsx",
-      "community": 30,
+      "community": 28,
       "norm_label": "photomode.tsx"
     },
     {
@@ -25137,7 +25137,7 @@
       "source_file": "src\\components\\space\\PhotoMode.tsx",
       "source_location": "L9",
       "id": "photomode_togglephotomode",
-      "community": 30,
+      "community": 28,
       "norm_label": "togglephotomode()"
     },
     {
@@ -25146,7 +25146,7 @@
       "source_file": "src\\components\\space\\PhotoMode.tsx",
       "source_location": "L19",
       "id": "photomode_takescreenshot",
-      "community": 30,
+      "community": 28,
       "norm_label": "takescreenshot()"
     },
     {
@@ -25155,16 +25155,16 @@
       "source_file": "src\\components\\space\\PlanetDetailPanel.tsx",
       "source_location": "L1",
       "id": "src_components_space_planetdetailpanel_tsx",
-      "community": 42,
+      "community": 38,
       "norm_label": "planetdetailpanel.tsx"
     },
     {
       "label": "handleKey()",
       "file_type": "code",
       "source_file": "src\\components\\space\\PlanetDetailPanel.tsx",
-      "source_location": "L25",
+      "source_location": "L28",
       "id": "planetdetailpanel_handlekey",
-      "community": 42,
+      "community": 38,
       "norm_label": "handlekey()"
     },
     {
@@ -25191,7 +25191,7 @@
       "source_file": "src\\components\\space\\SectionContext.tsx",
       "source_location": "L1",
       "id": "src_components_space_sectioncontext_tsx",
-      "community": 80,
+      "community": 74,
       "norm_label": "sectioncontext.tsx"
     },
     {
@@ -25200,7 +25200,7 @@
       "source_file": "src\\components\\space\\SectionTransition.tsx",
       "source_location": "L1",
       "id": "src_components_space_sectiontransition_tsx",
-      "community": 43,
+      "community": 39,
       "norm_label": "sectiontransition.tsx"
     },
     {
@@ -25209,7 +25209,7 @@
       "source_file": "src\\components\\space\\SectionTransition.tsx",
       "source_location": "L7",
       "id": "sectiontransition_sectiontransition",
-      "community": 43,
+      "community": 39,
       "norm_label": "sectiontransition()"
     },
     {
@@ -25218,8 +25218,35 @@
       "source_file": "src\\components\\space\\SettingsMenu.tsx",
       "source_location": "L1",
       "id": "src_components_space_settingsmenu_tsx",
-      "community": 81,
+      "community": 18,
       "norm_label": "settingsmenu.tsx"
+    },
+    {
+      "label": "open()",
+      "file_type": "code",
+      "source_file": "src\\components\\space\\SettingsMenu.tsx",
+      "source_location": "L12",
+      "id": "settingsmenu_open",
+      "community": 18,
+      "norm_label": "open()"
+    },
+    {
+      "label": "close()",
+      "file_type": "code",
+      "source_file": "src\\components\\space\\SettingsMenu.tsx",
+      "source_location": "L13",
+      "id": "settingsmenu_close",
+      "community": 18,
+      "norm_label": "close()"
+    },
+    {
+      "label": "handleKey()",
+      "file_type": "code",
+      "source_file": "src\\components\\space\\SettingsMenu.tsx",
+      "source_location": "L17",
+      "id": "settingsmenu_handlekey",
+      "community": 18,
+      "norm_label": "handlekey()"
     },
     {
       "label": "TutorialOverlay.tsx",
@@ -25263,7 +25290,7 @@
       "source_file": "src\\components\\space\\planetarySystem\\PlanetarySystem.tsx",
       "source_location": "L1",
       "id": "src_components_space_planetarysystem_planetarysystem_tsx",
-      "community": 82,
+      "community": 75,
       "norm_label": "planetarysystem.tsx"
     },
     {
@@ -25272,7 +25299,7 @@
       "source_file": "src\\components\\space\\planets\\Earth.tsx",
       "source_location": "L1",
       "id": "src_components_space_planets_earth_tsx",
-      "community": 83,
+      "community": 76,
       "norm_label": "earth.tsx"
     },
     {
@@ -25281,7 +25308,7 @@
       "source_file": "src\\components\\space\\planets\\index.ts",
       "source_location": "L1",
       "id": "src_components_space_planets_index_ts",
-      "community": 84,
+      "community": 77,
       "norm_label": "index.ts"
     },
     {
@@ -25290,7 +25317,7 @@
       "source_file": "src\\components\\space\\planets\\Jupiter.tsx",
       "source_location": "L1",
       "id": "src_components_space_planets_jupiter_tsx",
-      "community": 85,
+      "community": 78,
       "norm_label": "jupiter.tsx"
     },
     {
@@ -25299,7 +25326,7 @@
       "source_file": "src\\components\\space\\planets\\Mars.tsx",
       "source_location": "L1",
       "id": "src_components_space_planets_mars_tsx",
-      "community": 86,
+      "community": 79,
       "norm_label": "mars.tsx"
     },
     {
@@ -25308,7 +25335,7 @@
       "source_file": "src\\components\\space\\planets\\Mercury.tsx",
       "source_location": "L1",
       "id": "src_components_space_planets_mercury_tsx",
-      "community": 44,
+      "community": 40,
       "norm_label": "mercury.tsx"
     },
     {
@@ -25317,7 +25344,7 @@
       "source_file": "src\\components\\space\\planets\\Mercury.tsx",
       "source_location": "L10",
       "id": "mercury_mercury",
-      "community": 44,
+      "community": 40,
       "norm_label": "mercury()"
     },
     {
@@ -25326,7 +25353,7 @@
       "source_file": "src\\components\\space\\planets\\Neptune.tsx",
       "source_location": "L1",
       "id": "src_components_space_planets_neptune_tsx",
-      "community": 45,
+      "community": 41,
       "norm_label": "neptune.tsx"
     },
     {
@@ -25335,7 +25362,7 @@
       "source_file": "src\\components\\space\\planets\\Neptune.tsx",
       "source_location": "L13",
       "id": "neptune_neptune",
-      "community": 45,
+      "community": 41,
       "norm_label": "neptune()"
     },
     {
@@ -25344,7 +25371,7 @@
       "source_file": "src\\components\\space\\planets\\Saturn.tsx",
       "source_location": "L1",
       "id": "src_components_space_planets_saturn_tsx",
-      "community": 87,
+      "community": 80,
       "norm_label": "saturn.tsx"
     },
     {
@@ -25353,7 +25380,7 @@
       "source_file": "src\\components\\space\\planets\\Sun.tsx",
       "source_location": "L1",
       "id": "src_components_space_planets_sun_tsx",
-      "community": 17,
+      "community": 16,
       "norm_label": "sun.tsx"
     },
     {
@@ -25362,7 +25389,7 @@
       "source_file": "src\\components\\space\\planets\\Sun.tsx",
       "source_location": "L52",
       "id": "sun_sun",
-      "community": 17,
+      "community": 16,
       "norm_label": "sun()"
     },
     {
@@ -25371,7 +25398,7 @@
       "source_file": "src\\components\\space\\planets\\Venus.tsx",
       "source_location": "L1",
       "id": "src_components_space_planets_venus_tsx",
-      "community": 17,
+      "community": 16,
       "norm_label": "venus.tsx"
     },
     {
@@ -25380,7 +25407,7 @@
       "source_file": "src\\components\\space\\planets\\Venus.tsx",
       "source_location": "L18",
       "id": "venus_venus",
-      "community": 17,
+      "community": 16,
       "norm_label": "venus()"
     },
     {
@@ -25389,7 +25416,7 @@
       "source_file": "src\\components\\space\\procedural\\AsteroidField.tsx",
       "source_location": "L1",
       "id": "src_components_space_procedural_asteroidfield_tsx",
-      "community": 46,
+      "community": 42,
       "norm_label": "asteroidfield.tsx"
     },
     {
@@ -25398,7 +25425,7 @@
       "source_file": "src\\components\\space\\procedural\\AsteroidField.tsx",
       "source_location": "L9",
       "id": "asteroidfield_asteroidfield",
-      "community": 46,
+      "community": 42,
       "norm_label": "asteroidfield()"
     },
     {
@@ -25407,7 +25434,7 @@
       "source_file": "src\\components\\space\\procedural\\BlackHole.tsx",
       "source_location": "L1",
       "id": "src_components_space_procedural_blackhole_tsx",
-      "community": 88,
+      "community": 81,
       "norm_label": "blackhole.tsx"
     },
     {
@@ -25416,7 +25443,7 @@
       "source_file": "src\\components\\space\\procedural\\CometTrail.tsx",
       "source_location": "L1",
       "id": "src_components_space_procedural_comettrail_tsx",
-      "community": 89,
+      "community": 82,
       "norm_label": "comettrail.tsx"
     },
     {
@@ -25443,7 +25470,7 @@
       "source_file": "src\\components\\space\\procedural\\index.ts",
       "source_location": "L1",
       "id": "src_components_space_procedural_index_ts",
-      "community": 90,
+      "community": 83,
       "norm_label": "index.ts"
     },
     {
@@ -25488,7 +25515,7 @@
       "source_file": "src\\components\\ui\\AchievementCard.tsx",
       "source_location": "L1",
       "id": "src_components_ui_achievementcard_tsx",
-      "community": 91,
+      "community": 84,
       "norm_label": "achievementcard.tsx"
     },
     {
@@ -25542,7 +25569,7 @@
       "source_file": "src\\components\\ui\\Badge.tsx",
       "source_location": "L1",
       "id": "src_components_ui_badge_tsx",
-      "community": 47,
+      "community": 43,
       "norm_label": "badge.tsx"
     },
     {
@@ -25551,7 +25578,7 @@
       "source_file": "src\\components\\ui\\Badge.tsx",
       "source_location": "L10",
       "id": "badge_badge",
-      "community": 47,
+      "community": 43,
       "norm_label": "badge()"
     },
     {
@@ -25560,7 +25587,7 @@
       "source_file": "src\\components\\ui\\Button.tsx",
       "source_location": "L1",
       "id": "src_components_ui_button_tsx",
-      "community": 48,
+      "community": 44,
       "norm_label": "button.tsx"
     },
     {
@@ -25569,7 +25596,7 @@
       "source_file": "src\\components\\ui\\Button.tsx",
       "source_location": "L9",
       "id": "button_button",
-      "community": 48,
+      "community": 44,
       "norm_label": "button()"
     },
     {
@@ -25578,7 +25605,7 @@
       "source_file": "src\\components\\ui\\Card.tsx",
       "source_location": "L1",
       "id": "src_components_ui_card_tsx",
-      "community": 49,
+      "community": 45,
       "norm_label": "card.tsx"
     },
     {
@@ -25587,7 +25614,7 @@
       "source_file": "src\\components\\ui\\Card.tsx",
       "source_location": "L11",
       "id": "card_card",
-      "community": 49,
+      "community": 45,
       "norm_label": "card()"
     },
     {
@@ -25596,7 +25623,7 @@
       "source_file": "src\\components\\ui\\CertCard.tsx",
       "source_location": "L1",
       "id": "src_components_ui_certcard_tsx",
-      "community": 92,
+      "community": 85,
       "norm_label": "certcard.tsx"
     },
     {
@@ -25605,16 +25632,16 @@
       "source_file": "src\\components\\ui\\CertLightbox.tsx",
       "source_location": "L1",
       "id": "src_components_ui_certlightbox_tsx",
-      "community": 50,
+      "community": 46,
       "norm_label": "certlightbox.tsx"
     },
     {
       "label": "handleEsc()",
       "file_type": "code",
       "source_file": "src\\components\\ui\\CertLightbox.tsx",
-      "source_location": "L15",
+      "source_location": "L19",
       "id": "certlightbox_handleesc",
-      "community": 50,
+      "community": 46,
       "norm_label": "handleesc()"
     },
     {
@@ -25623,7 +25650,7 @@
       "source_file": "src\\components\\ui\\ChatbotWidget.tsx",
       "source_location": "L1",
       "id": "src_components_ui_chatbotwidget_tsx",
-      "community": 93,
+      "community": 86,
       "norm_label": "chatbotwidget.tsx"
     },
     {
@@ -25632,7 +25659,7 @@
       "source_file": "src\\components\\ui\\CustomCursor.tsx",
       "source_location": "L1",
       "id": "src_components_ui_customcursor_tsx",
-      "community": 51,
+      "community": 47,
       "norm_label": "customcursor.tsx"
     },
     {
@@ -25641,7 +25668,7 @@
       "source_file": "src\\components\\ui\\CustomCursor.tsx",
       "source_location": "L4",
       "id": "customcursor_customcursor",
-      "community": 51,
+      "community": 47,
       "norm_label": "customcursor()"
     },
     {
@@ -25650,16 +25677,16 @@
       "source_file": "src\\components\\ui\\Modal.tsx",
       "source_location": "L1",
       "id": "src_components_ui_modal_tsx",
-      "community": 52,
+      "community": 17,
       "norm_label": "modal.tsx"
     },
     {
       "label": "Modal()",
       "file_type": "code",
       "source_file": "src\\components\\ui\\Modal.tsx",
-      "source_location": "L10",
+      "source_location": "L13",
       "id": "modal_modal",
-      "community": 52,
+      "community": 17,
       "norm_label": "modal()"
     },
     {
@@ -25668,7 +25695,7 @@
       "source_file": "src\\components\\ui\\PageLoader.tsx",
       "source_location": "L1",
       "id": "src_components_ui_pageloader_tsx",
-      "community": 94,
+      "community": 87,
       "norm_label": "pageloader.tsx"
     },
     {
@@ -25677,7 +25704,7 @@
       "source_file": "src\\components\\ui\\ProgressBar.tsx",
       "source_location": "L1",
       "id": "src_components_ui_progressbar_tsx",
-      "community": 22,
+      "community": 23,
       "norm_label": "progressbar.tsx"
     },
     {
@@ -25686,7 +25713,7 @@
       "source_file": "src\\components\\ui\\ProgressBar.tsx",
       "source_location": "L10",
       "id": "progressbar_progressbar",
-      "community": 22,
+      "community": 23,
       "norm_label": "progressbar()"
     },
     {
@@ -25695,17 +25722,8 @@
       "source_file": "src\\components\\ui\\ProjectCard.tsx",
       "source_location": "L1",
       "id": "src_components_ui_projectcard_tsx",
-      "community": 53,
+      "community": 88,
       "norm_label": "projectcard.tsx"
-    },
-    {
-      "label": "getBadgeColor()",
-      "file_type": "code",
-      "source_file": "src\\components\\ui\\ProjectCard.tsx",
-      "source_location": "L13",
-      "id": "projectcard_getbadgecolor",
-      "community": 53,
-      "norm_label": "getbadgecolor()"
     },
     {
       "label": "ScrollProgress.tsx",
@@ -25713,7 +25731,7 @@
       "source_file": "src\\components\\ui\\ScrollProgress.tsx",
       "source_location": "L1",
       "id": "src_components_ui_scrollprogress_tsx",
-      "community": 23,
+      "community": 21,
       "norm_label": "scrollprogress.tsx"
     },
     {
@@ -25722,7 +25740,7 @@
       "source_file": "src\\components\\ui\\ScrollProgress.tsx",
       "source_location": "L4",
       "id": "scrollprogress_scrollprogress",
-      "community": 23,
+      "community": 21,
       "norm_label": "scrollprogress()"
     },
     {
@@ -25731,7 +25749,7 @@
       "source_file": "src\\components\\ui\\SectionHeading.tsx",
       "source_location": "L1",
       "id": "src_components_ui_sectionheading_tsx",
-      "community": 95,
+      "community": 89,
       "norm_label": "sectionheading.tsx"
     },
     {
@@ -25740,7 +25758,7 @@
       "source_file": "src\\components\\ui\\SkillBar.tsx",
       "source_location": "L1",
       "id": "src_components_ui_skillbar_tsx",
-      "community": 54,
+      "community": 48,
       "norm_label": "skillbar.tsx"
     },
     {
@@ -25749,7 +25767,7 @@
       "source_file": "src\\components\\ui\\SkillBar.tsx",
       "source_location": "L8",
       "id": "skillbar_skillbar",
-      "community": 54,
+      "community": 48,
       "norm_label": "skillbar()"
     },
     {
@@ -25758,7 +25776,7 @@
       "source_file": "src\\components\\ui\\SkillCategory.tsx",
       "source_location": "L1",
       "id": "src_components_ui_skillcategory_tsx",
-      "community": 96,
+      "community": 90,
       "norm_label": "skillcategory.tsx"
     },
     {
@@ -25767,7 +25785,7 @@
       "source_file": "src\\components\\ui\\SkillCategoryCard.tsx",
       "source_location": "L1",
       "id": "src_components_ui_skillcategorycard_tsx",
-      "community": 97,
+      "community": 91,
       "norm_label": "skillcategorycard.tsx"
     },
     {
@@ -25776,7 +25794,7 @@
       "source_file": "src\\components\\ui\\ThemeToggle.tsx",
       "source_location": "L1",
       "id": "src_components_ui_themetoggle_tsx",
-      "community": 18,
+      "community": 19,
       "norm_label": "themetoggle.tsx"
     },
     {
@@ -25785,7 +25803,7 @@
       "source_file": "src\\components\\ui\\ThemeToggle.tsx",
       "source_location": "L6",
       "id": "themetoggle_themetoggle",
-      "community": 18,
+      "community": 19,
       "norm_label": "themetoggle()"
     },
     {
@@ -25794,7 +25812,7 @@
       "source_file": "src\\components\\ui\\Timeline.tsx",
       "source_location": "L1",
       "id": "src_components_ui_timeline_tsx",
-      "community": 98,
+      "community": 92,
       "norm_label": "timeline.tsx"
     },
     {
@@ -25803,7 +25821,7 @@
       "source_file": "src\\components\\__tests__\\contact.test.tsx",
       "source_location": "L1",
       "id": "src_components_tests_contact_test_tsx",
-      "community": 99,
+      "community": 93,
       "norm_label": "contact.test.tsx"
     },
     {
@@ -25812,7 +25830,7 @@
       "source_file": "src\\config\\animationConfig.ts",
       "source_location": "L1",
       "id": "src_config_animationconfig_ts",
-      "community": 100,
+      "community": 94,
       "norm_label": "animationconfig.ts"
     },
     {
@@ -25866,7 +25884,7 @@
       "source_file": "src\\config\\colorConfig.ts",
       "source_location": "L1",
       "id": "src_config_colorconfig_ts",
-      "community": 101,
+      "community": 95,
       "norm_label": "colorconfig.ts"
     },
     {
@@ -25875,7 +25893,7 @@
       "source_file": "src\\config\\sectionsConfig.ts",
       "source_location": "L1",
       "id": "src_config_sectionsconfig_ts",
-      "community": 102,
+      "community": 96,
       "norm_label": "sectionsconfig.ts"
     },
     {
@@ -25902,7 +25920,7 @@
       "source_file": "src\\contexts\\AssetContextShared.ts",
       "source_location": "L1",
       "id": "src_contexts_assetcontextshared_ts",
-      "community": 103,
+      "community": 97,
       "norm_label": "assetcontextshared.ts"
     },
     {
@@ -25911,7 +25929,7 @@
       "source_file": "src\\contexts\\useAssets.ts",
       "source_location": "L1",
       "id": "src_contexts_useassets_ts",
-      "community": 17,
+      "community": 16,
       "norm_label": "useassets.ts"
     },
     {
@@ -25920,7 +25938,7 @@
       "source_file": "src\\contexts\\useAssets.ts",
       "source_location": "L6",
       "id": "useassets_useassets",
-      "community": 17,
+      "community": 16,
       "norm_label": "useassets()"
     },
     {
@@ -25929,7 +25947,7 @@
       "source_file": "src\\contexts\\useAssets.ts",
       "source_location": "L14",
       "id": "useassets_useplanettextures",
-      "community": 17,
+      "community": 16,
       "norm_label": "useplanettextures()"
     },
     {
@@ -25938,7 +25956,7 @@
       "source_file": "src\\data\\portfolioSeed.ts",
       "source_location": "L1",
       "id": "src_data_portfolioseed_ts",
-      "community": 104,
+      "community": 98,
       "norm_label": "portfolioseed.ts"
     },
     {
@@ -25992,7 +26010,7 @@
       "source_file": "src\\hooks\\useCameraPath.ts",
       "source_location": "L1",
       "id": "src_hooks_usecamerapath_ts",
-      "community": 24,
+      "community": 22,
       "norm_label": "usecamerapath.ts"
     },
     {
@@ -26001,7 +26019,7 @@
       "source_file": "src\\hooks\\useCameraPath.ts",
       "source_location": "L85",
       "id": "usecamerapath_usecamerapath",
-      "community": 24,
+      "community": 22,
       "norm_label": "usecamerapath()"
     },
     {
@@ -26023,12 +26041,30 @@
       "norm_label": "usecinematictimeline()"
     },
     {
+      "label": "useFocusTrap.ts",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useFocusTrap.ts",
+      "source_location": "L1",
+      "id": "src_hooks_usefocustrap_ts",
+      "community": 17,
+      "norm_label": "usefocustrap.ts"
+    },
+    {
+      "label": "useFocusTrap()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useFocusTrap.ts",
+      "source_location": "L15",
+      "id": "usefocustrap_usefocustrap",
+      "community": 17,
+      "norm_label": "usefocustrap()"
+    },
+    {
       "label": "useGeometricInteraction.ts",
       "file_type": "code",
       "source_file": "src\\hooks\\useGeometricInteraction.ts",
       "source_location": "L1",
       "id": "src_hooks_usegeometricinteraction_ts",
-      "community": 55,
+      "community": 49,
       "norm_label": "usegeometricinteraction.ts"
     },
     {
@@ -26037,7 +26073,7 @@
       "source_file": "src\\hooks\\useGeometricInteraction.ts",
       "source_location": "L4",
       "id": "usegeometricinteraction_usegeometricinteraction",
-      "community": 55,
+      "community": 49,
       "norm_label": "usegeometricinteraction()"
     },
     {
@@ -26064,7 +26100,7 @@
       "source_file": "src\\hooks\\useIntersectionObserver.ts",
       "source_location": "L1",
       "id": "src_hooks_useintersectionobserver_ts",
-      "community": 22,
+      "community": 23,
       "norm_label": "useintersectionobserver.ts"
     },
     {
@@ -26073,7 +26109,7 @@
       "source_file": "src\\hooks\\useIntersectionObserver.ts",
       "source_location": "L3",
       "id": "useintersectionobserver_useintersectionobserver",
-      "community": 22,
+      "community": 23,
       "norm_label": "useintersectionobserver()"
     },
     {
@@ -26082,7 +26118,7 @@
       "source_file": "src\\hooks\\useIsMobile.ts",
       "source_location": "L1",
       "id": "src_hooks_useismobile_ts",
-      "community": 31,
+      "community": 29,
       "norm_label": "useismobile.ts"
     },
     {
@@ -26091,7 +26127,7 @@
       "source_file": "src\\hooks\\useIsMobile.ts",
       "source_location": "L5",
       "id": "useismobile_getmatches",
-      "community": 31,
+      "community": 29,
       "norm_label": "getmatches()"
     },
     {
@@ -26100,7 +26136,7 @@
       "source_file": "src\\hooks\\useIsMobile.ts",
       "source_location": "L13",
       "id": "useismobile_useismobile",
-      "community": 31,
+      "community": 29,
       "norm_label": "useismobile()"
     },
     {
@@ -26127,7 +26163,7 @@
       "source_file": "src\\hooks\\useParallax.ts",
       "source_location": "L1",
       "id": "src_hooks_useparallax_ts",
-      "community": 56,
+      "community": 50,
       "norm_label": "useparallax.ts"
     },
     {
@@ -26136,7 +26172,7 @@
       "source_file": "src\\hooks\\useParallax.ts",
       "source_location": "L8",
       "id": "useparallax_useparallax",
-      "community": 56,
+      "community": 50,
       "norm_label": "useparallax()"
     },
     {
@@ -26145,7 +26181,7 @@
       "source_file": "src\\hooks\\usePlanetInteraction.ts",
       "source_location": "L1",
       "id": "src_hooks_useplanetinteraction_ts",
-      "community": 57,
+      "community": 51,
       "norm_label": "useplanetinteraction.ts"
     },
     {
@@ -26154,7 +26190,7 @@
       "source_file": "src\\hooks\\usePlanetInteraction.ts",
       "source_location": "L14",
       "id": "useplanetinteraction_useplanetinteraction",
-      "community": 57,
+      "community": 51,
       "norm_label": "useplanetinteraction()"
     },
     {
@@ -26181,7 +26217,7 @@
       "source_file": "src\\hooks\\useScrollAnimations.ts",
       "source_location": "L1",
       "id": "src_hooks_usescrollanimations_ts",
-      "community": 58,
+      "community": 52,
       "norm_label": "usescrollanimations.ts"
     },
     {
@@ -26190,7 +26226,7 @@
       "source_file": "src\\hooks\\useScrollAnimations.ts",
       "source_location": "L5",
       "id": "usescrollanimations_usescrollanimations",
-      "community": 58,
+      "community": 52,
       "norm_label": "usescrollanimations()"
     },
     {
@@ -26235,7 +26271,7 @@
       "source_file": "src\\hooks\\useScrollPosition.ts",
       "source_location": "L1",
       "id": "src_hooks_usescrollposition_ts",
-      "community": 23,
+      "community": 21,
       "norm_label": "usescrollposition.ts"
     },
     {
@@ -26244,7 +26280,7 @@
       "source_file": "src\\hooks\\useScrollPosition.ts",
       "source_location": "L3",
       "id": "usescrollposition_usescrollposition",
-      "community": 23,
+      "community": 21,
       "norm_label": "usescrollposition()"
     },
     {
@@ -26253,7 +26289,7 @@
       "source_file": "src\\hooks\\useScrollProgress.ts",
       "source_location": "L1",
       "id": "src_hooks_usescrollprogress_ts",
-      "community": 59,
+      "community": 53,
       "norm_label": "usescrollprogress.ts"
     },
     {
@@ -26262,7 +26298,7 @@
       "source_file": "src\\hooks\\useScrollProgress.ts",
       "source_location": "L7",
       "id": "usescrollprogress_usescrollprogress",
-      "community": 59,
+      "community": 53,
       "norm_label": "usescrollprogress()"
     },
     {
@@ -26271,7 +26307,7 @@
       "source_file": "src\\hooks\\useScrollReveal.ts",
       "source_location": "L1",
       "id": "src_hooks_usescrollreveal_ts",
-      "community": 60,
+      "community": 54,
       "norm_label": "usescrollreveal.ts"
     },
     {
@@ -26280,7 +26316,7 @@
       "source_file": "src\\hooks\\useScrollReveal.ts",
       "source_location": "L14",
       "id": "usescrollreveal_usescrollreveal",
-      "community": 60,
+      "community": 54,
       "norm_label": "usescrollreveal()"
     },
     {
@@ -26289,7 +26325,7 @@
       "source_file": "src\\hooks\\useScrollToCamera.ts",
       "source_location": "L1",
       "id": "src_hooks_usescrolltocamera_ts",
-      "community": 24,
+      "community": 22,
       "norm_label": "usescrolltocamera.ts"
     },
     {
@@ -26298,7 +26334,7 @@
       "source_file": "src\\hooks\\useScrollToCamera.ts",
       "source_location": "L5",
       "id": "usescrolltocamera_usescrolltocamera",
-      "community": 24,
+      "community": 22,
       "norm_label": "usescrolltocamera()"
     },
     {
@@ -26325,7 +26361,7 @@
       "source_file": "src\\hooks\\useTheme.tsx",
       "source_location": "L1",
       "id": "src_hooks_usetheme_tsx",
-      "community": 18,
+      "community": 19,
       "norm_label": "usetheme.tsx"
     },
     {
@@ -26334,7 +26370,7 @@
       "source_file": "src\\hooks\\useTheme.tsx",
       "source_location": "L20",
       "id": "usetheme_getinitialtheme",
-      "community": 18,
+      "community": 19,
       "norm_label": "getinitialtheme()"
     },
     {
@@ -26343,7 +26379,7 @@
       "source_file": "src\\hooks\\useTheme.tsx",
       "source_location": "L55",
       "id": "usetheme_listener",
-      "community": 18,
+      "community": 19,
       "norm_label": "listener()"
     },
     {
@@ -26352,7 +26388,7 @@
       "source_file": "src\\hooks\\useTheme.tsx",
       "source_location": "L90",
       "id": "usetheme_usetheme",
-      "community": 18,
+      "community": 19,
       "norm_label": "usetheme()"
     },
     {
@@ -26361,7 +26397,7 @@
       "source_file": "src\\hooks\\useTouchCamera.ts",
       "source_location": "L1",
       "id": "src_hooks_usetouchcamera_ts",
-      "community": 61,
+      "community": 55,
       "norm_label": "usetouchcamera.ts"
     },
     {
@@ -26370,7 +26406,7 @@
       "source_file": "src\\hooks\\useTouchCamera.ts",
       "source_location": "L3",
       "id": "usetouchcamera_usetouchcamera",
-      "community": 61,
+      "community": 55,
       "norm_label": "usetouchcamera()"
     },
     {
@@ -26397,7 +26433,7 @@
       "source_file": "src\\hooks\\useWindowSize.ts",
       "source_location": "L1",
       "id": "src_hooks_usewindowsize_ts",
-      "community": 62,
+      "community": 56,
       "norm_label": "usewindowsize.ts"
     },
     {
@@ -26406,7 +26442,7 @@
       "source_file": "src\\hooks\\useWindowSize.ts",
       "source_location": "L3",
       "id": "usewindowsize_usewindowsize",
-      "community": 62,
+      "community": 56,
       "norm_label": "usewindowsize()"
     },
     {
@@ -26415,7 +26451,7 @@
       "source_file": "src\\layouts\\MainLayout.tsx",
       "source_location": "L1",
       "id": "src_layouts_mainlayout_tsx",
-      "community": 63,
+      "community": 57,
       "norm_label": "mainlayout.tsx"
     },
     {
@@ -26424,7 +26460,7 @@
       "source_file": "src\\layouts\\MainLayout.tsx",
       "source_location": "L9",
       "id": "mainlayout_mainlayout",
-      "community": 63,
+      "community": 57,
       "norm_label": "mainlayout()"
     },
     {
@@ -26433,7 +26469,7 @@
       "source_file": "src\\test\\setup.ts",
       "source_location": "L1",
       "id": "src_test_setup_ts",
-      "community": 105,
+      "community": 99,
       "norm_label": "setup.ts"
     },
     {
@@ -26442,7 +26478,7 @@
       "source_file": "src\\types\\global.d.ts",
       "source_location": "L1",
       "id": "src_types_global_d_ts",
-      "community": 106,
+      "community": 100,
       "norm_label": "global.d.ts"
     },
     {
@@ -26451,7 +26487,7 @@
       "source_file": "src\\types\\portfolio.ts",
       "source_location": "L1",
       "id": "src_types_portfolio_ts",
-      "community": 107,
+      "community": 101,
       "norm_label": "portfolio.ts"
     },
     {
@@ -26514,7 +26550,7 @@
       "source_file": "src\\utils\\cinematicOptimization.ts",
       "source_location": "L1",
       "id": "src_utils_cinematicoptimization_ts",
-      "community": 64,
+      "community": 58,
       "norm_label": "cinematicoptimization.ts"
     },
     {
@@ -26523,7 +26559,7 @@
       "source_file": "src\\utils\\cinematicOptimization.ts",
       "source_location": "L7",
       "id": "cinematicoptimization_usecinematicoptimization",
-      "community": 64,
+      "community": 58,
       "norm_label": "usecinematicoptimization()"
     },
     {
@@ -26532,7 +26568,7 @@
       "source_file": "src\\utils\\errorBoundary.tsx",
       "source_location": "L1",
       "id": "src_utils_errorboundary_tsx",
-      "community": 21,
+      "community": 0,
       "norm_label": "errorboundary.tsx"
     },
     {
@@ -26541,7 +26577,7 @@
       "source_file": "src\\utils\\errorBoundary.tsx",
       "source_location": "L13",
       "id": "errorboundary_errorboundary",
-      "community": 21,
+      "community": 0,
       "norm_label": "errorboundary"
     },
     {
@@ -26550,7 +26586,7 @@
       "source_file": "src\\utils\\errorBoundary.tsx",
       "source_location": "L19",
       "id": "errorboundary_errorboundary_getderivedstatefromerror",
-      "community": 21,
+      "community": 0,
       "norm_label": ".getderivedstatefromerror()"
     },
     {
@@ -26559,7 +26595,7 @@
       "source_file": "src\\utils\\errorBoundary.tsx",
       "source_location": "L23",
       "id": "errorboundary_errorboundary_componentdidcatch",
-      "community": 21,
+      "community": 0,
       "norm_label": ".componentdidcatch()"
     },
     {
@@ -26568,7 +26604,7 @@
       "source_file": "src\\utils\\errorBoundary.tsx",
       "source_location": "L27",
       "id": "errorboundary_errorboundary_render",
-      "community": 21,
+      "community": 0,
       "norm_label": ".render()"
     },
     {
@@ -26577,7 +26613,7 @@
       "source_file": "src\\utils\\logger.ts",
       "source_location": "L1",
       "id": "src_utils_logger_ts",
-      "community": 108,
+      "community": 102,
       "norm_label": "logger.ts"
     }
   ],
@@ -26593,6 +26629,18 @@
       "source": "read_docx_py",
       "target": "read_docx_read_docx",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "read_docx.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_src": "read_docx_read_docx",
+      "_tgt": "settingsmenu_open",
+      "source": "read_docx_read_docx",
+      "target": "settingsmenu_open"
     },
     {
       "relation": "contains",
@@ -114894,7 +114942,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src\\components\\sections\\ScrollSections.tsx",
-      "source_location": "L30",
+      "source_location": "L32",
       "weight": 1.0,
       "_src": "src_components_sections_scrollsections_tsx",
       "_tgt": "scrollsections_sectiontransform",
@@ -114906,7 +114954,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src\\components\\sections\\ScrollSections.tsx",
-      "source_location": "L42",
+      "source_location": "L44",
       "weight": 1.0,
       "_src": "src_components_sections_scrollsections_tsx",
       "_tgt": "scrollsections_handlesubmit",
@@ -114918,7 +114966,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "src\\components\\sections\\ScrollSections.tsx",
-      "source_location": "L31",
+      "source_location": "L33",
       "weight": 1.0,
       "_src": "scrollsections_sectiontransform",
       "_tgt": "scrollsections_sectionopacity",
@@ -115062,13 +115110,25 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src\\components\\space\\HelpOverlay.tsx",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_src": "src_components_space_helpoverlay_tsx",
       "_tgt": "helpoverlay_helpoverlay",
       "source": "src_components_space_helpoverlay_tsx",
       "target": "helpoverlay_helpoverlay",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\components\\space\\HelpOverlay.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_src": "helpoverlay_helpoverlay",
+      "_tgt": "usefocustrap_usefocustrap",
+      "source": "helpoverlay_helpoverlay",
+      "target": "usefocustrap_usefocustrap"
     },
     {
       "relation": "contains",
@@ -115134,7 +115194,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src\\components\\space\\PlanetDetailPanel.tsx",
-      "source_location": "L25",
+      "source_location": "L28",
       "weight": 1.0,
       "_src": "src_components_space_planetdetailpanel_tsx",
       "_tgt": "planetdetailpanel_handlekey",
@@ -115188,6 +115248,54 @@
       "_tgt": "sectiontransition_sectiontransition",
       "source": "src_components_space_sectiontransition_tsx",
       "target": "sectiontransition_sectiontransition",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\space\\SettingsMenu.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_src": "src_components_space_settingsmenu_tsx",
+      "_tgt": "settingsmenu_open",
+      "source": "src_components_space_settingsmenu_tsx",
+      "target": "settingsmenu_open",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\space\\SettingsMenu.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_src": "src_components_space_settingsmenu_tsx",
+      "_tgt": "settingsmenu_close",
+      "source": "src_components_space_settingsmenu_tsx",
+      "target": "settingsmenu_close",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\space\\SettingsMenu.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_src": "src_components_space_settingsmenu_tsx",
+      "_tgt": "settingsmenu_handlekey",
+      "source": "src_components_space_settingsmenu_tsx",
+      "target": "settingsmenu_handlekey",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\space\\SettingsMenu.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_src": "settingsmenu_handlekey",
+      "_tgt": "settingsmenu_close",
+      "source": "settingsmenu_close",
+      "target": "settingsmenu_handlekey",
       "confidence_score": 1.0
     },
     {
@@ -115446,7 +115554,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src\\components\\ui\\CertLightbox.tsx",
-      "source_location": "L15",
+      "source_location": "L19",
       "weight": 1.0,
       "_src": "src_components_ui_certlightbox_tsx",
       "_tgt": "certlightbox_handleesc",
@@ -115470,13 +115578,25 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src\\components\\ui\\Modal.tsx",
-      "source_location": "L10",
+      "source_location": "L13",
       "weight": 1.0,
       "_src": "src_components_ui_modal_tsx",
       "_tgt": "modal_modal",
       "source": "src_components_ui_modal_tsx",
       "target": "modal_modal",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\components\\ui\\Modal.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_src": "modal_modal",
+      "_tgt": "usefocustrap_usefocustrap",
+      "source": "modal_modal",
+      "target": "usefocustrap_usefocustrap"
     },
     {
       "relation": "contains",
@@ -115501,18 +115621,6 @@
       "_tgt": "useintersectionobserver_useintersectionobserver",
       "source": "progressbar_progressbar",
       "target": "useintersectionobserver_useintersectionobserver"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src\\components\\ui\\ProjectCard.tsx",
-      "source_location": "L13",
-      "weight": 1.0,
-      "_src": "src_components_ui_projectcard_tsx",
-      "_tgt": "projectcard_getbadgecolor",
-      "source": "src_components_ui_projectcard_tsx",
-      "target": "projectcard_getbadgecolor",
-      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -115813,6 +115921,18 @@
       "_tgt": "usespacecameracontroller_usespacecameracontroller",
       "source": "usecinematictimeline_usecinematictimeline",
       "target": "usespacecameracontroller_usespacecameracontroller"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useFocusTrap.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_src": "src_hooks_usefocustrap_ts",
+      "_tgt": "usefocustrap_usefocustrap",
+      "source": "src_hooks_usefocustrap_ts",
+      "target": "usefocustrap_usefocustrap",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",

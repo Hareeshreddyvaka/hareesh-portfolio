@@ -13,7 +13,7 @@ import { useState } from 'react';
  */
 export default function ScrollSections() {
   const { data, isLoading } = usePortfolioData();
-  const { totalProgress } = useScrollOrchestrator();
+  const { totalProgress, sectionProgress } = useScrollOrchestrator();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
@@ -26,6 +26,8 @@ export default function ScrollSections() {
     if (totalProgress < peak) return mapRange(totalProgress, start, peak, 0, 1);
     return mapRange(totalProgress, peak, end, 1, 0);
   };
+
+  const weight = Math.round(300 + (sectionProgress * 400));
 
   const sectionTransform = (start: number, peak: number, end: number) => {
     const op = sectionOpacity(start, peak, end);
@@ -62,7 +64,8 @@ export default function ScrollSections() {
               <Sparkles size={12} aria-hidden="true" /> Welcome to my universe
             </span>
           </div>
-          <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-bold text-white mb-5 font-['Space_Grotesk'] tracking-tight leading-[0.95]">
+          <span className="text-[var(--text-xs)] tracking-[0.15em] text-white/40 uppercase block mb-2">01 / About</span>
+          <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] text-white mb-5 tracking-tight leading-[0.95]" style={{ fontVariationSettings: `'wght' ${weight}` }}>
             {personal.name.split(' ').map((word: string, i: number) => (
               <span key={i} className={i === personal.name.split(' ').length - 1 
                 ? 'text-transparent bg-clip-text bg-gradient-to-r from-[#9D4EDD] via-[#3A86FF] to-[#00D9FF]' 
@@ -116,7 +119,8 @@ export default function ScrollSections() {
               </div>
               <span className="text-xs font-mono text-white/40 tracking-widest uppercase">Mars Sector</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-white font-['Space_Grotesk'] mb-3">
+            <span className="text-[var(--text-xs)] tracking-[0.15em] text-white/40 uppercase block mb-2">02 / Projects</span>
+            <h2 className="text-4xl md:text-5xl text-white mb-3" style={{ fontVariationSettings: `'wght' ${weight}` }}>
               Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#9D4EDD] to-[#3A86FF]">Projects</span>
             </h2>
             <p className="text-white/40 text-lg max-w-xl">
@@ -148,7 +152,8 @@ export default function ScrollSections() {
               </div>
               <span className="text-xs font-mono text-white/40 tracking-widest uppercase">Venus Sector</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-white font-['Space_Grotesk'] mb-3">
+            <span className="text-[var(--text-xs)] tracking-[0.15em] text-white/40 uppercase block mb-2">03 / Skills</span>
+            <h2 className="text-4xl md:text-5xl text-white mb-3" style={{ fontVariationSettings: `'wght' ${weight}` }}>
               Technical <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3A86FF] to-[#00D9FF]">Proficiency</span>
             </h2>
             <p className="text-white/40 text-lg max-w-xl mx-auto">
@@ -186,7 +191,8 @@ export default function ScrollSections() {
             </div>
             <span className="text-xs font-mono text-white/40 tracking-widest uppercase">Saturn Sector</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white font-['Space_Grotesk'] mb-6">
+          <span className="text-[var(--text-xs)] tracking-[0.15em] text-white/40 uppercase block mb-2">04 / Education</span>
+          <h2 className="text-4xl md:text-5xl text-white mb-6" style={{ fontVariationSettings: `'wght' ${weight}` }}>
             Certifications
           </h2>
           
@@ -198,7 +204,7 @@ export default function ScrollSections() {
                     <Award size={22} className="text-[#EEDB9A]" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white font-['Space_Grotesk'] mb-1">{cert.title}</h3>
+                    <h3 className="text-xl text-white mb-1" style={{ fontVariationSettings: `'wght' ${weight}` }}>{cert.title}</h3>
                     <p className="text-sm text-[#00D9FF] font-mono mb-3">{cert.issuer} · {cert.date}</p>
                     <p className="text-white/40 text-sm leading-relaxed">{cert.description}</p>
                   </div>
@@ -209,7 +215,7 @@ export default function ScrollSections() {
 
           {/* Education block */}
           <div className="mt-8 bg-white/[0.03] backdrop-blur-sm rounded-2xl border border-white/5 p-8 text-left">
-            <h3 className="text-lg font-bold text-white font-['Space_Grotesk'] mb-1">{education.degree}</h3>
+            <h3 className="text-lg text-white mb-1" style={{ fontVariationSettings: `'wght' ${weight}` }}>{education.degree}</h3>
             <p className="text-sm text-[#00D9FF] font-mono mb-2">{education.school} · {education.specialization}</p>
             <div className="flex gap-6 text-sm text-white/40">
               <span>CGPA: <span className="text-white/70 font-bold">{education.cgpa}</span></span>
@@ -235,7 +241,8 @@ export default function ScrollSections() {
               </div>
               <span className="text-xs font-mono text-white/40 tracking-widest uppercase">Jupiter Sector</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-white font-['Space_Grotesk'] mb-4">
+            <span className="text-[var(--text-xs)] tracking-[0.15em] text-white/40 uppercase block mb-2">05 / Contact</span>
+            <h2 className="text-4xl md:text-5xl text-white mb-4" style={{ fontVariationSettings: `'wght' ${weight}` }}>
               Let's <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#9D4EDD] to-[#3A86FF]">Connect</span>
             </h2>
             <p className="text-white/40 text-lg mb-8 max-w-lg">

@@ -76,3 +76,27 @@ axe-core integration: added to DEV mode (import.meta.env.DEV) in main.tsx
 Test status: PASS
 TypeScript status: PASS
 Build status: PASS
+
+## Sprint 2.1 — Typography & Design System
+Typography Foundation:
+- Installed `@fontsource-variable/inter` package.
+- Created `src/styles/typography.css` establishing Inter Variable as the global `var(--font-primary)`.
+- Applied global font family in CSS and imported into `main.tsx`.
+
+Kinetic Typography:
+- Bound `fontVariationSettings` ('wght') on all section headings dynamically to `sectionProgress` (from `useScrollOrchestrator`).
+- Removed static `font-['Space_Grotesk']` and `font-bold` classes to let Inter dynamically scale weight from 300 (fade-in) to 700 (fully focused) across scroll interactions.
+
+Section Labels:
+- Prepended stylized `01 / About`, `02 / Projects`, `03 / Skills`, `04 / Education`, `05 / Contact` directly above headings.
+- Configured with `text-[var(--text-xs)] tracking-[0.15em] text-white/40 uppercase block mb-2`.
+
+Project Cards Update:
+- Replaced shadow-based hover states with GPU-accelerated `transform: translateY(-4px)` and `border-color: rgba(255,255,255,0.3)`.
+- Replaced dynamic Tailwind colors on tech stack pill badges with a unified `bg-white/10 border border-white/15 text-white/80` pill design per design spec.
+
+Validations:
+- Visual contrast verified >= 4.5:1 against dark themes.
+- Test status: PASS
+- TypeScript status: PASS
+- Build status: PASS

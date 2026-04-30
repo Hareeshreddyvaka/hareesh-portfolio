@@ -9,20 +9,11 @@ interface ProjectCardProps {
 export default function ProjectCard({ project }: ProjectCardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
 
-  // Parse colors dynamically based on tags where possible, or use defaults
-  const getBadgeColor = (tag: string) => {
-    const t = tag.toLowerCase();
-    if (t.includes('react')) return 'bg-cyan-500/20 text-cyan-300';
-    if (t.includes('python')) return 'bg-yellow-500/20 text-yellow-300';
-    if (t.includes('node') || t.includes('mongo')) return 'bg-green-500/20 text-green-300';
-    if (t.includes('ai') || t.includes('deep') || t.includes('torch')) return 'bg-purple-500/20 text-purple-300';
-    return 'bg-slate-700 text-slate-300';
-  };
 
   return (
     <div 
       ref={cardRef}
-      className="project-card group relative flex flex-col bg-[#1A1F26]/80 backdrop-blur-md rounded-2xl border border-white/5 overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(58,134,255,0.15)] hover:border-white/10"
+      className="project-card group relative flex flex-col bg-[#1A1F26]/80 backdrop-blur-md rounded-2xl border border-white/5 overflow-hidden transition-[transform,border-color] duration-200 ease-in-out hover:-translate-y-1 hover:border-white/30"
     >
       {/* Parallax Image Container */}
       <div className="relative w-full h-48 overflow-hidden bg-black/50">
@@ -48,13 +39,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           {project.tags.slice(0, 3).map((tag) => (
             <span 
               key={tag} 
-              className={`text-xs px-2.5 py-1 rounded-full font-medium ${getBadgeColor(tag)}`}
+              className="text-[var(--text-xs)] px-[10px] py-[2px] rounded-full font-medium bg-white/10 border border-white/15 text-white/80"
             >
               {tag}
             </span>
           ))}
           {project.tags.length > 3 && (
-            <span className="text-xs px-2 py-1 rounded-full bg-white/5 text-gray-400">
+            <span className="text-[var(--text-xs)] px-[10px] py-[2px] rounded-full font-medium bg-white/5 border border-transparent text-gray-400">
               +{project.tags.length - 3}
             </span>
           )}
