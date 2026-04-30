@@ -100,3 +100,16 @@ Validations:
 - Test status: PASS
 - TypeScript status: PASS
 - Build status: PASS
+
+## Sprint 2.2 — Entrance Animations
+GSAP ScrollTrigger implemented: YES
+toggleActions used not scrub: YES
+Label stagger before heading: YES
+Content items stagger 60ms: YES
+Exit animation at 0.85: YES
+Reduced motion support: YES
+Cleanup on unmount: YES
+Kinetic font weight preserved: YES
+Test status: PASS
+TypeScript status: PASS
+Build status: PASS

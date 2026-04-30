@@ -6,7 +6,7 @@ export interface ScrollState {
   currentSection: 'hero' | 'projects' | 'skills' | 'certifications' | 'contact';
 }
 
-const SECTION_BOUNDARIES = {
+export const SECTION_BOUNDARIES = {
   hero: [0, 0.25],
   projects: [0.25, 0.50],
   skills: [0.50, 0.75],
