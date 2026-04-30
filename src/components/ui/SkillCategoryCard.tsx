@@ -46,7 +46,7 @@ export const SkillCategoryCard: React.FC<SkillCategoryCardProps> = ({ category }
             <span className="font-mono text-xs text-primary-400">{item.confidence}%</span>
           </div>
 
-          {item.blurb && <p className="text-xs text-slate-500">{item.blurb}</p>}
+          {item.blurb && <p className="text-xs text-slate-400">{item.blurb}</p>}
 
           <div className="h-1.5 w-full overflow-hidden rounded-full bg-surface-dark border border-white/5">
             <motion.div

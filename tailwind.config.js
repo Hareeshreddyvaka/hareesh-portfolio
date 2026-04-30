@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Outfit', 'sans-serif'],
+        sans: ['Space Grotesk', 'Outfit', 'sans-serif'],
         mono: ['Fira Code', 'monospace'],
         display: ['Space Grotesk', 'sans-serif'],
       },

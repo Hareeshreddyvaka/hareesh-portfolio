@@ -22,9 +22,13 @@ const getInitialTheme = (): Theme => {
     return 'dark';
   }
 
-  const stored = window.localStorage.getItem(STORAGE_KEY) as Theme | null;
-  if (stored === 'light' || stored === 'dark') {
-    return stored;
+  try {
+    const stored = window.localStorage.getItem(STORAGE_KEY) as Theme | null;
+    if (stored === 'light' || stored === 'dark') {
+      return stored;
+    }
+  } catch (error) {
+    console.warn('Theme storage is unavailable, falling back to system preference.', error);
   }
 
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -38,7 +42,12 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     const root = window.document.documentElement;
     root.classList.remove(theme === 'dark' ? 'light' : 'dark');
     root.classList.add(theme);
-    window.localStorage.setItem(STORAGE_KEY, theme);
+
+    try {
+      window.localStorage.setItem(STORAGE_KEY, theme);
+    } catch (error) {
+      console.warn('Theme storage is unavailable, skipping persistence.', error);
+    }
   }, [theme]);
 
   useEffect(() => {
@@ -46,8 +55,14 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     const listener = (event: MediaQueryListEvent) => {
       setThemeState(event.matches ? 'dark' : 'light');
     };
-    mediaQuery.addEventListener('change', listener);
-    return () => mediaQuery.removeEventListener('change', listener);
+
+    if (typeof mediaQuery.addEventListener === 'function') {
+      mediaQuery.addEventListener('change', listener);
+      return () => mediaQuery.removeEventListener('change', listener);
+    }
+
+    mediaQuery.addListener(listener);
+    return () => mediaQuery.removeListener(listener);
   }, []);
 
   const setTheme = useCallback((value: Theme) => {

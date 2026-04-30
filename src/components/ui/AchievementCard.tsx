@@ -11,12 +11,20 @@ type AchievementCardProps = {
 export const AchievementCard: React.FC<AchievementCardProps> = ({ achievement, index }) => (
   <motion.div
     className="group perspective"
-    data-aos="zoom-in-up"
-    data-aos-delay={index * 120}
+    initial={{ opacity: 0, scale: 0.92, y: 20 }}
+    whileInView={{ opacity: 1, scale: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.5, delay: index * 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
   >
     <div className="relative h-full w-full rounded-3xl border border-white/10 bg-transparent transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
       <div className="absolute inset-0 flex h-full w-full flex-col items-center justify-center gap-4 rounded-3xl bg-white/80 p-6 text-center shadow-xl shadow-primary-500/10 backdrop-blur dark:bg-slate-900/70 [backface-visibility:hidden]">
-        <img src={achievement.thumbnail} alt={achievement.title} className="h-20 w-20 rounded-2xl object-cover shadow-md" />
+        <img
+          src={achievement.thumbnail}
+          alt={achievement.title}
+          className="h-20 w-20 rounded-2xl object-cover shadow-md"
+          loading="lazy"
+          decoding="async"
+        />
         <div className="flex flex-col gap-1">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary-500/80 dark:text-primary-300/80">
             {achievement.year}
@@ -50,4 +58,3 @@ export const AchievementCard: React.FC<AchievementCardProps> = ({ achievement, i
     </div>
   </motion.div>
 );
-

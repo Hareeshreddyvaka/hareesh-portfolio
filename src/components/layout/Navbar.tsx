@@ -1,165 +1,83 @@
 import { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Link } from 'react-scroll';
-import { Menu, X, Download, Mail } from 'lucide-react';
-import clsx from 'clsx';
-import { navItems } from '../../data/navigation';
-import { ThemeToggle } from '../ui/ThemeToggle';
+import { useScrollOrchestrator } from '../../hooks/useScrollOrchestrator';
+import { usePortfolioData } from '../../hooks/usePortfolioData';
 
-const navMotion = {
-  initial: { opacity: 0, y: -12 },
-  animate: { opacity: 1, y: 0 },
-};
-
-const mobileVariants = {
-  hidden: { opacity: 0, y: -24 },
-  visible: { opacity: 1, y: 0 },
-  exit: { opacity: 0, y: -16 },
-};
-
-const Navbar: React.FC = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+export default function Navbar() {
+  const { currentSection } = useScrollOrchestrator();
+  const { data } = usePortfolioData();
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => {
-      setIsScrolled(window.scrollY > 24);
-    };
-    onScroll();
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-  }, [isOpen]);
+  // Planet navigation — scroll to percentage of the full document
+  const navItems = [
+    { id: 'hero', label: 'Home', scrollPct: 0 },
+    { id: 'projects', label: 'Projects', scrollPct: 0.35 },
+    { id: 'skills', label: 'Skills', scrollPct: 0.55 },
+    { id: 'certifications', label: 'Certs', scrollPct: 0.78 },
+    { id: 'contact', label: 'Contact', scrollPct: 0.92 },
+  ];
 
-  const handleNavClick = () => setIsOpen(false);
+  const scrollToPct = (pct: number) => {
+    const maxScroll = document.body.scrollHeight - window.innerHeight;
+    window.scrollTo({ top: maxScroll * pct, behavior: 'smooth' });
+  };
 
   return (
-    <motion.header
-      {...navMotion}
-      transition={{ duration: 0.6, delay: 0.2, type: 'spring' }}
-      className={clsx(
-        'fixed inset-x-0 top-0 z-50 mx-auto flex max-w-6xl items-center justify-between rounded-full px-6 py-4 transition-all duration-300 ease-out md:px-10',
-        isScrolled
-          ? 'bg-white/80 text-slate-900 shadow-lg shadow-primary-500/10 backdrop-blur dark:bg-slate-900/80 dark:text-slate-100'
-          : 'mt-6 bg-white/40 text-slate-900 shadow-sm shadow-primary-500/5 backdrop-blur-2xl dark:bg-slate-900/40 dark:text-slate-100',
-      )}
+    <nav
+      className={`w-full transition-all duration-300 ${
+        scrolled
+          ? 'bg-[#0A0D12]/80 backdrop-blur-xl border-b border-white/5 py-3'
+          : 'bg-transparent py-5'
+      }`}
     >
-      <div className="flex items-center gap-3">
-        <span className="h-10 w-10 rounded-2xl bg-gradient-to-br from-primary-500 via-secondary-400 to-cyan-400 shadow-glow" />
-        <span className="text-sm font-semibold uppercase tracking-[0.35em] text-slate-600 dark:text-slate-300">
-          Hareesh
-        </span>
-      </div>
-      <nav className="hidden items-center gap-8 md:flex">
-        {navItems.map((item) => (
-          <Link
-            key={item.id}
-            to={item.id}
-            smooth
-            spy
-            offset={-80}
-            duration={500}
-            className="cursor-pointer text-sm font-medium text-slate-500 transition hover:text-primary-500 dark:text-slate-300 dark:hover:text-primary-300"
-            activeClass="text-primary-500 font-semibold dark:text-primary-300"
-          >
-            {item.label}
-          </Link>
-        ))}
-      </nav>
-      <div className="hidden items-center gap-4 md:flex">
+      <div className="max-w-7xl mx-auto px-6 w-full flex items-center justify-between">
+        {/* Logo */}
         <button
-          type="button"
-          className="interactive flex items-center gap-2 rounded-full border border-white/10 bg-white/80 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary-500/30 dark:bg-slate-800/80 dark:text-slate-100"
-          onClick={() => window.open('mailto:hareesh.vaka.ai@gmail.com')}
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="text-white font-bold font-outfit text-lg tracking-tight flex items-center gap-2.5 group"
         >
-          <Mail size={16} />
-          Hire Me
+          <span className="w-8 h-8 rounded-full bg-gradient-to-tr from-[#9D4EDD] to-[#00D9FF] flex items-center justify-center text-xs font-bold shadow-[0_0_12px_rgba(157,78,221,0.4)]">
+            {data?.personal.name.charAt(0) || 'H'}
+          </span>
+          <span className="hidden sm:inline group-hover:text-[#00D9FF] transition-colors">
+            {data?.personal.name || 'Portfolio'}
+          </span>
         </button>
-        <a
-          className="interactive flex items-center gap-2 rounded-full bg-gradient-to-r from-primary-500 via-secondary-500 to-cyan-400 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-primary-500/40 transition hover:-translate-y-0.5 hover:shadow-primary-500/60"
-          href="https://drive.google.com/file/d/1-portfolio-resume/view?usp=sharing"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Download size={16} />
-          Download Resume
-        </a>
-        <ThemeToggle />
+
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center gap-0.5 p-1 bg-white/[0.03] rounded-full border border-white/[0.06] backdrop-blur-sm">
+          {navItems.map((item) => {
+            const isActive = currentSection === item.id;
+            return (
+              <button
+                key={item.id}
+                onClick={() => scrollToPct(item.scrollPct)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                  isActive
+                    ? 'bg-white/10 text-white shadow-[0_0_10px_rgba(255,255,255,0.08)]'
+                    : 'text-gray-500 hover:text-gray-300 hover:bg-white/[0.03]'
+                }`}
+              >
+                {item.label}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Mobile menu toggle */}
+        <div className="md:hidden">
+          <button className="text-white/70 p-2 hover:text-white transition-colors">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+            </svg>
+          </button>
+        </div>
       </div>
-      <div className="flex items-center gap-3 md:hidden">
-        <ThemeToggle />
-        <button
-          type="button"
-          className="rounded-full border border-white/20 bg-white/70 p-2 text-slate-700 shadow-sm transition hover:scale-105 dark:bg-slate-800/80 dark:text-slate-100"
-          onClick={() => setIsOpen((prev) => !prev)}
-          aria-label="Toggle navigation menu"
-        >
-          {isOpen ? <X size={20} /> : <Menu size={20} />}
-        </button>
-      </div>
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            className="fixed inset-x-4 top-20 z-40 rounded-3xl border border-white/10 bg-white/90 p-6 shadow-2xl shadow-primary-500/20 dark:bg-slate-900/95"
-            initial="hidden"
-            animate="visible"
-            exit="exit"
-            variants={mobileVariants}
-            transition={{ duration: 0.25, ease: 'easeOut' }}
-          >
-            <div className="flex flex-col gap-4">
-              {navItems.map((item) => (
-                <Link
-                  key={item.id}
-                  to={item.id}
-                  smooth
-                  spy
-                  offset={-70}
-                  duration={500}
-                  onClick={handleNavClick}
-                  className="cursor-pointer rounded-full px-4 py-3 text-base font-semibold text-slate-600 transition hover:bg-slate-200/80 hover:text-primary-600 dark:text-slate-200 dark:hover:bg-slate-800/80 dark:hover:text-primary-300"
-                  activeClass="bg-primary-500/10 text-primary-600 dark:text-primary-300"
-                >
-                  {item.label}
-                </Link>
-              ))}
-              <div className="mt-2 flex flex-col gap-3">
-                <a
-                  className="interactive flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-primary-500 via-secondary-500 to-cyan-400 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-primary-500/40 transition hover:shadow-primary-500/60"
-                  href="https://drive.google.com/file/d/1-portfolio-resume/view?usp=sharing"
-                  target="_blank"
-                  rel="noreferrer"
-                  onClick={handleNavClick}
-                >
-                  <Download size={18} />
-                  Download Resume
-                </a>
-                <button
-                  type="button"
-                  className="interactive flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/80 px-4 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary-500/30 dark:bg-slate-800/80 dark:text-slate-100"
-                  onClick={() => {
-                    window.open('mailto:hareesh.vaka.ai@gmail.com');
-                    handleNavClick();
-                  }}
-                >
-                  <Mail size={18} />
-                  Hire Me
-                </button>
-              </div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </motion.header>
+    </nav>
   );
-};
-
-export default Navbar;
-
+}

@@ -1,0 +1,695 @@
+🌐
+3D PORTFOLIO WEBSITE
+Complete Build Guide with Scroll Animations & Free Resources
+Step-by-Step Instructions · All Free Tools & CDN Links Included · Production Ready
+
+1. Project Overview & Vision
+This guide will walk you through building a jaw-dropping 3D portfolio website from scratch. The final result will feature immersive scroll-triggered animations, floating 3D geometry, cinematic particle backgrounds, smooth camera movements, and a dark space-like aesthetic — all using completely free libraries and assets.
+
+1.1  What You Will Build
+A full-page 3D scene powered by Three.js with rotating geometric objects
+GSAP ScrollTrigger animations that fire as the user scrolls down
+Parallax background images sourced from Unsplash & NASA APIs
+Glitchy hero text with CSS clip-path and neon glow effects
+Smooth section transitions using locomotive-scroll
+Interactive project cards that tilt in 3D on mouse hover (VanillaTilt.js)
+A floating animated navigation bar with blur-glass morphism style
+Contact section with animated input fields
+Fully responsive — works on desktop, tablet, and mobile
+
+1.2  Core Technology Stack
+
+
+2. Project Folder Structure
+Create this folder structure on your computer before writing any code. Keeping files organised makes the project easy to maintain.
+portfolio-3d/
+  ├── index.html               ← Main entry point
+  ├── about.html               ← About page
+  ├── projects.html            ← Projects showcase page
+  ├── contact.html             ← Contact form page
+  ├── css/
+  │   ├── reset.css            ← CSS reset + custom properties
+  │   ├── main.css             ← Global layout & typography
+  │   ├── hero.css             ← Hero section styles
+  │   ├── animations.css       ← Keyframe animations
+  │   └── responsive.css       ← Mobile breakpoints
+  ├── js/
+  │   ├── three-scene.js       ← Three.js 3D canvas setup
+  │   ├── scroll-animations.js ← GSAP + ScrollTrigger logic
+  │   ├── particles.js         ← tsParticles config
+  │   ├── tilt.js              ← VanillaTilt for project cards
+  │   └── main.js              ← Init + glue code
+  ├── assets/
+  │   ├── images/              ← Backgrounds, profile photo
+  │   ├── icons/               ← Tech stack SVG icons
+  │   └── models/              ← (optional) .glb 3D model files
+  └── README.md
+
+
+
+3. HTML Boilerplate (index.html)
+Copy the following complete HTML structure into your index.html. Every CDN link is free and served over HTTPS. The <canvas> element is where Three.js renders the 3D scene.
+3.1  Complete Head Section
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Creative Developer</title>
+
+  <!-- ─── Google Font: Space Grotesk ─── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- ─── Iconify Icons ─── -->
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+  <!-- ─── Your CSS ─── -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+3.2  Body Structure & CDN Scripts
+<body data-scroll-container>
+
+  <!-- ─── 3D Canvas (full screen, sits behind everything) ─── -->
+  <canvas id="three-canvas"></canvas>
+
+  <!-- ─── Particles overlay ─── -->
+  <div id="tsparticles"></div>
+
+  <!-- ─── Navigation ─── -->
+  <nav class="navbar glass-nav">
+    <div class="logo">YN</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="menu-btn">&#9776;</button>
+  </nav>
+
+  <!-- ─── HERO SECTION ─── -->
+  <section id="hero" data-scroll-section>
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I am</p>
+      <h1 class="hero-name glitch" data-text="Your Name">Your Name</h1>
+      <h2 class="hero-role">
+        <span id="typed-output"></span>
+      </h2>
+      <p class="hero-bio">I build immersive digital experiences...</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Work</a>
+        <a href="#contact"  class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+    <div class="scroll-indicator"><span></span></div>
+  </section>
+
+  <!-- ─── ABOUT SECTION ─── -->
+  <section id="about" data-scroll-section>
+    <div class="section-inner">
+      <h2 class="section-title" data-scroll data-scroll-speed="2">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Your story goes here ...</p>
+        </div>
+        <div class="about-img">
+          <img src="https://picsum.photos/500/600?grayscale" alt="Profile" />
+        </div>
+      </div>
+      <div class="skills-grid" id="skills"></div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS SECTION ─── -->
+  <section id="projects" data-scroll-section>
+    <div class="section-inner">
+      <h2 class="section-title">My Projects</h2>
+      <div class="projects-grid" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT SECTION ─── -->
+  <section id="contact" data-scroll-section>
+    <div class="section-inner">
+      <h2 class="section-title">Get In Touch</h2>
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <input type="text" id="name" placeholder=" " required />
+          <label for="name">Your Name</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder=" " required />
+          <label for="email">Your Email</label>
+        </div>
+        <div class="form-group">
+          <textarea id="message" placeholder=" " rows="5" required></textarea>
+          <label for="message">Message</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ──────────────────────────────── -->
+  <!-- CDN Libraries (load before your JS) -->
+  <!-- ──────────────────────────────── -->
+
+  <!-- Three.js r158 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- GSAP 3 + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Locomotive Scroll -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+
+  <!-- VanillaTilt.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+
+  <!-- tsParticles -->
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/all@3.3.0/tsparticles.bundle.min.js"></script>
+
+  <!-- Typed.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.min.js"></script>
+
+  <!-- Your scripts -->
+  <script type="module" src="js/three-scene.js"></script>
+  <script type="module" src="js/scroll-animations.js"></script>
+  <script type="module" src="js/particles.js"></script>
+  <script type="module" src="js/tilt.js"></script>
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
+
+
+4. CSS — Styling & Visual Effects
+4.1  reset.css — Custom Properties & Reset
+Paste this entire block into css/reset.css. All colors are driven by CSS variables so you can retheme the whole site by changing one line.
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* ─ Colors ─ */
+  --color-bg:        #0A0A0F;
+  --color-surface:   #12121A;
+  --color-border:    #2D2D4A;
+  --color-accent:    #6C63FF;
+  --color-cyan:      #00D4FF;
+  --color-text:      #E0E0FF;
+  --color-muted:     #888899;
+
+  /* ─ Typography ─ */
+  --font-main:  'Space Grotesk', sans-serif;
+  --font-mono:  'Courier New', monospace;
+
+  /* ─ Spacing ─ */
+  --section-padding: 8rem 2rem;
+  --max-width: 1200px;
+
+  /* ─ Transitions ─ */
+  --ease-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+html { scroll-behavior: smooth; font-size: 16px; }
+body { background: var(--color-bg); color: var(--color-text); font-family: var(--font-main); overflow-x: hidden; }
+canvas#three-canvas { position: fixed; top: 0; left: 0; z-index: 0; pointer-events: none; }
+#tsparticles  { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
+section        { position: relative; z-index: 2; }
+img            { max-width: 100%; display: block; }
+a              { text-decoration: none; color: inherit; }
+
+4.2  main.css — Layout, Navigation, Glassmorphism
+.section-inner { max-width: var(--max-width); margin: 0 auto; padding: var(--section-padding); }
+.section-title  { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; margin-bottom: 3rem;
+                  background: linear-gradient(135deg, var(--color-accent), var(--color-cyan));
+                  -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+/* ─── Glassmorphism Nav ─── */
+.glass-nav { position: fixed; top: 0; width: 100%; z-index: 100;
+             display: flex; justify-content: space-between; align-items: center;
+             padding: 1rem 2rem;
+             background: rgba(10,10,15,0.5);
+             backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+             border-bottom: 1px solid var(--color-border);
+             transition: background 0.4s var(--ease-smooth); }
+
+.glass-nav.scrolled { background: rgba(10,10,15,0.85); }
+
+.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links a { font-size: 0.95rem; font-weight: 500; letter-spacing: 0.05em;
+               color: var(--color-muted); transition: color 0.3s; }
+.nav-links a:hover { color: var(--color-accent); }
+
+/* ─── Buttons ─── */
+.btn { display: inline-flex; align-items: center; gap: 0.5rem;
+       padding: 0.85rem 2rem; border-radius: 50px; font-weight: 600;
+       font-size: 0.95rem; transition: all 0.35s var(--ease-smooth);
+       cursor: pointer; border: none; }
+.btn-primary { background: linear-gradient(135deg, var(--color-accent), var(--color-cyan)); color: #fff; }
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(108,99,255,0.5); }
+.btn-outline  { border: 1.5px solid var(--color-accent); color: var(--color-accent); background: transparent; }
+.btn-outline:hover  { background: var(--color-accent); color: #fff; transform: translateY(-3px); }
+
+4.3  hero.css — Hero Section & Glitch Effect
+#hero { min-height: 100vh; display: flex; align-items: center; justify-content: center;
+        padding-top: 80px; overflow: hidden; }
+.hero-content { text-align: center; }
+.hero-greeting { color: var(--color-cyan); letter-spacing: 0.2em; text-transform: uppercase;
+                 font-size: 0.9rem; margin-bottom: 1rem; }
+.hero-name { font-size: clamp(3rem, 8vw, 7rem); font-weight: 700; line-height: 1;
+             margin-bottom: 1.5rem; color: var(--color-text); }
+.hero-role  { font-size: clamp(1.2rem, 3vw, 1.8rem); color: var(--color-accent); margin-bottom: 1.5rem; }
+.hero-bio   { max-width: 600px; margin: 0 auto 2.5rem; color: var(--color-muted); line-height: 1.7; }
+.hero-cta   { display: flex; gap: 1.2rem; justify-content: center; flex-wrap: wrap; }
+
+/* ─── Glitch Effect ─── */
+.glitch { position: relative; }
+.glitch::before, .glitch::after { content: attr(data-text); position: absolute;
+  top: 0; left: 0; right: 0; overflow: hidden; clip-path: polygon(0 0,100% 0,100% 33%,0 33%); }
+.glitch::before { left: 2px; text-shadow: -2px 0 var(--color-cyan);
+  animation: glitch-1 2s infinite linear alternate-reverse; }
+.glitch::after  { left: -2px; text-shadow: -2px 0 var(--color-accent);
+  animation: glitch-2 3s infinite linear alternate-reverse; }
+
+/* ─── Scroll Indicator ─── */
+.scroll-indicator { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); }
+.scroll-indicator span { display: block; width: 24px; height: 40px; border: 2px solid var(--color-accent);
+  border-radius: 12px; position: relative; }
+.scroll-indicator span::after { content:''; width: 4px; height: 8px; background: var(--color-accent);
+  border-radius: 2px; position: absolute; top: 6px; left: 50%; transform: translateX(-50%);
+  animation: scroll-dot 1.8s infinite; }
+
+4.4  animations.css — Keyframes
+@keyframes glitch-1 {
+  0%   { clip-path: polygon(0 2%,  100% 2%,  100% 5%,  0 5%);  transform: translate(-2px, 0); }
+  20%  { clip-path: polygon(0 15%, 100% 15%, 100% 30%, 0 30%); transform: translate(2px,  0); }
+  40%  { clip-path: polygon(0 55%, 100% 55%, 100% 70%, 0 70%); transform: translate(-2px, 0); }
+  60%  { clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%); transform: translate(2px,  0); }
+  80%  { clip-path: polygon(0 90%, 100% 90%, 100% 98%, 0 98%); transform: translate(-2px, 0); }
+  100% { clip-path: polygon(0 0,   100% 0,   100% 3%,  0 3%);  transform: translate(0, 0); }
+}
+@keyframes glitch-2 {
+  0%   { clip-path: polygon(0 30%, 100% 30%, 100% 40%, 0 40%); transform: translate(2px, 0); }
+  30%  { clip-path: polygon(0 60%, 100% 60%, 100% 70%, 0 70%); transform: translate(-2px,0); }
+  60%  { clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%); transform: translate(2px, 0); }
+  100% { clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%); transform: translate(0,0); }
+}
+@keyframes scroll-dot { 0%,100%{opacity:1;transform:translateX(-50%) translateY(0)}
+  50%{opacity:0;transform:translateX(-50%) translateY(14px)} }
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-20px)} }
+@keyframes pulse-glow { 0%,100%{box-shadow:0 0 20px rgba(108,99,255,0.3)}
+  50%{box-shadow:0 0 60px rgba(108,99,255,0.7)} }
+@keyframes fade-up { from{opacity:0;transform:translateY(40px)} to{opacity:1;transform:translateY(0)} }
+
+
+5. Three.js — 3D Background Scene (three-scene.js)
+This is the most powerful piece of the site. The Three.js canvas sits behind all content and shows a living 3D world. Copy the complete code below into js/three-scene.js.
+// ─── js/three-scene.js ───────────────────────────────
+const canvas    = document.getElementById('three-canvas');
+const renderer  = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.setSize(window.innerWidth, window.innerHeight);
+
+const scene  = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100);
+camera.position.z = 5;
+
+// ─── Ambient + Point lights ───
+scene.add(new THREE.AmbientLight(0x6C63FF, 0.8));
+const pointLight = new THREE.PointLight(0x00D4FF, 2, 20);
+pointLight.position.set(3, 3, 3);
+scene.add(pointLight);
+
+// ─── Geometry objects ───
+const objects = [];
+const geos = [
+  new THREE.IcosahedronGeometry(1, 1),
+  new THREE.TorusGeometry(0.8, 0.3, 16, 100),
+  new THREE.OctahedronGeometry(0.9),
+  new THREE.TorusKnotGeometry(0.6, 0.2, 100, 16),
+];
+geos.forEach((geo, i) => {
+  const mat = new THREE.MeshStandardMaterial({
+    color: i % 2 === 0 ? 0x6C63FF : 0x00D4FF,
+    wireframe: true, transparent: true, opacity: 0.6,
+  });
+  const mesh = new THREE.Mesh(geo, mat);
+  mesh.position.set((i - 1.5) * 3, Math.sin(i) * 2, -i * 1.5);
+  scene.add(mesh);
+  objects.push(mesh);
+});
+
+// ─── Star field ───
+const starGeo = new THREE.BufferGeometry();
+const positions = new Float32Array(6000);
+for (let i = 0; i < 6000; i++) positions[i] = (Math.random() - 0.5) * 100;
+starGeo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+const starMat  = new THREE.PointsMaterial({ color: 0xffffff, size: 0.05 });
+scene.add(new THREE.Points(starGeo, starMat));
+
+// ─── Mouse parallax ───
+let mouseX = 0, mouseY = 0;
+document.addEventListener('mousemove', e => {
+  mouseX = (e.clientX / window.innerWidth  - 0.5) * 2;
+  mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
+});
+
+// ─── Scroll camera drift ───
+let scrollY = 0;
+window.addEventListener('scroll', () => scrollY = window.scrollY);
+
+// ─── Render loop ───
+const clock = new THREE.Clock();
+function animate() {
+  requestAnimationFrame(animate);
+  const t = clock.getElapsedTime();
+  objects.forEach((obj, i) => {
+    obj.rotation.x = t * 0.3 * (i % 2 === 0 ? 1 : -1);
+    obj.rotation.y = t * 0.5;
+    obj.position.y = Math.sin(t + i) * 0.5;
+  });
+  camera.position.x += (mouseX * 0.5 - camera.position.x) * 0.05;
+  camera.position.y += (-mouseY * 0.5 - camera.position.y) * 0.05;
+  camera.position.z = 5 - scrollY * 0.004;
+  renderer.render(scene, camera);
+}
+animate();
+
+// ─── Resize handler ───
+window.addEventListener('resize', () => {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+});
+
+
+6. GSAP Scroll Animations (scroll-animations.js)
+GSAP ScrollTrigger is the industry standard for scroll animations. These animations fire perfectly in sync with the user's scroll position. Paste into js/scroll-animations.js.
+// ─── js/scroll-animations.js ─────────────────────────
+gsap.registerPlugin(ScrollTrigger);
+
+// ─── Locomotive Scroll + GSAP sync ───
+const locoScroll = new LocomotiveScroll({
+  el: document.querySelector('[data-scroll-container]'),
+  smooth: true, multiplier: 1, class: 'is-inview'
+});
+locoScroll.on('scroll', ScrollTrigger.update);
+ScrollTrigger.scrollerProxy('[data-scroll-container]', {
+  scrollTop(value) {
+    return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+  },
+  getBoundingClientRect() {
+    return { top:0, left:0, width: window.innerWidth, height: window.innerHeight };
+  },
+  pinType: document.querySelector('[data-scroll-container]').style.transform ? 'transform' : 'fixed'
+});
+
+// ─── Section headings: slide up & fade ───
+gsap.utils.toArray('.section-title').forEach(el => {
+  gsap.from(el, {
+    scrollTrigger: { trigger: el, scroller: '[data-scroll-container]', start: 'top 85%', toggleActions: 'play none none reverse' },
+    y: 60, opacity: 0, duration: 1, ease: 'power3.out'
+  });
+});
+
+// ─── Project cards: stagger cascade ───
+gsap.utils.toArray('.project-card').forEach((card, i) => {
+  gsap.from(card, {
+    scrollTrigger: { trigger: card, scroller: '[data-scroll-container]', start: 'top 90%', toggleActions: 'play none none reverse' },
+    y: 80, opacity: 0, rotateX: 15, duration: 0.8, delay: i * 0.1, ease: 'power2.out'
+  });
+});
+
+// ─── Skill pills: pop in ───
+gsap.from('.skill-pill', {
+  scrollTrigger: { trigger: '#skills', scroller: '[data-scroll-container]', start: 'top 80%' },
+  scale: 0, opacity: 0, duration: 0.5, stagger: 0.06, ease: 'back.out(1.7)'
+});
+
+// ─── Hero text: staggered entrance ───
+gsap.from(['.hero-greeting','.hero-name','.hero-role','.hero-bio','.hero-cta'], {
+  y: 40, opacity: 0, duration: 1, stagger: 0.15, ease: 'power3.out', delay: 0.2
+});
+
+// ─── Parallax background images ───
+gsap.utils.toArray('.parallax-bg').forEach(bg => {
+  gsap.to(bg, {
+    scrollTrigger: { trigger: bg.parentElement, scroller: '[data-scroll-container]',
+      start: 'top bottom', end: 'bottom top', scrub: 1.5 },
+    y: '-25%', ease: 'none'
+  });
+});
+
+ScrollTrigger.addEventListener('refresh', () => locoScroll.update());
+ScrollTrigger.refresh();
+
+
+7. Particle Background (particles.js)
+tsParticles creates a floating particle starfield over the Three.js canvas, adding depth and texture. Paste into js/particles.js.
+// ─── js/particles.js ─────────────────────────────────
+tsParticles.load('tsparticles', {
+  background: { color: { value: 'transparent' } },
+  particles: {
+    number: { value: 120, density: { enable: true, value_area: 800 } },
+    color: { value: ['#6C63FF','#00D4FF','#ffffff'] },
+    shape: { type: 'circle' },
+    opacity: { value: 0.5, random: true, anim: { enable:true, speed:1, minimum:0.1, sync:false } },
+    size:    { value: 2, random: true, anim: { enable:true, speed:2, minimum:0.5, sync:false } },
+    links:   { enable:true, distance:120, color:'#6C63FF', opacity:0.3, width:1 },
+    move:    { enable:true, speed:0.8, direction:'none', random:true, straight:false,
+               out_mode:'out', bounce:false, attract:{ enable:false } }
+  },
+  interactivity: {
+    events: { onhover:{ enable:true, mode:'repulse' }, onclick:{ enable:true, mode:'push' } },
+    modes:  { repulse:{ distance:100, duration:0.4 }, push:{ quantity:4 } }
+  },
+  retina_detect: true
+});
+
+
+8. Main Initialisation (main.js)
+This file wires everything together — Typed.js typewriter effect, VanillaTilt 3D hover cards, dynamic skills and project data, and the navbar scroll effect.
+// ─── js/main.js ──────────────────────────────────────
+
+// ─── Typed.js typewriter ───
+new Typed('#typed-output', {
+  strings: ['Full-Stack Developer', 'UI/UX Designer', '3D Web Artist', 'Creative Coder'],
+  typeSpeed: 70, backSpeed: 40, backDelay: 2000, loop: true
+});
+
+// ─── Nav scroll tint ───
+const nav = document.querySelector('.glass-nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60));
+
+// ─── Skills data (add/remove freely) ───
+const SKILLS = ['HTML5','CSS3','JavaScript','React','Node.js','Python','Three.js','GSAP',
+                'Figma','Git','MongoDB','Docker','TypeScript','Next.js','TailwindCSS'];
+const skillsContainer = document.getElementById('skills');
+SKILLS.forEach(skill => {
+  const pill = document.createElement('span');
+  pill.className = 'skill-pill';
+  pill.textContent = skill;
+  skillsContainer.appendChild(pill);
+});
+
+// ─── Projects data ───
+const PROJECTS = [
+  { title:'Project Alpha', desc:'A 3D product configurator built with Three.js and React.',
+    img:'https://picsum.photos/600/400?random=1', tags:['Three.js','React','GSAP'],
+    demo:'https://yoursite.com/demo1', code:'https://github.com/yourname/project-alpha' },
+  { title:'Project Beta',  desc:'Real-time data dashboard with D3.js and WebSockets.',
+    img:'https://picsum.photos/600/400?random=2', tags:['D3.js','Node.js','Socket.io'],
+    demo:'https://yoursite.com/demo2', code:'https://github.com/yourname/project-beta' },
+  { title:'Project Gamma', desc:'AI-powered content generator with Next.js and OpenAI.',
+    img:'https://picsum.photos/600/400?random=3', tags:['Next.js','OpenAI','TailwindCSS'],
+    demo:'https://yoursite.com/demo3', code:'https://github.com/yourname/project-gamma' },
+];
+const grid = document.getElementById('projects-grid');
+PROJECTS.forEach(p => {
+  grid.innerHTML += `
+    <div class='project-card' data-tilt data-tilt-max='15' data-tilt-perspective='1000' data-tilt-glare data-tilt-max-glare='0.3'>
+      <img src='${p.img}' alt='${p.title}' loading='lazy' />
+      <div class='card-body'>
+        <h3>${p.title}</h3>
+        <p>${p.desc}</p>
+        <div class='card-tags'>${p.tags.map(t=>`<span>${t}</span>`).join('')}</div>
+        <div class='card-links'>
+          <a href='${p.demo}' target='_blank' class='btn btn-primary btn-sm'>Live Demo</a>
+          <a href='${p.code}' target='_blank' class='btn btn-outline btn-sm'>GitHub</a>
+        </div>
+      </div>
+    </div>`;
+});
+
+// ─── Init VanillaTilt on dynamically added cards ───
+VanillaTilt.init(document.querySelectorAll('[data-tilt]'), {
+  max: 15, perspective: 1000, glare: true, 'max-glare': 0.3,
+  easing: 'cubic-bezier(.03,.98,.52,.99)', speed: 400, scale: 1.04
+});
+
+
+9. Project Card Styles
+Add these styles to main.css for the 3D tilt project cards and skill pills.
+.projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px,1fr));
+                 gap: 2rem; }
+.project-card  { background: rgba(18,18,26,0.8); border: 1px solid var(--color-border);
+                 border-radius: 16px; overflow: hidden; transform-style: preserve-3d;
+                 transition: box-shadow 0.3s; cursor: pointer; }
+.project-card:hover { box-shadow: 0 20px 60px rgba(108,99,255,0.3); }
+.project-card img    { width: 100%; height: 200px; object-fit: cover; }
+.card-body    { padding: 1.5rem; }
+.card-body h3 { margin-bottom: 0.5rem; font-size: 1.25rem; }
+.card-body p  { color: var(--color-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1rem; }
+.card-tags    { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.2rem; }
+.card-tags span { padding: 0.25rem 0.7rem; border-radius: 50px; font-size: 0.75rem;
+                  background: rgba(108,99,255,0.15); color: var(--color-accent); border: 1px solid var(--color-accent); }
+.card-links   { display: flex; gap: 0.8rem; }
+.btn-sm { padding: 0.5rem 1.2rem; font-size: 0.8rem; }
+
+.skills-grid  { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
+.skill-pill   { padding: 0.5rem 1.2rem; border-radius: 50px; font-size: 0.85rem; font-weight: 500;
+                background: rgba(0,212,255,0.1); color: var(--color-cyan); border: 1px solid var(--color-cyan);
+                transition: all 0.3s; }
+.skill-pill:hover { background: var(--color-cyan); color: #0A0A0F; transform: translateY(-2px); }
+
+
+10. Free Image Resources & Background Links
+All of these image sources are completely free, high-resolution, and safe for commercial use. Use them for section backgrounds, hero images, and project thumbnails.
+
+10.1  Direct URL Patterns (use in CSS/HTML immediately)
+
+10.2  Download Sites for Background Images
+→  Unsplash — Free professional photography: https://unsplash.com/s/photos/dark-space
+→  Pexels — Free stock photos & videos: https://www.pexels.com/search/dark%20background/
+→  Pixabay — Free images & illustrations: https://pixabay.com/images/search/dark%20technology/
+→  NASA Image Gallery — Space & astronomy: https://images.nasa.gov
+→  Freepik — Free vectors & backgrounds: https://www.freepik.com/free-photos-vectors/dark-background
+→  Coverr — Free background videos (use as video bg): https://coverr.co/tags/technology
+
+10.3  CSS Background Techniques
+Paste these background styles into individual section CSS rules:
+/* ─── Full-section parallax image ─── */
+.section-with-bg { position: relative; }
+.section-with-bg .parallax-bg {
+  position: absolute; inset: -25% 0; z-index: -1;
+  background-image: url('https://picsum.photos/1920/1400?random=5');
+  background-size: cover; background-position: center;
+  filter: brightness(0.25) saturate(0.5); /* darken image to not distract */ }
+
+/* ─── Gradient overlay ─── */
+.section-with-bg::before { content:''; position:absolute; inset:0; z-index:-1;
+  background: linear-gradient(to bottom, rgba(10,10,15,0.6), rgba(10,10,15,0.95)); }
+
+
+11. Free 3D Models & Assets
+If you want to load actual 3D model files (like a floating laptop, phone, or character), these sites offer completely free .glb files ready for Three.js.
+→  Sketchfab — Huge library, filter 'Downloadable' + 'Free': https://sketchfab.com/features/free-3d-models
+→  Poly Pizza — Thousands of low-poly free models: https://poly.pizza
+→  Google Poly Archive (via GitHub): https://github.com/nicktindall/cyclon.js
+→  Market.pmnd.rs — React Three Fiber ready models: https://market.pmnd.rs
+→  Quaternius — Free low-poly packs: https://quaternius.com
+→  KhronosGroup GLTF Sample Models: https://github.com/KhronosGroup/glTF-Sample-Models
+
+11.1  Loading a .glb Model in Three.js
+// Add to your index.html <head>:
+// <script src='https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js'></script>
+
+const loader = new THREE.GLTFLoader();
+loader.load('./assets/models/your-model.glb', (gltf) => {
+  const model = gltf.scene;
+  model.scale.set(0.5, 0.5, 0.5);
+  model.position.set(0, 0, 0);
+  scene.add(model);
+  // Animate rotation in the render loop:
+  // model.rotation.y = clock.getElapsedTime() * 0.4;
+});
+
+
+12. Responsive Design (responsive.css)
+Paste this into css/responsive.css to ensure perfect mobile layout.
+@media (max-width: 768px) {
+  .hero-name { font-size: 2.5rem; }
+  .hero-cta  { flex-direction: column; align-items: center; }
+  .nav-links { display: none; }
+  .menu-btn  { display: block; background:none; border:none; color:var(--color-text); font-size:1.5rem; cursor:pointer; }
+  .projects-grid { grid-template-columns: 1fr; }
+  .about-grid    { grid-template-columns: 1fr; }
+  .section-inner { padding: 5rem 1rem; }
+}
+@media (min-width: 769px) {
+  .menu-btn  { display: none; }
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+}
+@media (min-width: 1200px) {
+  .projects-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+
+13. Free Hosting & Deployment
+All the following platforms host static websites 100% free. Your portfolio can go live in under 5 minutes.
+
+13.1  Deploy to Netlify in 3 Steps
+Go to https://netlify.com and sign up free
+Drag your entire portfolio-3d/ folder onto the deploy drop zone
+Your site is live instantly at yourname.netlify.app — get a custom domain free!
+
+13.2  Custom Domain (Free with Freenom)
+→  Freenom — Free .tk .ml .ga domain names: https://freenom.com
+→  No-IP — Free dynamic DNS: https://noip.com
+
+
+14. Performance Optimisation Tips
+A beautiful 3D site that loads slowly will hurt your impression. Follow these rules to keep it fast.
+Compress all images with Squoosh (free): https://squoosh.app — target <200KB per image
+Add loading='lazy' attribute to all <img> tags below the fold
+Use renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2)) to limit GPU load on retina displays
+Reduce particle count to 60-80 on mobile by detecting screen width before tsParticles.load()
+Use IntersectionObserver to pause Three.js animation when not in viewport
+Add <link rel='preload'> for your hero background image in the <head>
+Enable Gzip/Brotli compression on Netlify via a netlify.toml config file
+Use WebP image format instead of JPEG/PNG — 30-50% smaller file sizes
+
+
+15. Design Inspiration & Reference Sites
+Study these award-winning portfolio sites before building yours. They are all built with similar techniques.
+→  Awwwards — Best web design awards & inspiration: https://www.awwwards.com/websites/portfolio
+→  Bruno Simon 3D Portfolio (Three.js masterpiece): https://bruno-simon.com
+→  Lusion.co — Three.js + GSAP studio site: https://lusion.co
+→  CSS-Tricks — Scroll animation articles: https://css-tricks.com/tag/scroll-animations
+→  Three.js Journey (best course, free examples): https://threejs-journey.com
+→  GSAP Showcase — Real-world scroll animation demos: https://gsap.com/showcase
+→  Codrops — Free creative UI experiments: https://tympanus.net/codrops/category/playground
+
+
+16. Build Checklist
+Follow this checklist in order to build the complete 3D portfolio. Tick each step off as you go.
+[ ] Create the portfolio-3d/ folder structure (Section 2)
+[ ] Copy the HTML boilerplate into index.html (Section 3)
+[ ] Paste and configure reset.css and main.css (Section 4)
+[ ] Add hero.css and animations.css (Section 4.3 & 4.4)
+[ ] Set up three-scene.js — test the 3D canvas first (Section 5)
+[ ] Set up scroll-animations.js — check in browser (Section 6)
+[ ] Configure particles.js (Section 7)
+[ ] Fill main.js with your real name, skills, and project data (Section 8)
+[ ] Add project card CSS (Section 9)
+[ ] Replace Picsum placeholders with your own images (Section 10)
+[ ] (Optional) Add a .glb 3D model (Section 11)
+[ ] Add responsive.css and test on mobile (Section 12)
+[ ] Compress all images with Squoosh (Section 14)
+[ ] Deploy to Netlify or Vercel (Section 13)
+[ ] Share your live URL with the world! 🚀
+
+
+🎉
+You're Ready to Build!
+Every library link in this document is free, every CDN is live right now. Follow the sections in order and you will have a stunning 3D portfolio online today.

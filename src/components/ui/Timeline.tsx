@@ -21,8 +21,10 @@ export const Timeline: React.FC<TimelineProps> = ({ items }) => (
         <motion.div
           key={`${item.organisation}-${item.period}`}
           className="relative flex flex-col gap-4 rounded-3xl border border-white/10 bg-white/70 p-6 shadow-xl shadow-primary-500/10 backdrop-blur dark:bg-slate-900/60 md:ml-12"
-          data-aos="fade-up"
-          data-aos-delay={index * 100}
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: index * 0.08, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
           <div className="absolute -left-12 top-6 hidden h-6 w-6 rounded-full bg-gradient-to-r from-primary-500 via-secondary-500 to-cyan-400 md:flex md:items-center md:justify-center">
             <span className="h-2 w-2 rounded-full bg-white" />
@@ -61,4 +63,3 @@ export const Timeline: React.FC<TimelineProps> = ({ items }) => (
     </div>
   </div>
 );
-
