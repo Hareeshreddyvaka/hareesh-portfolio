@@ -51,12 +51,28 @@ export function useCinematicTimeline() {
       const prev = seqs[i - 1];
       const next = seqs[i];
       const duration = next.progress - prev.progress;
-      
+
+      // Per-segment easing selection
+      // travel → planet: arriving (easeOut)
+      // planet → travel: departing (easeIn)
+      // travel → travel: warp (easeExpoInOut equivalent in GSAP)
+      // planet → planet: orbit (easeInOut)
+      let ease = 'power2.inOut';
+      if (prev.section === 'travel' && next.section !== 'travel') {
+        ease = 'power3.out';       // Arriving at a planet — decelerate smoothly
+      } else if (prev.section !== 'travel' && next.section === 'travel') {
+        ease = 'power3.in';        // Leaving a planet — accelerate into warp
+      } else if (prev.section === 'travel' && next.section === 'travel') {
+        ease = 'expo.inOut';       // Warp / fast travel between sectors
+      } else {
+        ease = 'power2.inOut';     // Planet-to-planet orbit
+      }
+
       const camProps = {
         px: next.camera.position[0], py: next.camera.position[1], pz: next.camera.position[2],
         tx: next.camera.target[0], ty: next.camera.target[1], tz: next.camera.target[2],
         fov: next.camera.fov || 65,
-        ease: 'power2.inOut',
+        ease,
         duration
       };
 
@@ -74,6 +90,7 @@ export function useCinematicTimeline() {
         timeline.to(effectsState.current, effProps, prev.progress);
       }
     }
+
     
     return timeline;
   }, []);

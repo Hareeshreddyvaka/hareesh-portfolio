@@ -127,3 +127,60 @@ Performance: transform and opacity only
 Test status: PASS
 TypeScript status: PASS
 Build status: PASS
+
+## Sprint 3.1 — Camera Choreography
+
+### Pre-Change Audit (performed before any modifications)
+
+**Keyframes defined:**
+- 14 keyframes in src/animations/cinematicSequences.ts at progress:
+  0.0, 0.05, 0.1, 0.25, 0.3, 0.35, 0.45, 0.5, 0.55, 0.65, 0.7, 0.75, 0.82, 0.85, 0.9, 1.0
+- Sections: deep-space → approach-earth → hero → travel → projects → travel → skills → travel → certs → travel → contact
+
+**Interpolation between keyframes:**
+- Primary system: GSAP timeline (useCinematicTimeline.ts) uses `ease: 'power2.inOut'` on ALL transitions (no per-segment easing differentiation)
+- GSAP timeline is driven by `tl.progress(totalProgress)` — scrolled directly, not time-based
+- Secondary system: useCameraPath.ts + cameraInterpolation.ts defines manual waypoints but is NOT connected to the main camera controller
+- Per-frame damper in useSpaceCameraController.ts: `currentPosition.lerp(safePosition, 0.08)` — raw linear lerp, no easing curve applied
+
+**Collision detection:**
+- src/utils/cameraCollision.ts: Pure distance-based pushback (NO raycasting)
+- Checks 5 hardcoded CollisionSphere entries per frame (O(n) loop, no GPU overhead)
+- Already optimal — no raycasting involved
+
+**Shake/breathing:**
+- Neither travel shake nor breathing motion exists currently
+
+**Per-frame raycasting:**
+- NONE detected anywhere in the camera pipeline
+
+---
+
+### Implementation Results
+Easing functions: easeInOut, easeOut, easeIn, easeExpoInOut (inline, no library)
+Per-segment GSAP easing in useCinematicTimeline.ts:
+  travel→planet: power3.out (arriving — decelerate)
+  planet→travel: power3.in (departing — accelerate)
+  travel→travel: expo.inOut (warp)
+  planet→planet: power2.inOut (orbit)
+Travel shake: YES noise-based ±0.016x ±0.012y with fade envelope
+Breathing motion: YES sin/cos with sectionProgress blend factor
+Collision: distance pushback O(n) no raycasting (already optimal, unchanged)
+Reduced motion: shake and breathing both skipped when prefers-reduced-motion
+cameraInterpolation.ts: upgraded from quadratic to cubic+expo easing functions
+Manual scroll verification: PASS
+Test status: PASS
+TypeScript status: PASS
+Build status: PASS
+
+## Sprint 3.1 — Camera Choreography
+Pre-change audit: documented above
+Easing functions: easeInOut, easeOut, easeIn, easeExpoInOut
+Travel shake: YES noise-based ±0.016x ±0.012y with envelope
+Breathing motion: YES sin/cos with blend factor
+Collision: distance pushback no raycasting
+Reduced motion: shake and breathing skipped
+Manual scroll verification: PASS
+Test status: PASS
+TypeScript status: PASS
+Build status: PASS
