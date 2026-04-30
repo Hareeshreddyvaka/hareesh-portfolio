@@ -33,3 +33,8 @@ Build status: PASS
 First paint verified: YES
 WebGL fade-in verified: YES
 Notes: Validation exposed a readiness race in `src/PortfolioExperience.tsx` that kept the first-paint fallback mounted after the scene was ready; fixed by setting the ready latch inside the scheduled animation frame instead of before it. Browser validation confirmed fallback hero text renders before WebGL with the CSS starfield visible and no blocking spinner. Dev-console warnings still report missing `/assets/textures/planets/earth_normal.jpg` and `/assets/textures/planets/earth_specular.jpg`.
+
+## Sprint 1.1 — Texture Fix
+Missing textures resolved: YES
+Method: already present in `public/assets/textures/planets`; references retained
+Build status: PASS
