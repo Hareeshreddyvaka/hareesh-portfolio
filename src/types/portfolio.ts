@@ -36,7 +36,7 @@ export interface Project {
   title: string;
   description: string;
   shortDescription: string;
-  image: string;
+  image?: string;
   tags: string[];
   technologies: string[];
   liveLink?: string;

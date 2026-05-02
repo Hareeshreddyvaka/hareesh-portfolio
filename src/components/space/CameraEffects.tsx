@@ -52,7 +52,7 @@ const PLANET_POSITIONS: Record<string, THREE.Vector3> = {
   jupiter: new THREE.Vector3(0, 10, -40),
 };
 
-type BloomEffectRef = { intensity: number; resolution: number };
+type BloomEffectRef = { intensity: number };
 type ChromaticAberrationEffectRef = { offset: THREE.Vector2 };
 type VignetteEffectRef = { darkness: number };
 type DOFEffectRef = { target: THREE.Vector3; bokehScale: number; focusDistance: number };
@@ -157,7 +157,6 @@ export function CameraEffects() {
     // ── Apply bloom + vignette ────────────────────────────────────────────────
     if (bloomRef.current) {
       bloomRef.current.intensity = currentBloom.current;
-      bloomRef.current.resolution = bloomResolution.current;
     }
     if (vignetteRef.current) {
       vignetteRef.current.darkness = currentVignette.current;

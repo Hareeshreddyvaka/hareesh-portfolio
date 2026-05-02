@@ -59,7 +59,7 @@ function PortfolioExperienceRoot({ onReady }: PortfolioExperienceProps) {
             }}
             dpr={[1, 1.5]}
           >
-            <ErrorBoundary>
+            <ErrorBoundary fallback={null}>
               {isSceneReady ? <PlanetarySystem /> : null}
             </ErrorBoundary>
           </Canvas>

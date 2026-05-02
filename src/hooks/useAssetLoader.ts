@@ -128,7 +128,7 @@ export function useAssetLoader(): UseAssetLoaderReturn {
     (key: string, originalUrl: string): Promise<void> => {
       // Use WebP if supported, else use original URL
       let url = originalUrl;
-      if (hasWebP && (url.endsWith('.jpg') || url.endsWith('.png'))) {
+      if (hasWebP && url.includes('/planets/') && (url.endsWith('.jpg') || url.endsWith('.png'))) {
         url = url.substring(0, url.lastIndexOf('.')) + '.webp';
       }
 
