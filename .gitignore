@@ -34,3 +34,14 @@ Thumbs.db
 # Test coverage
 # ===============================
 coverage/
+
+# ===============================
+# Build and Temp folders
+# ===============================
+dist/
+scratch/
+.claude/
+.codex/
+*.log
+upgraded_design.md_blueprint.md
+sprint-*.png

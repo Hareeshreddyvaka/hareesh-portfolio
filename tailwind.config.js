@@ -1,82 +1,80 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
-  darkMode: 'class',
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Space Grotesk', 'Outfit', 'sans-serif'],
-        mono: ['Fira Code', 'monospace'],
-        display: ['Space Grotesk', 'sans-serif'],
+        zentry: ["zentry", "sans-serif"],
+        general: ["general", "sans-serif"],
+        "circular-web": ["circular-web", "sans-serif"],
+        "robert-medium": ["robert-medium", "sans-serif"],
+        "robert-regular": ["robert-regular", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
+        mono: ["JetBrains Mono", "monospace"],
       },
       colors: {
-        surface: {
-          DEFAULT: '#ffffff',
-          dark: '#030014', // Deep space blue/black
+        // Neural Interface Theme — direct utility access
+        "neural-black": "#020308",
+        "neural-dark": "#080B14",
+        "neural-card": "#0D1220",
+        "neural-border": "#1A2240",
+        "cyan-glow": "#00F5FF",
+        "cyan-soft": "#5EF3FF",
+        "violet-glow": "#7C3AED",
+        "violet-soft": "#A855F7",
+        "mint-glow": "#06FFA5",
+        // Nested versions for extended usage
+        neural: {
+          black: "#020308",
+          dark: "#080B14",
+          card: "#0D1220",
+          border: "#1A2240",
         },
-        foreground: {
-          DEFAULT: '#0f172a',
-          dark: '#e2e8f0',
+        cyan: {
+          glow: "#00F5FF",
+          soft: "#5EF3FF",
+          dim: "#00A8B5",
         },
-        primary: {
-          DEFAULT: '#00f2ff', // Cyan Neon
-          50: '#f0fdff',
-          100: '#cffafe',
-          200: '#a5f3fc',
-          300: '#67e8f9',
-          400: '#22d3ee',
-          500: '#06b6d4',
-          600: '#0891b2',
-          700: '#0e7490',
-          800: '#155e75',
-          900: '#164e63',
-          glow: 'rgba(0, 242, 255, 0.5)',
+        violet: {
+          glow: "#7C3AED",
+          soft: "#A855F7",
+          dim: "#4C1D95",
+          300: "#5724ff",
         },
-        secondary: {
-          DEFAULT: '#7000ff', // Electric Violet
-          50: '#faf5ff',
-          100: '#f3e8ff',
-          200: '#e9d5ff',
-          300: '#d8b4fe',
-          400: '#c084fc',
-          500: '#a855f7',
-          600: '#9333ea',
-          700: '#7e22ce',
-          800: '#6b21a8',
-          900: '#581c87',
-          glow: 'rgba(112, 0, 255, 0.5)',
+        mint: {
+          glow: "#06FFA5",
         },
-        accent: {
-          pink: '#ff0099',
-          yellow: '#ffea00',
+        // Template colors (keep for compatibility)
+        blue: {
+          50: "#DFDFF0",
+          75: "#dfdff2",
+          100: "#F0F2FA",
+          200: "#010101",
+          300: "#4FB7DD",
         },
-      },
-      backgroundImage: {
-        'cyber-grid': "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(255 255 255 / 0.05)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e\")",
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        yellow: {
+          100: "#8e983f",
+          300: "#edff66",
+        },
       },
       boxShadow: {
-        'neon-blue': '0 0 20px rgba(0, 242, 255, 0.3), 0 0 60px rgba(0, 242, 255, 0.1)',
-        'neon-purple': '0 0 20px rgba(112, 0, 255, 0.3), 0 0 60px rgba(112, 0, 255, 0.1)',
-        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+        "cyan-glow": "0 0 20px rgba(0, 245, 255, 0.3)",
+        "violet-glow": "0 0 20px rgba(124, 58, 237, 0.3)",
+        "mint-glow": "0 0 20px rgba(6, 255, 165, 0.3)",
       },
       animation: {
-        'spin-slow': 'spin 8s linear infinite',
-        'pulse-glow': 'pulse-glow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'float': 'float 6s ease-in-out infinite',
+        "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        float: "float 6s ease-in-out infinite",
+        "float-delayed": "float 6s ease-in-out 2s infinite",
+        "spin-slow": "spin 20s linear infinite",
       },
       keyframes: {
-        'pulse-glow': {
-          '0%, 100%': { opacity: 1, boxShadow: '0 0 20px rgba(0, 242, 255, 0.3)' },
-          '50%': { opacity: 0.7, boxShadow: '0 0 40px rgba(0, 242, 255, 0.5)' },
-        },
         float: {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-20px)' },
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-12px)" },
         },
       },
     },
   },
   plugins: [],
-}
+};

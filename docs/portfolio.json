@@ -1,0 +1,225 @@
+{
+  "personal": {
+    "name": "Vaka Hareesh Reddy",
+    "title": "CS Engineering | AI/ML Specialist | Full-Stack Developer",
+    "bio": "Building cinematic experiences with code",
+    "email": "vakahareesh.reddy2023@vitstudent.ac.in",
+    "social": {
+      "github": "https://github.com/Hareeshreddyvaka",
+      "linkedin": "https://www.linkedin.com/in/hareesh-reddy-vaka",
+      "twitter": "https://x.com/HareeshVaka"
+    }
+  },
+  "education": {
+    "school": "VIT Chennai",
+    "degree": "B.Tech Computer Science Engineering",
+    "specialization": "AI/ML",
+    "startYear": 2022,
+    "endYear": 2026,
+    "cgpa": 7.74,
+    "credits": 89,
+    "semester": "3-2"
+  },
+  "projects": [
+    {
+      "id": "proj_001",
+      "title": "Face Shape Classification & Virtual Hairstyle Try-On",
+      "description": "Engineered a ResNet-based classifier that outperforms baseline CNNs, delivering accurate face shape predictions and personalized hairstyle mapping for enhanced user profiling.",
+      "shortDescription": "Deep learning system that classifies face shapes from images and provides personalized hairstyle recommendations.",
+      "tags": [
+        "Deep Learning",
+        "PyTorch",
+        "ResNet",
+        "Python"
+      ],
+      "technologies": [
+        "Python",
+        "PyTorch",
+        "ResNet",
+        "OpenCV"
+      ],
+      "githubLink": "https://github.com/hareeshreddyvaka/Face-Shape-Hairstyle-Recommendation",
+      "featured": true,
+      "details": {
+        "models": [
+          "ResNet",
+          "CNNs"
+        ],
+        "accuracy": "Outperforms baseline CNNs",
+        "techniques": [
+          "Transfer Learning",
+          "Image Classification"
+        ],
+        "deployment": "Python environment"
+      }
+    },
+    {
+      "id": "proj_002",
+      "title": "Online Blood Donor & Emergency Request Portal",
+      "description": "End-to-end MERN stack platform connecting donors, hospitals, and ambulance services with live geolocation and SOS routing. Onboarded 500+ donors during pilot run and enabled sub-5 minute matching for 87% of emergency requests.",
+      "shortDescription": "End-to-end MERN platform connecting blood donors with live geolocation routing.",
+      "tags": [
+        "React",
+        "Express",
+        "MongoDB",
+        "Full-Stack"
+      ],
+      "technologies": [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB"
+      ],
+      "liveLink": "https://hareesh.dev/blood-donor-portal",
+      "githubLink": "https://github.com/hareesh-vaka/blood-donor-portal",
+      "featured": true,
+      "details": {
+        "architecture": "MERN Stack",
+        "features": [
+          "Geolocation",
+          "SOS Routing",
+          "Real-time matching"
+        ],
+        "impact": "500+ donors onboarded"
+      }
+    },
+    {
+      "id": "proj_003",
+      "title": "Car Rental Customer Feedback Analyzer",
+      "description": "Leveraged IBM watsonx.ai to ingest unstructured customer feedback and transform it into actionable sentiment dashboards for operations teams. Reduced manual review time by 68% and uncovered critical service gaps within the first week of deployment.",
+      "shortDescription": "IBM watsonx.ai-powered customer feedback analyzer and sentiment dashboard.",
+      "tags": [
+        "AI",
+        "IBM watsonx",
+        "Data Visualization"
+      ],
+      "technologies": [
+        "IBM watsonx.ai",
+        "Python",
+        "Data Visualization",
+        "Automation"
+      ],
+      "liveLink": "https://watsonx.ibm.com/feedback-analyzer-demo",
+      "githubLink": "https://github.com/hareesh-vaka/feedback-analyzer",
+      "featured": true,
+      "details": {
+        "algorithm": "LLM Sentiment Analysis",
+        "impact": "68% reduction in manual review",
+        "platform": "IBM watsonx.ai"
+      }
+    }
+  ],
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "items": [
+        {
+          "name": "Python",
+          "level": 92
+        },
+        {
+          "name": "JavaScript",
+          "level": 88
+        },
+        {
+          "name": "C++",
+          "level": 86
+        },
+        {
+          "name": "Java",
+          "level": 78
+        },
+        {
+          "name": "C",
+          "level": 74
+        }
+      ]
+    },
+    {
+      "category": "Web & Frontend",
+      "items": [
+        {
+          "name": "React",
+          "level": 90
+        },
+        {
+          "name": "Vite",
+          "level": 85
+        },
+        {
+          "name": "HTML/CSS",
+          "level": 90
+        },
+        {
+          "name": "Node.js",
+          "level": 84
+        },
+        {
+          "name": "Express",
+          "level": 82
+        }
+      ]
+    },
+    {
+      "category": "AI/ML & Deep Learning",
+      "items": [
+        {
+          "name": "Deep Learning",
+          "level": 88
+        },
+        {
+          "name": "Computer Vision",
+          "level": 85
+        },
+        {
+          "name": "TensorFlow/Keras",
+          "level": 76
+        },
+        {
+          "name": "PyTorch",
+          "level": 87
+        },
+        {
+          "name": "IBM watsonx.ai",
+          "level": 80
+        }
+      ]
+    },
+    {
+      "category": "Tools & Platforms",
+      "items": [
+        {
+          "name": "Git & GitHub",
+          "level": 93
+        },
+        {
+          "name": "VS Code",
+          "level": 88
+        },
+        {
+          "name": "Linux",
+          "level": 87
+        },
+        {
+          "name": "Docker",
+          "level": 72
+        },
+        {
+          "name": "Figma",
+          "level": 78
+        }
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "id": "cert_001",
+      "title": "Gen AI Using IBM Watsonx",
+      "issuer": "IBM",
+      "date": "2025",
+      "certificateImage": "/assets/ibm-genai-cert.png",
+      "credentialUrl": "#",
+      "description": "Mastered the fundamentals of Generative AI and IBM Watsonx platform for building enterprise-grade AI applications. Covered Generative AI Models and Prompt Engineering."
+    }
+  ]
+}

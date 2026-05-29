@@ -24,16 +24,14 @@ export default defineConfig({
   },
 
   build: {
-    // Suppress chunk size warning for three.js (it's always large)
-    chunkSizeWarningLimit: 800,
+    outDir: 'docs',
+    emptyOutDir: true,
+    chunkSizeWarningLimit: 600,
     rollupOptions: {
       output: {
         manualChunks: {
-          'three-core': ['three'],
-          'react-three': ['@react-three/fiber', '@react-three/drei'],
-          'postprocessing': ['@react-three/postprocessing', 'postprocessing'],
           'animation': ['gsap'],
-          'vendor': ['react', 'react-dom', 'framer-motion'],
+          'vendor': ['react', 'react-dom'],
         }
       }
     }
