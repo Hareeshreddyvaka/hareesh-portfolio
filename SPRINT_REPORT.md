@@ -662,3 +662,5 @@ pm run build passed)
 - `graphify update .`: ⚙ Fail (missing CLI tool in environment)
 
 - **CONTACT FORM ACTIVATION**: Upgraded the form submit handler in [Contact.jsx](file:///c:/Users/myself/Desktop/Projects/hareesh-portfolio-1/src/components/Contact.jsx) to support dynamic Formspree form submissions via a customizable `FORMSPREE_ID` variable, and introduced an automatic `mailto:` fallback targeting `hareeshreddyvaka2006@gmail.com` with pre-populated name, email, and message body parameters so that form submissions work immediately out-of-the-box.
+
+- **CORS REDIRECT FIX**: Added the `Accept: application/json` header to the Formspree fetch POST request in [Contact.jsx](file:///c:/Users/myself/Desktop/Projects/hareesh-portfolio-1/src/components/Contact.jsx). This prevents Formspree from attempting a HTTP 302 redirect (which browsers block as a CORS network failure) and forces it to respond with a clean JSON payload, resolving the browser submission failure.
