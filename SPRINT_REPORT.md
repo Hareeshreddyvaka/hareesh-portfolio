@@ -639,3 +639,26 @@ pm run build passed)
 - `npx tsc --noEmit`: ✔ PASS (0 errors)
 - `npm run test:run`: ✘ Fail (No test files found, pre-existing condition)
 - `graphify update .`: ✘ Fail (missing CLI tool in environment)
+
+
+---
+
+## SPRINT 2.2 - PORTFOLIO METRICS UPDATE
+**Date:** 2026-07-09
+**Status:** ⚙ BUILD PASSING | ⚙ TSC CLEAN | ⚙ METRICS UPDATED
+
+### What Changed
+- **CGPA UPDATE**: Updated CGPA from `7.74` to `7.82` across all core sections:
+  - [About.jsx](file:///c:/Users/myself/Desktop/Projects/hareesh-portfolio-1/src/components/About.jsx)
+  - [Timeline.jsx](file:///c:/Users/myself/Desktop/Projects/hareesh-portfolio-1/src/components/Timeline.jsx)
+  - [Certifications.jsx](file:///c:/Users/myself/Desktop/Projects/hareesh-portfolio-1/src/components/Certifications.jsx)
+  - [portfolio.json](file:///c:/Users/myself/Desktop/Projects/hareesh-portfolio-1/public/portfolio.json)
+- **LEETCODE MENTION REMOVAL**: Replaced all mentions of "LeetCode" with "Problems Solved" or "algorithmic challenges" to generalize problem-solving credentials while keeping the stats and layout balanced.
+
+### Verification Results
+- `npm run build`: ⚙ PASS (built successfully to docs/)
+- `npx tsc --noEmit`: ⚙ PASS (0 errors)
+- `npm run test:run`: ⚙ Fail (No test files found, pre-existing condition)
+- `graphify update .`: ⚙ Fail (missing CLI tool in environment)
+
+- **CONTACT FORM ACTIVATION**: Upgraded the form submit handler in [Contact.jsx](file:///c:/Users/myself/Desktop/Projects/hareesh-portfolio-1/src/components/Contact.jsx) to support dynamic Formspree form submissions via a customizable `FORMSPREE_ID` variable, and introduced an automatic `mailto:` fallback targeting `hareeshreddyvaka2006@gmail.com` with pre-populated name, email, and message body parameters so that form submissions work immediately out-of-the-box.

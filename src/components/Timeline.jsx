@@ -12,7 +12,7 @@ const timelineItems = [
     type: "Education",
     title: "B.Tech CSE — Artificial Intelligence & Machine Learning",
     org: "VIT Chennai",
-    detail: "CGPA: 7.74 | No backlogs",
+    detail: "CGPA: 7.82 | No backlogs",
     tags: ["AI/ML Specialization", "Deep Learning", "Reinforcement Learning", "XAI"],
     color: "#00F5FF",
     icon: "🎓",

@@ -38,8 +38,21 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("sending");
+
+    // Replace with your Formspree Form ID (e.g. "mqkvgnye")
+    const FORMSPREE_ID = "xykrejov";
+
+    if (!FORMSPREE_ID || FORMSPREE_ID === "YOUR_FORM_ID") {
+      // Fallback: If Formspree is not set up, open default email client with pre-filled subject/body
+      const mailtoUrl = `mailto:hareeshreddyvaka2006@gmail.com?subject=Contact from ${encodeURIComponent(formData.name)}&body=Sender Email: ${encodeURIComponent(formData.email)}%0D%0A%0D%0AMessage:%0D%0A${encodeURIComponent(formData.message)}`;
+      window.location.href = mailtoUrl;
+      setStatus("sent");
+      setFormData({ name: "", email: "", message: "" });
+      return;
+    }
+
     try {
-      const res = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

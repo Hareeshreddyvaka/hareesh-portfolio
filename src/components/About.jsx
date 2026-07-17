@@ -8,8 +8,8 @@ import AnimatedTitle from "./AnimatedTitle";
 gsap.registerPlugin(ScrollTrigger);
 
 const stats = [
-  { value: "7.74", label: "CGPA", suffix: "" },
-  { value: "120", label: "LeetCode Problems", suffix: "+" },
+  { value: "7.82", label: "CGPA", suffix: "" },
+  { value: "120", label: "Problems Solved", suffix: "+" },
   { value: "7", label: "Projects Built", suffix: "+" },
   { value: "2027", label: "Graduation Year", suffix: "" },
 ];
@@ -169,7 +169,7 @@ const About = () => {
                     style={{ color: "rgba(255,255,255,0.5)" }}
                   >
                     When I'm not training neural nets, I'm pushing code to
-                    GitHub, solving graph problems on LeetCode, or exploring
+                    GitHub, solving algorithmic challenges, or exploring
                     the intersection of cryptography and intelligent systems.
                   </p>
 
@@ -198,9 +198,28 @@ const About = () => {
                   </div>
                 </div>
 
-                {/* Profile placeholder */}
+                {/* Profile picture with fallback */}
                 <div className="flex flex-shrink-0 items-center justify-center md:items-start">
+                  <img
+                    id="profile-pic"
+                    src="/assets/profile.png"
+                    alt="Vaka Hareesh Reddy"
+                    className="h-36 w-36 rounded-2xl object-cover hidden"
+                    style={{
+                      border: "2px solid rgba(0,245,255,0.3)",
+                      boxShadow: "0 0 30px rgba(0,245,255,0.1)",
+                    }}
+                    onLoad={(e) => {
+                      e.currentTarget.classList.remove("hidden");
+                      const fallback = document.getElementById("profile-fallback");
+                      if (fallback) fallback.style.display = "none";
+                    }}
+                    onError={(e) => {
+                      e.currentTarget.style.display = "none";
+                    }}
+                  />
                   <div
+                    id="profile-fallback"
                     className="flex h-36 w-36 items-center justify-center rounded-2xl text-4xl font-black"
                     style={{
                       background:
@@ -317,7 +336,7 @@ const About = () => {
                   120+
                 </div>
                 <div>
-                  <p className="font-bold text-white">LeetCode Problems</p>
+                  <p className="font-bold text-white">Problems Solved</p>
                   <p
                     className="text-xs mt-1"
                     style={{ color: "rgba(255,255,255,0.5)" }}

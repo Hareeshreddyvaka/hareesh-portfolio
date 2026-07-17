@@ -109,8 +109,8 @@ const Certifications = () => {
         {/* Academic highlights */}
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
           {[
-            { icon: "📊", label: "CGPA", value: "7.74", sub: "VIT Chennai | AI/ML" },
-            { icon: "💻", label: "LeetCode", value: "120+", sub: "Arrays, Graphs, DP" },
+            { icon: "📊", label: "CGPA", value: "7.82", sub: "VIT Chennai | AI/ML" },
+            { icon: "💻", label: "Problems Solved", value: "120+", sub: "Arrays, Graphs, DP" },
             { icon: "🔬", label: "Projects", value: "7+", sub: "AI/ML focused" },
           ].map((stat) => (
             <div key={stat.label} className="neural-card rounded-xl p-4 text-center">
